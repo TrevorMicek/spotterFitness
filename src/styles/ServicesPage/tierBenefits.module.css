@@ -1,0 +1,24 @@
+.benefits > div {   
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+    max-height: 8vh;
+}
+.benefitTitle {
+    font-size: 1.1rem;
+    margin: 1.5vh auto;
+    text-align: left;
+    color: #1a1a1a;
+ }
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+.benefits > div {
+    max-height: 7vh;
+    margin-left: 3vw;
+    max-width: 70vw;
+}
+}
+@media only screen and (min-width: 950px) {
+.benefits > div {
+    margin-left: 1vw;
+}
+}

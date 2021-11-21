@@ -1,0 +1,30 @@
+.imgWrapper {
+  min-width: 30px;
+  max-width: 30px;
+}
+.serviceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.secondSection > div {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10vw;
+}
+.SecondSectionTitle {
+  font-size: 1.2rem;
+  margin: 1.5vh auto 2vh 1vw;
+  white-space: nowrap;
+}
+div > div > p {
+  color: #1a1a1a;
+  margin-left: 1vw;
+  max-width: 250px;
+  font-size: 1.1rem;
+  line-height: 1.25;
+ }
+@media only screen and (min-width: 768px) {
+  .secondSection > div {
+    max-width: 40vw;
+  }
+}
