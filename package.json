@@ -5,7 +5,11 @@
   "version": "0.1.0",
   "author": "Trevor Micek",
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
     "@reach/router": "^1.3.4",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "autoprefixer": "^10.4.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "gatsby": "^2.32.3",
@@ -15,14 +19,20 @@
     "gatsby-plugin-layout": "^2.2.0",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-postcss": "^5.2.0",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sharp": "^2.14.3",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-sharp": "^2.12.1",
     "global": "^4.4.0",
     "lodash": "^4.17.21",
+    "node": "16.13.0",
     "nodemailer": "^6.5.0",
+    "npm": "^8.1.4",
+    "postcss": "^8.4.3",
+    "postcss-cli": "^9.0.2",
     "prop-types": "^15.7.2",
+    "python3": "^0.0.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
@@ -32,7 +42,8 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "shopify-buy": "^2.11.0",
-    "ssr-window": "^3.0.0"
+    "ssr-window": "^3.0.0",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "prettier": "2.2.1",
@@ -46,10 +57,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby start",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "gatsby test"
   },
   "repository": {
     "type": "git",
