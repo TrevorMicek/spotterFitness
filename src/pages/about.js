@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-import styles from '../styles/AboutPage/mainStyles.module.css'
+import styles from '../styles/AboutPage/mainStyles.css'
 
 import Section from '../components/pages/aboutPage/aboutSection'
 import info from '../data/aboutPage/aboutInfo';

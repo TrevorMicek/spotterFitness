@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "./Footer"
 import NavBar from "./NavBar"
-import styles from './layoutGrid.module.css';
+
 
 const GridLayout = (props) => (
     <div>

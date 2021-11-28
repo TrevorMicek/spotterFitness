@@ -14,7 +14,7 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
 import createComponent from '../commonComps/createCart'
-import styles from "./layoutGrid.module.css"
+import styles from "./layoutGrid.css"
 import "./layout.css"
 import { useShopify } from "../../storePage/hooks";
 import { createStore, combineReducers, applyMiddleware, compose } from "redux"
@@ -31,15 +31,7 @@ const Layout = ({children, title, pageLayout}) => {
 
   const store = createStore(rootReducer, enhancer);
  */
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+
 
   return (
 
@@ -55,12 +47,11 @@ const Layout = ({children, title, pageLayout}) => {
           <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
         </Helmet>
        <div className={styles.grid}>
-        <NavBar font={'Cinzel Decorative'} />
         <Header title={title}/>
 
 
         <main style={pageLayout}  className={styles.main}>{children}</main>
-        <Footer />
+
        </div>
       </div>
 

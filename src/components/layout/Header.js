@@ -1,11 +1,12 @@
 import React from 'react';
 
-import storeStyles from '../../styles/StorePage/storeStyles.module.css'
-import secondStyles from './secondaryHeader.module.css';
-import firstStyles from '../../styles/FrontPage/headerStyles.module.css';
+import storeStyles from '../../styles/StorePage/storeStyles.css'
+import secondStyles from './secondaryHeader.css';
+import firstStyles from '../../styles/FrontPage/headerStyles.css';
+const img = require("../../images/logo.png")
 const Header = (props) => {
 
-  const firstTitle = 'Small Business Web Design & Development'
+  const firstTitle = 'Spotter Fitness'
   const secondaryTitles = ['Services & Pricing', 'About Us', 'Contact Us']
 
   const getSecondaryTitle = (curTitle) => {
@@ -17,15 +18,21 @@ const Header = (props) => {
   }
   const secondTitle = getSecondaryTitle(props.title)
   const HomeHeader = () => (
-    <section className={firstStyles.headerPictureWrapper}>
+    <section class="headerPictureWrapper">
 
-    <section className={firstStyles.gradient}></section>
+    <section class="gradient" />
 
-      <div className={firstStyles.headerBorder}>
-      <h1 className={firstStyles.headerTitle}>
+      <div class="headerBorder">
+        <span>
+      <img src={img} alt="logo image" width="40px" height="40px" class="logo" />
+      </span>
+      <h1 class="headerTitle">
           <span>{props.title}</span>
       </h1>
-      <h2 className={firstStyles.headerText}>For retailers & professional services</h2>
+      <h2 class="headerText">
+      Taking the guesswork out of fitness
+      </h2>
+
       </div>
 
     </section>

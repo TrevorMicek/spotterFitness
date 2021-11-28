@@ -1,7 +1,7 @@
 import React from 'react';
 
 import info from '../../../data/frontPage/benefitData';
-import styles from '../../../styles/FrontPage/benefit.module.css'
+import styles from '../../../styles/FrontPage/benefit.css'
 import CreateComponent from '../../commonComps/createComponent';
 
 const Benefit = (props) => (

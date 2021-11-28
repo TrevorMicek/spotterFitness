@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
 
-import styles from '../styles/ServicesPage/mainStyles.module.css';
+import styles from '../styles/ServicesPage/mainStyles.css';
 import info from '../data/servicesPage/pageData';
 import SecondSectionTitle from '../components/commonComps/MainSectionTitle'
 import standard from '../data/servicesPage/standard';
@@ -15,7 +15,7 @@ import ecomPricing from '../data/servicesPage/ecomPricing'
 import Benefit from '../components/pages/servicesPage/TopBenefits';
 import BenefitData from '../data/servicesPage/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
-import wrapperStyles from '../styles/FrontPage/wrapper.module.css'
+import wrapperStyles from '../styles/FrontPage/wrapper.css'
 
 const ServicePage = () => (
 

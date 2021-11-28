@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-import firstStyles from '../../../styles/FrontPage/headerStyles.module.css';
+import firstStyles from '../../../styles/FrontPage/headerStyles.css';
 const Header = (props) => (
 
-  
+
     <section className={firstStyles.headerPictureWrapper}>
 
     <section className={firstStyles.firstSectionOverlay}></section>
@@ -15,7 +15,7 @@ const Header = (props) => (
       </h1>
       <h2 className={firstStyles.headerText}>Websites By Trevor</h2>
       </div>
-      
+
     </section>
   )
 export default Header;

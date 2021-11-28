@@ -1,19 +1,19 @@
 import React from 'react';
 
-import styles from './styles/mainSection.module.css';
+import styles from './styles/mainSection.css';
 
 const Title = (props) => (
     <section className={styles.firstSection}>
-    
+
         <section className={styles.firstSectionWrapper}>
-          
-       
+
+
         <div className={styles.firstSectionTitle}>
-          
+
           <h3>
             {props.title}
           </h3>
-          {props.imgSrc === undefined ? null : 
+          {props.imgSrc === undefined ? null :
           <img src={props.imgSrc} alt="colorful desktop icon" className={styles.firstSectionGraphic} width="100px" height="100px" />
           }
         </div>
@@ -21,10 +21,10 @@ const Title = (props) => (
           <article className={styles.firstSectionText}>
             <p>
               {props.text}
-              
+
             </p>
           </article>
-        </div> 
+        </div>
         </section>
       </section>
 )

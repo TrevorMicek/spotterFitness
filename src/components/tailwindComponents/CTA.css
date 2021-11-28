@@ -1,0 +1,88 @@
+
+.firstSection {
+    position: relative;
+
+
+}
+.firstSectionWrapper {
+    margin: 0 10vw;
+
+
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.skewRight {
+
+overflow: hidden;
+    right: 0;
+    left: 0;
+    bottom: -5vh;
+    position: absolute;
+
+
+}
+
+.skewLeft {
+
+overflow: hidden;
+    right: 0;
+    left: 0;
+    bottom: -5vh;
+    position: absolute;
+
+}
+.firstSectionGraphic {
+    position: relative;
+    margin: auto 0;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.firstSectionTitle > h3 {
+
+    font-size: 1.6rem;
+    margin: auto 0;
+    color: #fafafa;
+   white-space: nowrap;
+}
+.firstSectionText {
+    font-size: 1.1rem;
+    margin-top: 4vh;
+    color: #fafafa;
+}
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+.firstSectionTitle > h3 {
+    font-size: 1.3rem;
+}
+.firstSectionText {
+    margin-top: 0vh;
+    font-size: 1.1rem;
+}
+.firstSectionGraphic {
+    max-width: 25vw;
+}
+}
+@media only screen and (min-width: 668px) {
+.firstSectionWrapper {
+    max-width: 500px;
+}
+}
+@media only screen and (min-width: 860px) {
+.firstSectionTitle > h3 {
+    font-size: 1.75rem;
+}
+.firstSectionText {
+    font-size: 1.2rem;
+}
+}
+@media only screen and (min-width: 1030px) {
+.firstSectionWrapper {
+    max-width: 600px;
+}
+}

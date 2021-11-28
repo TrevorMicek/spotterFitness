@@ -1,10 +1,10 @@
 import React from 'react';
 
-import styles from '../../../styles/ServicesPage/tierBenefits.module.css';
+import styles from '../../../styles/ServicesPage/tierBenefits.css';
 const checkmark = require('../../../images/checkmark.jpg')
 
 const Benefits = (props) => (
-      props.title === undefined ? null : 
+      props.title === undefined ? null :
       <div className={styles.benefits}>
       <div>
     <div className={styles.imgWrapper}>

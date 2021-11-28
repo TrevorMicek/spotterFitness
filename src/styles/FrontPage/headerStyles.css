@@ -1,15 +1,14 @@
 .gradient {
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     position: absolute;
-    background-color: #04768a;
-    background: linear-gradient(240deg,#5b0060,#870160,#ac255e,#ca485c,#e16b5c,#f39060);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    -o-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    top: -5vh;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bgcascading.jpg");
+    background-size: 100vw 65vh;
+    background-position: center;
+    z-index: 3;
 }
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -40,12 +39,33 @@
  .headerBorder {
     min-height: 35vh;
     margin: auto 5vw;
+    margin-bottom: -10vh;
+}
+
+.logo {
+    color: #fafafa;
+    display: inline;
+    font-size: 1.65rem;
+    border: 2px solid rgb(180, 177, 177);
+    border-radius: 100%;
+    position: relative;
+    top: 1vh;
+    z-index: 4;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 1.5vw;
+
+
 }
 .headerTitle > span {
-
+    width: 85vw;
+    margin: auto auto;
     display: block;
     position: relative;
+    margin-left: 0;
+    padding-bottom: 2vh;
     z-index: 4;
+    border-bottom: 2px solid rgb(180, 177, 177);
 }
 .headerTitle {
     color: #fafafa;
@@ -53,7 +73,7 @@
     font-size: 1.65rem;
     position: relative;
     z-index: 4;
-    top: 10vh;
+
     font-family: sans-serif, Arial, Helvetica;
 
 }
@@ -64,7 +84,7 @@
     font-weight: normal;
     z-index: 4;
     position: relative;
-    top: 15vh;
+    top: 2vh;
  }
  @media only screen and (min-width: 320px) and (max-width: 410px) {
     .firstSectionOverlay, .firstTransition {

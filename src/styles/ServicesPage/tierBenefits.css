@@ -1,4 +1,4 @@
-.benefits > div {   
+.benefits > div {
     display: flex;
     flex-direction: row;
     margin-left: 3vw;

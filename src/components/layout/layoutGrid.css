@@ -12,5 +12,5 @@
     display: grid;
     grid-template-columns: [left-gutter] 1fr [left] 3fr [left-center] 3fr [center]  3fr [right-center] 3fr [right] 3fr [right-gutter] 1fr;
     grid-gap: 30px;
-    min-width: 90vw;
+
 }

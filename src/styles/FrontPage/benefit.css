@@ -21,6 +21,7 @@
    margin: 0 auto;
 }
 .benefitWrapper {
+    position: relative;
 
    margin: 0 auto 7.5vh auto;
    padding-top: 2vh;
