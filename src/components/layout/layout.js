@@ -43,7 +43,6 @@ const Layout = ({children, title, pageLayout}) => {
       >
 
        <div className={styles.grid}>
-        <Header title={title}/>
 
 
         <main style={pageLayout}  className={styles.main}>{children}</main>
