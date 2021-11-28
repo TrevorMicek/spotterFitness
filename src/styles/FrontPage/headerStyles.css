@@ -38,9 +38,8 @@
 
 }
  .headerBorder {
-    min-height: 35vh;
     margin: auto 5vw;
-    margin-bottom: -10vh;
+    margin-top: 7vh;
 }
 
 .logo {
@@ -52,8 +51,8 @@
     position: relative;
     top: 1vh;
     z-index: 4;
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 55px;
+    min-height: 55px;
     padding: 1.5vw;
 
 

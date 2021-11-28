@@ -9,9 +9,9 @@ const Title = (props) => (
         <div class={`${props.skew === 'right' ? "skewLeft" : "skewRight"}`} style={{background: `${props.bg}`, zIndex: `${props.zBottom}`, minHeight: `${props.skew === 'left' ? '55vh' : '67vh'}`, top: `${props.skew === 'left' ? '15vh' : '15vh'}`, transform: `${props.skew === 'left' ? 'skewY(-5deg)' : 'skewY(9deg)'}`}}></div>
         </div>
 
-        <section class="firstSectionWrapper" style={{textAlign: `${props.align}`, alignItems: `${props.align === 'left' ? 'flex-start' : 'flex-end'}`}}>
+        <section class="firstSectionWrapper" style={{padding: `${props.comp ? '0' : '0 10vw'}`, textAlign: `${props.align}`, alignItems: `${props.align === 'left' ? 'flex-start' : 'flex-end'}`}}>
           {
-            props.comp ? <props.comp /> : <>
+            props.comp ? <props.comp  /> : <>
             {props.imgSrc === undefined ? null :
               <img src={props.imgSrc} alt="colorful desktop icon" class="firstSectionGraphic" width="100px" height="100px" />
               }

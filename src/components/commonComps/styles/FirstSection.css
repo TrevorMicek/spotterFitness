@@ -4,7 +4,6 @@
 
 }
 .firstSectionWrapper {
-
     position: relative;
     z-index: 20;
 }
@@ -41,7 +40,6 @@
     font-size: 1.6rem;
     margin: auto 0;
     color: #fafafa;
-   white-space: nowrap;
 }
 .firstSectionText {
     font-size: 1.1rem;

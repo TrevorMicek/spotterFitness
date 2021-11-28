@@ -16,8 +16,7 @@ export default function CTA() {
                   <span className="block">Start your free trial today.</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-indigo-200" style={{minWidth: '70vw'}}>
-                  Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla
-                  nec.
+                  It's time to ditch the hotel gym. We're removing the obstacles to help you live a healthier & happier life!
                 </p>
                 <a
                   href="#"
