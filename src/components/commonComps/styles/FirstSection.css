@@ -7,13 +7,11 @@
 
     position: relative;
     z-index: 20;
-
-
 }
 
 .skewRight {
 
-overflow: hidden;
+    overflow: hidden;
     right: 0;
     left: 0;
     bottom: -15vh;
@@ -23,7 +21,7 @@ overflow: hidden;
 
 .skewLeft {
 
-overflow: hidden;
+    overflow: hidden;
     right: 0;
     left: 0;
     bottom: -15vh;
@@ -35,6 +33,7 @@ overflow: hidden;
     margin: auto 0;
     margin-left: 2vw;
     margin-bottom: 2vh;
+
 }
 
 .firstSectionTitle > h3 {
