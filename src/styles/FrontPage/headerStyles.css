@@ -51,9 +51,10 @@
     position: relative;
     top: 1vh;
     z-index: 4;
-    min-width: 55px;
-    min-height: 55px;
-    padding: 1.5vw;
+
+    height: 60px;
+    width: auto;
+    padding: 1.5vw 1.75vw;
 
 
 }

@@ -20,9 +20,9 @@ export default function CTA() {
                 </p>
                 <a
                   href="#"
-                  className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50"
+                  className="mt-8 bg-yellow-500 border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-black hover:bg-indigo-500"
                 >
-                  Sign up for free
+                  Download SpotterFitness
                 </a>
               </div>
             </div>
