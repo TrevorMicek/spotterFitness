@@ -23,7 +23,9 @@ const Header = (props) => {
     <section class="gradient" />
 
       <div class="headerBorder">
-
+        <span>
+      <img src={img} alt="logo image" width="40px" height="40px" class="logo" />
+      </span>
       <h1 class="headerTitle">
           <span>{props.title}</span>
       </h1>
