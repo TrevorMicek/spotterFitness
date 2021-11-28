@@ -15,9 +15,7 @@ const IndexPage = () => (
 
 
     <div class="wrapper">
-      <FirstSection  skew="right" bg=" rgba(29, 78, 216, 1)" zTop="4" zBottom="4"  />
-      <FirstSection {...info[0]} skew="left" bg="rgb(67, 77, 134)" zTop="5" zBottom="5" align="left" />
-      <FirstSection {...info[0]} skew="right" bg="rgb(76, 87, 153)" zTop="6" zBottom="6"  />
+
     </div>
     </Layout>
   )
