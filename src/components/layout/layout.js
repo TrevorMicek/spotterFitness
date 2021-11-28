@@ -41,8 +41,13 @@ const Layout = ({children, title, pageLayout}) => {
           margin: `0 0`,
         }}
       >
-
+        <Helmet>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+        </Helmet>
        <div className={styles.grid}>
+        <Header title={title}/>
 
 
         <main style={pageLayout}  className={styles.main}>{children}</main>
