@@ -6,9 +6,9 @@ export default function FirstSection() {
         <div className="py-16 xl:py-36 px-7 sm:px-6 lg:px-8 overflow-hidden" >
         <div className="max-w-max lg:max-w-7xl mx-auto relative z-9" >
           <div className=" mb-8 md:mb-2 md:px-6  relative z-10" >
-            <div className="text-base max-w-prose lg:max-w-none" >
+            <div className="text-base max-w-prose lg:max-w-none border-b-2 border-solid border-gray-200" >
               <h2 className="leading-6 text-yellow-400 font-semibold tracking-wide uppercase">How It Works</h2>
-              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl" style={{minWidth: '80vw'}}>
+              <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl" style={{ minWidth: '80vw'}}>
                 Work Out Anywhere, Anytime
               </p>
             </div>
