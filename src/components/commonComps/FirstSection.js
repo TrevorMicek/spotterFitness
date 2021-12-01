@@ -5,35 +5,12 @@ import './styles/FirstSection.css';
 
 const Title = (props) => (
     <section class="firstSection">
-      <div class={`${props.skew === 'right' ? "skewRight" : "skewLeft"}`} style={{background: `${props.bg}`, zIndex: `${props.zTop}`, minHeight: `${props.skew === 'right' ? '55vh' : '67vh'}`, top: `${props.skew === 'right' ? '0vh': '0vh'}`, transform: `${props.skew === 'right' ? 'skewY(-5deg)' : 'skewY(9deg)'}`}}>
+      <div class={`${props.skew === 'right' ? "skewRight" : "skewLeft"}`} style={{background: `${props.bg}`, paddingBottom: `${props.pad ? props.pad : 'auto'}`, zIndex: `${props.zTop}`, minHeight: `${props.skew === 'right' ? '55vh' : '67vh'}`, top: `${props.skew === 'right' ? '0vh': '0vh'}`, transform: `${props.skew === 'right' ? 'skewY(-5deg)' : 'skewY(9deg)'}`}}>
         <div class={`${props.skew === 'right' ? "skewLeft" : "skewRight"}`} style={{background: `${props.bg}`, zIndex: `${props.zBottom}`, minHeight: `${props.skew === 'left' ? '55vh' : '67vh'}`, top: `${props.skew === 'left' ? '15vh' : '15vh'}`, transform: `${props.skew === 'left' ? 'skewY(-5deg)' : 'skewY(9deg)'}`}}></div>
         </div>
 
-        <section class="firstSectionWrapper" style={{padding: `${props.comp ? '0' : '0 10vw'}`, textAlign: `${props.align}`, alignItems: `${props.align === 'left' ? 'flex-start' : 'flex-end'}`}}>
-          {
-            props.comp ? <props.comp  /> : <>
-            {props.imgSrc === undefined ? null :
-              <img src={props.imgSrc} alt="colorful desktop icon" class="firstSectionGraphic" width="100px" height="100px" />
-              }
-            <div class="firstSectionTitle">
+        <props.comp />
 
-              <h3>
-                {props.title}
-              </h3>
-
-            </div>
-            <div>
-              <article class="firstSectionText">
-                <p>
-                  {props.text}
-
-                </p>
-              </article>
-            </div>
-            </>
-          }
-
-        </section>
       </section>
 )
 export default Title;

@@ -18,15 +18,15 @@ const Header = (props) => {
   }
   const secondTitle = getSecondaryTitle(props.title)
   const HomeHeader = () => (
-    <section class="headerPictureWrapper">
+    <section className="headerPictureWrapper">
 
-    <section class="gradient" />
+    <section className="gradient" />
 
-      <div class="headerBorder">
+      <div className="headerBorder">
         <span>
-      <img src={img} alt="logo image" width="60px" height="40px" class="logo" />
+      <img src={img} alt="logo image" width="60px" height="40px" className="logo" />
       </span>
-      <h1 class="headerTitle">
+      <h1 className="headerTitle">
           <span>{props.title}</span>
       </h1>
       <h2 class="headerText">

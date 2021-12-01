@@ -46,13 +46,13 @@ const Layout = ({children, title, pageLayout}) => {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
         </Helmet>
-       <div className={styles.grid}>
         <Header title={title}/>
 
 
-        <main style={pageLayout}  className={styles.main}>{children}</main>
+        <main style={pageLayout}  >{children}</main>
+        <Footer />
 
-       </div>
+
       </div>
 
   )

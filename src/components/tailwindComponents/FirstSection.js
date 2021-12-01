@@ -1,10 +1,11 @@
 import React from 'react'
 
+import appImg from '../../images/appImg.png'
 export default function FirstSection() {
     return (
         <div className="py-16 xl:py-36 px-7 sm:px-6 lg:px-8 overflow-hidden" >
-        <div className="max-w-max lg:max-w-7xl mx-auto" >
-          <div className="relative z-10 mb-8 md:mb-2 md:px-6" >
+        <div className="max-w-max lg:max-w-7xl mx-auto relative z-9" >
+          <div className=" mb-8 md:mb-2 md:px-6  relative z-10" >
             <div className="text-base max-w-prose lg:max-w-none" >
               <h2 className="leading-6 text-yellow-400 font-semibold tracking-wide uppercase">How It Works</h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl" style={{minWidth: '80vw'}}>
@@ -57,7 +58,7 @@ export default function FirstSection() {
               </defs>
               <rect width={404} height={384} fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
             </svg>
-            <div className="relative md:bg-white md:p-6">
+            <div className="relative  md:p-6 z-10">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-indigo prose-lg text-gray-200 lg:max-w-none">
                   <p className="text-indigo-200" style={{minWidth: '80vw'}}>

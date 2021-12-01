@@ -87,6 +87,7 @@
     position: relative;
     top: 2vh;
  }
+ /*
  @media only screen and (min-width: 320px) and (max-width: 410px) {
     .firstSectionOverlay, .firstTransition {
         height: 60vh;
@@ -151,3 +152,4 @@
       display: inline;
 }
 }
+*/

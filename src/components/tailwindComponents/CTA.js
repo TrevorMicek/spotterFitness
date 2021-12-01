@@ -1,5 +1,5 @@
 import React from 'react'
-
+import appImg from '../../images/appImg.png'
 export default function CTA() {
     return (
       <>

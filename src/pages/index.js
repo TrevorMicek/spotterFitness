@@ -17,10 +17,11 @@ const IndexPage = () => (
       <SEO title="Home" />
 
 
-    <div class="wrapper">
+      <div class="wrapper">
       <FirstSection  comp={CTA} skew="right" bg="rgba(29, 78, 216, 1)" zTop="4" zBottom="4"  />
       <FirstSection comp={FirstSectionComp} skew="left" bg="rgba(55, 65, 81, 1)" zTop="5" zBottom="5" align="left" />
-      <FirstSection comp={Newsletter} skew="right" bg="rgba(23, 70, 200, 1)" zTop="6" zBottom="6"  />
+      <FirstSection comp={Newsletter} skew="right" bg="rgba(23, 70, 200, 1)" zTop="6" zBottom="6" pad="15vh"  />
+
     </div>
     </Layout>
   )
