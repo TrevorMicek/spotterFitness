@@ -61,25 +61,25 @@ export default function FirstSection() {
             <div className="relative  md:p-6 z-10">
               <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div className="prose prose-indigo prose-lg text-gray-200 lg:max-w-none">
-                  <p className="text-indigo-200" style={{minWidth: '80vw'}}>
+                  <p className="text-gray-200" style={{minWidth: '80vw'}}>
                     Working out is at the core of every healthy lifestyle but sometimes it can feel like a chore. Traveling for work?
                     We know you don't want to spend an hour in the sad and dark gym in your hotel.
                   </p>
-                  <p className="text-indigo-200"  style={{minWidth: '80vw'}}>
+                  <p className="text-gray-200"  style={{minWidth: '80vw'}}>
                   Feel isolated and self-conscious when you go to your local gym?
                     We know how hard it can be to motivate yourself whilte finishing that final rep.
                   </p>
                   <ol role="list" style={{position: 'relative', right: '4vw'}}>
-                    <li>This new fitness app makes it easy to stay commited and healthy.</li>
-                    <li>Find your spotter, because fitness doesn't have to be a solo endeavor</li>
+                    <li className="text-gray-100">This new fitness app makes it easy to stay commited and healthy.</li>
+                    <li className="text-gray-100">Find your spotter, because fitness doesn't have to be a solo endeavor</li>
                   </ol>
-                  <p className="text-indigo-200" style={{minWidth: '80vw'}}>
+                  <p className="text-gray-200" style={{minWidth: '80vw'}}>
                    Whether you're looking to start new healthy habits or you're a long-time gym goer,
                    Spotter Fitness can help you reach your fitness goals.
                   </p>
                 </div>
                 <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
-                  <p className="text-indigo-200" style={{minWidth: '80vw'}}>
+                  <p className="text-gray-200" style={{minWidth: '80vw'}}>
                    With resources for finding the best local gyms and fitness classes to connecting you with like-minded singles and an all-encompassing portal to keep you connected with your trainer.
                   </p>
 
