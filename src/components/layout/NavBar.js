@@ -49,11 +49,11 @@ const Nav = (props) => {
       </div>
       </> :
       <>
-        <div class="hamburger">
+
           <button class="mobileNav" onClick={toggleOpen} onKeyDown={toggleOpen}>
             <img src={hamburger} alt={"open drop down menu"} width="40px" height="35px" />
            </button>
-        </div>
+
 
 
     </>}
