@@ -41,13 +41,13 @@ export default function Example() {
               HOW IT WORKS
             </h2>
           </div>
-          <dl className="flex flex-row flex-wrap justify-between mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          <dl className="flex flex-row flex-wrap justify-between sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
-              <div key={feature.name}  style={{maxWidth: '40vw'}}>
+              <div key={feature.name} style={{maxWidth: '40vw'}}>
                 <dt>
 
-                  <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <p className="mt-5 mx-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                  <div className="flex mx-12 mb-4 items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                 </dt>
