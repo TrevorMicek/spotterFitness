@@ -1,11 +1,13 @@
 
   text{
-
-
+    fill            : none;
+    stroke          : rgb(132,92,65);
     stroke-width    : 2px;
     stroke-linejoin : round;
   }
   tspan {
+    fill : rgb(231,208,175);
+    stroke          : none;
     stroke-width    : 2px;
     stroke-linejoin : round;
   }
