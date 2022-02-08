@@ -161,8 +161,8 @@ export default function Example() {
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block mb-1 xl:inline" ><span className="tracking-wider" style={{color: "17,24,38", textShadow: "2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff"}}>Find Your</span> <span style={{color: "rgb(231,208,175)"}}>Spot</span></span>{' '}
-              <span className="block -ml-10 mr-1 xl:inline"><span className="tracking-wider" style={{color: "17,24,38", textShadow: "2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff"}}>Find Your</span> <span style={{color: "rgb(231,208,175)"}}>Fit</span></span>
+              <span className="block mb-1 xl:inline" ><span className="tracking-wider  text-4xl" style={{color: "17,24,38", wordSpacing: "-5px", textShadow: "2px 0 0 rgb(132,92,65), -2px 0 0 rgb(132,92,65), 0 2px 0 rgb(132,92,65), 0 -2px 0 rgb(132,92,65), 1px 1px rgb(132,92,65), -1px -1px 0 rgb(132,92,65), 1px -1px 0 rgb(132,92,65), -1px 1px 0 rgb(132,92,65)"}}>Find Your</span> <span style={{color: "rgb(231,208,175)"}}>Spot</span></span>{' '}
+              <span className="block xl:inline"><span className="tracking-wider  text-4xl" style={{color: "17,24,38",wordSpacing: "-5px", textShadow: "2px 0 0 rgb(132,92,65), -2px 0 0 rgb(132,92,65), 0 2px 0 rgb(132,92,65), 0 -2px 0 rgb(132,92,65), 1px 1px rgb(132,92,65), -1px -1px 0 rgb(132,92,65), 1px -1px 0 rgb(132,92,65), -1px 1px 0 rgb(132,92,65)"}}>Find Your</span> <span style={{color: "rgb(231,208,175)"}}>Fit</span></span>
             </h1>
             <p className="mt-3 max-w-md mx-auto font-bold text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
             The app that takes the guesswork out of fitness.
