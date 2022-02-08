@@ -17,10 +17,10 @@ const navigation = [
 
 export default function Example() {
   const TextStroke = (props) => (
-    <svg viewBox="0 0 500 50" className={svgStyles.color}>
-  <text x="50" y="50">
+    <svg viewBox="0 0 400 50" className={svgStyles.color}>
+  <text x="50" y="40">
     FIND YOUR
-    <tspan dx="15" y="50">{props.title}</tspan>
+    <tspan dx="15" y="40">{props.title}</tspan>
     </text>
 
 </svg>
