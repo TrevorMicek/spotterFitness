@@ -5,6 +5,7 @@
     stroke          : rgb(132,92,65);
     stroke-width    : 2px;
     stroke-linejoin : round;
+    transform: scaleY(1.4)
   }
   tspan {
     fill : rgb(231,208,175);
