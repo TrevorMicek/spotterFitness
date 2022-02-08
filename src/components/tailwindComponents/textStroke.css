@@ -1,0 +1,19 @@
+
+  text{
+    font-size: 3rem;
+    fill            : none;
+    stroke          : rgb(132,92,65);
+    stroke-width    : 2px;
+    stroke-linejoin : round;
+  }
+  tspan {
+    font-size: 3rem;
+    fill : rgb(231,208,175);
+    stroke          : none;
+    stroke-width    : 2px;
+    stroke-linejoin : round;
+  }
+
+  @keyframes pulsate {
+    50%{ stroke-width:5px }
+  }

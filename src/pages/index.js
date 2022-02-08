@@ -19,7 +19,7 @@ const IndexPage = () => (
 
       <div class="wrapper">
 
-      <FirstSection comp={Features} skew="right" bg="rgba(255, 244, 238, 1)" zTop="4" zBottom="4" align="left"/>
+      <FirstSection comp={Features} skew="right" bg="rgba(255, 244, 238, 1)" borderTop="none" zTop="4" zBottom="4" align="left"/>
       <FirstSection comp={CTA} skew="left" bg="rgba(17, 24, 38, 1)" zTop="5" zBottom="5"  />
       <FirstSection comp={Newsletter} skew="right" bg="rgba(54,53,52, 1)" zTop="6" zBottom="6" pad="15vh"  />
 
