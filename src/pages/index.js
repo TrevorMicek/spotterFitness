@@ -21,9 +21,9 @@ const IndexPage = () => (
       <div class="wrapper">
 
       <FirstSection comp={Features} skew="right" bg="rgba(255, 244, 238)" borderTop="none" zTop="4" zBottom="4"  />
-      <FirstSection comp={CTA} skew="left" bg="rgba(17, 24, 38)" zTop="5" zBottom="5"  />
-      <FirstSection comp={CTA2} skew="right" bg="rgba(54,53,52, 1)" zTop="6" zBottom="6" pad="15vh"  />
-      <FirstSection comp={CTA3} skew="left" bg="rgba(17, 24, 38)" zTop="7" zBottom="7"  />
+      <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" zTop="5" zBottom="5"  />
+      <FirstSection comp={CTA2} skew="right" bg="rgb(255,244,238)" zTop="6" zBottom="6" pad="15vh"  />
+      <FirstSection comp={CTA3} skew="left" bg="rgb(17, 24, 38)" zTop="7" zBottom="7"  />
 
     </div>
     </Layout>
