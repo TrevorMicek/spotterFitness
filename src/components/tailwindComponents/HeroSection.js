@@ -20,7 +20,7 @@ export default function Example() {
     <svg viewBox="0 0 400 50" className={svgStyles.color}>
   <text x="50" y="40">
     FIND YOUR
-    <tspan dx="15" y="40">{props.title}</tspan>
+    <tspan dx="10" y="40">{props.title}</tspan>
     </text>
 
 </svg>
