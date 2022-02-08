@@ -13,13 +13,13 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center">
                 <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
-                  <span className="text-7xl block ">SPOT.</span>
+                  <span className="text-7xl block ">SWEAT.</span>
                 </h2>
                 <p className=" text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)"}}>
-                  Create your profile and tell us what you’re looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
+                Access discounted drop-in rates at awesome gyms. Connect and book with matched trainers who will help keep your butt in gear.
                 </p>
                 <p className="text-md leading-6 font-bold text-center" style={{color: "rgb(255, 244, 238)"}}>
-                WE FIND THE PERFECT GYM OR TRAINER FOR YOU IN SECONDS.
+                LOCK IT IN. SWEAT IT OUT. RATE YOUR EXPERIENCE.
                 </p>
               </div>
             </div>
