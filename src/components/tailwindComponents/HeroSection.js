@@ -19,8 +19,8 @@ export default function Example() {
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 50" className={svgStyles.color}>
   <text x="50" y="40">
-  <tspan y="40">FIND YOUR</tspan>
-    <tspan dx="10" y="40">{props.title}</tspan>
+  <tspan dx="10" y="40">FIND YOUR</tspan>
+   {props.title}
     </text>
 
 </svg>
