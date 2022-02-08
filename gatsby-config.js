@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Trevor's Website`,
-    description: `Custom Ecommerce Website`,
+    title: `SPOTTER APP`,
+    description: `Fitness App`,
     author: 'Trevor Micek',
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logoImg.png`, // This path is relative to the root of the site.
+        icon: `src/images/SpotterFavIcon.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
