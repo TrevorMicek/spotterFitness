@@ -17,15 +17,14 @@ const navigation = [
 
 export default function Example() {
   const TextStroke = (props) => (
-    <div className='flex justify-center'>
-    <svg viewBox="0 0 200 50" className={svgStyles.color}>
-  <text y="50">
+    <svg viewBox="0 0 500 50" className={svgStyles.color}>
+  <text x="50" y="50">
     FIND YOUR
-
+    <tspan dx="15" y="50">{props.title}</tspan>
     </text>
 
 </svg>
-</div>
+
   )
   return (
     <div className="relative overflow-hidden pb-16" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
