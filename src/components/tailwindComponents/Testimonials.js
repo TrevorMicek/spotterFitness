@@ -1,19 +1,44 @@
 import React from 'react'
 
+const reviews = [
+    {
+      name: '1',
+      description: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae."',
+      icon: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      name: '2',
+      description:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae."',
+      icon: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      name: '3',
+      description:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae."',
+      icon: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      name: '4',
+      description:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae."',
+      icon: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  ]
+
 export default function Example() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
       <section className="py-24 overflow-hidden md:py-20 lg:py-24">
-        <div className="relative pb-6 overflow-x-scroll max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative border-2 pb-6 overflow-x-scroll max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-            <div className="flex flex-row">
-          <div className="relative border-2 rounded-xl mx-8" style={{backgroundColor: "rgb(255,244,238)"}}>
-
-            <blockquote className="mt-8">
-              <div className="max-w-3xl mx-auto text-center font-sm  font-medium text-gray-900">
-                <p>
-                  &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                  alias molestiae.&rdquo;
+          <div className="relative flex flex-row" >
+            {
+                reviews.map((review) => (
+                    <blockquote className="mt-8 px-6 py-4 border-2 rounded-xl" style={{backgroundColor: "rgb(255,244,238)"}}>
+              <div className="max-w-3xl mx-auto text-center font-sm font-medium text-gray-900">
+                <p className="w-52">
+                  {review.description}
                 </p>
               </div>
               <footer className="mt-4 bg-transparent">
@@ -37,7 +62,9 @@ export default function Example() {
                 </div>
               </footer>
             </blockquote>
-          </div>
+                ))
+            }
+
           </div>
         </div>
       </section>
