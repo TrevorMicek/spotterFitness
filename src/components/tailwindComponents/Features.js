@@ -29,6 +29,16 @@ const features = [
 ]
 
 export default function Example() {
+  const TextStroke = (props) => (
+    <svg viewBox="0 0 40 15">
+  <text x="5" stroke="black" fill="white" strokeWidth=".25px">
+
+    <tspan dx="13" y="10" fontSize="6px">{props.title}</tspan>
+    </text>
+
+</svg>
+
+  )
   return (
     <div style={{position: 'relative', zIndex: '21'}}>
     <div className="overflow-hidden">
@@ -37,21 +47,21 @@ export default function Example() {
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="text-3xl text-center font-extrabold tracking-tight sm:text-4xl">
+            <h2 className="text-2xl text-center font-bold tracking-tight sm:text-4xl">
               HOW IT WORKS
             </h2>
           </div>
           <dl className="flex flex-row flex-wrap justify-between sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
-              <div key={feature.name} style={{maxWidth: '40vw'}}>
-                <dt>
+              <div key={feature.name}  style={{maxWidth: '40vw'}}>
+                <dt className="flex flex-col justify-center items-center">
 
-                  <p className="mt-5 mx-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
-                  <div className="flex mx-12 mb-4 items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <TextStroke title={feature.name} />
+                  <div className="flex mb-4 items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
+                <dd className="mt-2 text-base text-center text-gray-700">{feature.description}</dd>
               </div>
             ))}
           </dl>

@@ -5,7 +5,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-import svgStyles from './textStroke.css'
+import './textStroke.css'
 const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 const navigation = [
@@ -18,9 +18,10 @@ const navigation = [
 export default function Example() {
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 60">
-  <text x="50" y="40">
-  FIND YOUR
-    <tspan dx="10" y="40">{props.title}</tspan>
+
+  <text x="50" y="40" style={{transform: "scaleY(1.4)"}}>
+  <tspan y="40" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
+    <tspan dx="10" y="40" fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 
 </svg>
@@ -139,7 +140,7 @@ export default function Example() {
                       alt=""
                     />
                   </div>
-                  <div className="-mr-2">
+                  <div className="-mr-5 mb-5">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
