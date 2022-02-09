@@ -88,6 +88,8 @@ export default function Example() {
                       className="ml-2 h-10 w-auto sm:h-10"
                       src={Icon}
                       alt=""
+                      width="50px"
+                      height="50px"
                     />
                   </a>
                   <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
@@ -138,6 +140,8 @@ export default function Example() {
                       className="h-10 w-auto"
                       src={Icon}
                       alt=""
+                      width="50px"
+                      height="50px"
                     />
                   </div>
                   <div className="-mr-5 mb-5">
@@ -195,6 +199,8 @@ export default function Example() {
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
                 alt="App screenshot"
+                width="200px"
+                height="100px"
               />
             </div>
             </div>
