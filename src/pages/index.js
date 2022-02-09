@@ -10,6 +10,10 @@ import CTA3 from '../components/tailwindComponents/CTA3'
 import FirstSection from '../components/commonComps/FirstSection'
 import Testimonials from '../components/tailwindComponents/Testimonials'
 import Download from '../components/tailwindComponents/Download'
+import Cities from '../components/tailwindComponents/Cities'
+import Work from '../components/tailwindComponents/Work'
+
+
 import '../styles/FrontPage/wrapper.css'
 
 const IndexPage = () => (
@@ -25,6 +29,8 @@ const IndexPage = () => (
       <FirstSection comp={CTA3} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="7" zBottom="7"  />
       <FirstSection comp={Testimonials}  skew="right" bg="rgb(17, 24, 38)"  zTop="8" zBottom="8" pad="15vh"  />
       <FirstSection comp={Download} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="9" zBottom="9"  />
+      <FirstSection comp={Cities}  skew="right" bg="rgb(17, 24, 38)"  zTop="10" zBottom="10" pad="15vh"  />
+      <FirstSection comp={Work} skew="left" bg="rgb(17, 24, 38)"  zTop="11" zBottom="11"  />
     </div>
     </Layout>
   )

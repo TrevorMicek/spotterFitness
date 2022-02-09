@@ -29,7 +29,7 @@ const reviews = [
 export default function Example() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-      <section className="pt-24 overflow-hidden md:py-20 lg:py-24">
+      <section className="pt-24 pb-8 overflow-hidden md:py-20 lg:py-24">
         <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">
 
           <div className="relative pb-4 flex flex-row overflow-x-scroll px-4" >
