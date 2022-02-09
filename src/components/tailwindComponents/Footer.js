@@ -50,7 +50,7 @@ const navigation = {
     return (
       <footer >
 <div className="py-28 absolute -bottom-20 left-0 right-0 z-21" style={{backgroundColor: "rgb(17,24,38)"}} />
-          <div className="absolute bottom-10 left-0 right-0 z-21" style={{backgroundColor: "rgb(17,24,38)", height:"35vh", transform:"skewY(9deg)"}} />
+          <div className="absolute bottom-0 left-0 right-0 z-21" style={{backgroundColor: "rgb(17,24,38)", height:"35vh", transform:"skewY(9deg)"}} />
         <div className="max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
