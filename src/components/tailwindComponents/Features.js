@@ -40,9 +40,9 @@ export default function Example() {
 
   )
   return (
-    <div style={{position: 'relative', zIndex: '21'}}>
+    <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
 
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
