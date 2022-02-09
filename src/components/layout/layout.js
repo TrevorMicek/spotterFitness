@@ -7,8 +7,7 @@
 
  import React, {useState} from "react"
  import PropTypes from "prop-types"
- import { useStaticQuery, graphql } from "gatsby"
- import { Helmet } from "react-helmet";
+
 
  import HeroSection from '../tailwindComponents/HeroSection'
  import Footer from "./Footer";
@@ -35,11 +34,7 @@
            margin: `0 0`,
          }}
        >
-         <Helmet>
-           <link rel="preconnect" href="https://fonts.googleapis.com" />
-           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-           <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
-         </Helmet>
+
          <HeroSection />
 
 
