@@ -29,13 +29,13 @@ const reviews = [
 export default function Example() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-      <section className="py-24 overflow-hidden md:py-20 lg:py-24">
-        <div className="relative border-2 pb-6 overflow-x-scroll max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <section className="pt-24 overflow-hidden md:py-20 lg:py-24">
+        <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-          <div className="relative flex flex-row" >
+          <div className="relative pb-4 flex flex-row overflow-x-scroll px-4" >
             {
                 reviews.map((review) => (
-                    <blockquote className="mt-8 px-6 py-4 border-2 rounded-xl" style={{backgroundColor: "rgb(255,244,238)"}}>
+                    <blockquote className="mb-12 mx-4 px-6 py-4 border-2 rounded-xl" style={{backgroundColor: "rgb(255,244,238)"}}>
               <div className="max-w-3xl mx-auto text-center font-sm font-medium text-gray-900">
                 <p className="w-52">
                   {review.description}
