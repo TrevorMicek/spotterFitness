@@ -1,0 +1,43 @@
+.buttonOne-enter {
+    transform: scaleY(1);
+}
+.buttonOne-enter-active {
+    transform: scale(1.05, 1.05);
+    transition: transform 200ms ease-in;
+}
+.buttonOne-exit {
+    transform: scale(1.05, 1.05);
+}
+.buttonOne-exit-active {
+    transform: scaleY(1);
+    transition: transform 200ms;
+}
+
+.buttonTwo-enter {
+    transform: scaleY(1);
+}
+.buttonTwo-enter-active {
+    transform: scale(1.05, 1.05);
+    transition: transform 200ms ease-in;
+}
+.buttonTwo-exit {
+    transform: scale(1.05, 1.05);
+}
+.buttonTwo-exit-active {
+    transform: scaleY(1);
+    transition: transform 200ms;
+}
+.buttonThree-enter {
+    transform: scaleY(1);
+}
+.buttonThree-enter-active {
+    transform: scale(1.05, 1.05);
+    transition: transform 200ms ease-in;
+}
+.buttonThree-exit {
+    transform: scale(1.05, 1.05);
+}
+.buttonThree-exit-active {
+    transform: scaleY(1);
+    transition: transform 200ms;
+}

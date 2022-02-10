@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
+import './transitions.css'
 export default function Work() {
-
+  const [inPropHoverOne, setInPropHoverOne] = useState(false)
+  const [inPropHoverTwo, setInPropHoverTwo] = useState(false)
+  const [inPropHoverThree, setInPropHoverThree] = useState(false)
 return (
   <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
     <div className="pb-16 pt-8">
@@ -11,29 +15,40 @@ return (
             WORK WITH US
           </h2>
           <div className="flex flex-col items-center justify-center rounded-md shadow">
+          <CSSTransition in={inPropHoverOne} timeout={2500} classNames="buttonOne">
                 <a
                   href="#"
-                  className="w-max mb-4 px-12 py-1 border border-transparent text-sm font-medium rounded-md text-black hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
-                  style={{backgroundColor: "rgb(255,244,238)"}}
+                  className="w-max mb-4 px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+
+                  onMouseOver={() => setInPropHoverOne(true)}
+                  onMouseOut={() => setInPropHoverOne(false)}
                 >
                   Trainers
                 </a>
-
+            </CSSTransition>
+            <CSSTransition in={inPropHoverTwo} timeout={2500} classNames="buttonTwo">
               <a
                   href="#"
-                  className="w-max mb-4 px-14 py-1 border border-transparent text-sm font-medium rounded-md text-black hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
-                  style={{backgroundColor: "rgb(255,244,238)"}}
+                  className="w-max mb-4 px-14 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+
+                  onMouseOver={() => setInPropHoverTwo(true)}
+                  onMouseOut={() => setInPropHoverTwo(false)}
                 >
                   Gyms
                 </a>
+            </CSSTransition>
+            <CSSTransition in={inPropHoverThree} timeout={2500} classNames="buttonTwo">
 
                <a
                   href="#"
-                  className="w-max px-12 py-1 border border-transparent text-sm font-medium rounded-md text-black hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
-                  style={{backgroundColor: "rgb(255,244,238)"}}
+                  className="w-max px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+
+                  onMouseOver={() => setInPropHoverThree(true)}
+                  onMouseOut={() => setInPropHoverThree(false)}
                 >
                   Partners
                 </a>
+            </CSSTransition>
               </div>
         </div>
     </div>

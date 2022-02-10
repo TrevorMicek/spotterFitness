@@ -30,7 +30,7 @@
 }
 .button-enter-active {
     transform: scale(1.05, 1.05);
-    transition: transform 200ms ease-in;
+    transition: transform 200ms ease-out;
 }
 .button-exit {
     transform: scale(1.05, 1.05);
