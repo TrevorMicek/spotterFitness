@@ -18,10 +18,14 @@ const navigation = [
 
 export default function Example() {
   const [inProp, setInProp] = useState(false)
+  const [inPropHover, setInPropHover] = useState(false)
+  const [inPropNav, setInPropNav] = useState(false)
+
 
   useEffect(() => {
     setInProp(true)
   }, [])
+
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 60">
 
@@ -101,7 +105,10 @@ export default function Example() {
                   <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
                       <span className="sr-only">Open main menu</span>
-                      <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                      <CSSTransition in={inPropNav} timeout={2000} classNames="nav">
+
+                      <MenuIcon className="h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
+                      </CSSTransition>
                     </Popover.Button>
                   </div>
                 </div>
@@ -164,6 +171,7 @@ export default function Example() {
                       href={item.href}
                       className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-900 hover:bg-gray-50"
                       style={{color: "rgb(255,244,238)"}}
+
                     >
                       {item.name}
                     </a>
@@ -182,7 +190,7 @@ export default function Example() {
 
         <main className="mt-8 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
-          <CSSTransition in={inProp} timeout={3000} classNames="transition">
+          <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-9 text-5xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="text-4xl block mb-1 xl:inline"><span className="tracking-wider text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
@@ -194,15 +202,24 @@ export default function Example() {
             The app that takes the guesswork out of fitness.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="flex items-center justify-center rounded-md shadow">
+            <CSSTransition in={inPropHover} timeout={2000} classNames="button">
+              <div
+                className="flex items-center justify-center rounded-md shadow"
+                onMouseOver={() => setInPropHover(true)}
+                onMouseOut={() => setInPropHover(false)}
+              >
+
                 <a
                   href="#"
                   className="w-max px-6 py-2 border border-transparent text-sm font-medium rounded-md text-black hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
                   style={{backgroundColor: "rgb(255,244,238)"}}
+
                 >
                   DOWNLOAD SPOTTER
                 </a>
-              </div>
+                </div>
+              </CSSTransition>
+
               <div className="mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
               <img
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
