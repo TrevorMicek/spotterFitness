@@ -28,12 +28,12 @@ const features = [
   },
 ]
 
-export default function Example() {
+export default function Features() {
   const TextStroke = (props) => (
     <svg viewBox="0 0 40 15">
-  <text x="5" stroke="black" fill="white" strokeWidth=".35px">
+  <text x="50%" stroke="black" fill="white" strokeWidth=".35px">
 
-    <tspan dx="13" y="10" fontSize="6px">{props.title}</tspan>
+    <tspan y="10" fontSize="6px">{props.title}</tspan>
     </text>
 
 </svg>

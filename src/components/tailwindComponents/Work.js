@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Example() {
+export default function Work() {
 
 return (
   <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>

@@ -61,7 +61,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function FAQ() {
   return (
     <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
     <div className="pt-20 pb-12" >

@@ -30,7 +30,7 @@ export default function Example() {
     <svg viewBox="0 0 400 60">
 
   <text x="50%" y="40" style={{transform: "scaleY(1.4)"}}>
-  <tspan fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
+  <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
     <tspan dx="10"  fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 

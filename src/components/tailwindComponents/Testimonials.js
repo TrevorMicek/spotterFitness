@@ -26,7 +26,7 @@ const reviews = [
     },
   ]
 
-export default function Example() {
+export default function Testimonials() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
       <section className="pt-24 pb-8 overflow-hidden md:py-20 lg:py-24">

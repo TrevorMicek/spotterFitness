@@ -3,7 +3,7 @@ import React from 'react'
 const googlePlay = require('../../images/newImg/googlePlay.svg')
 const appStore = require('../../images/newImg/appStore.svg')
 
-export default function Example() {
+export default function Download() {
 
   return (
     <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
