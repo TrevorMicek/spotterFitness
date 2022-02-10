@@ -29,9 +29,9 @@ export default function Example() {
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 60">
 
-  <text x="50" y="40" style={{transform: "scaleY(1.4)"}}>
-  <tspan y="40" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
-    <tspan dx="10" y="40" fill="rgb(231,208,175)">{props.title}</tspan>
+  <text x="50%" y="40" style={{transform: "scaleY(1.4)"}}>
+  <tspan fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
+    <tspan dx="10"  fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 
 </svg>
@@ -105,10 +105,9 @@ export default function Example() {
                   <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
                       <span className="sr-only">Open main menu</span>
-                      <CSSTransition in={inPropNav} timeout={2000} classNames="nav">
 
                       <MenuIcon className="h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
-                      </CSSTransition>
+
                     </Popover.Button>
                   </div>
                 </div>
@@ -192,9 +191,9 @@ export default function Example() {
           <div className="text-center">
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-9 text-5xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="text-4xl block mb-1 xl:inline"><span className="tracking-wider text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
-              <span className="text-4xl block xl:inline"><span className="tracking-wider text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
+            <h1 className="mb-9 font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
+              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>
             </CSSTransition>
 
