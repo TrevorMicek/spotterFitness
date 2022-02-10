@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
 
 import { Fragment } from 'react'
@@ -16,6 +17,11 @@ const navigation = [
 ]
 
 export default function Example() {
+  const [inProp, setInProp] = useState(false)
+
+  useEffect(() => {
+    setInProp(true)
+  }, [])
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 60">
 
@@ -176,10 +182,13 @@ export default function Example() {
 
         <main className="mt-8 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
+          <CSSTransition in={inProp} timeout={3000} classNames="transition">
+
             <h1 className="mb-9 text-5xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="text-4xl block mb-1 xl:inline"><span className="tracking-wider text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
               <span className="text-4xl block xl:inline"><span className="tracking-wider text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>
+            </CSSTransition>
 
             <p className="mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
             The app that takes the guesswork out of fitness.

@@ -4,7 +4,7 @@ export default function Example() {
 
 return (
   <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-    <div className="pt-8">
+    <div className="py-8">
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative">
           <h2 className="text-center text-sm leading-8  tracking-tight sm:text-4xl" style={{color: "rgb(255,244,238)"}}>
