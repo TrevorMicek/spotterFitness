@@ -14,7 +14,7 @@
 }
 .appear-enter-active {
     opacity: 1;
-    transition: opacity 2000ms ease-out;
+    transition: opacity 2000ms linear;
 }
 .appear-exit {
     opacity: 1;
