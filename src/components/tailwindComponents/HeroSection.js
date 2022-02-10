@@ -189,7 +189,7 @@ export default function Example() {
 
         <main className="mt-8 mx-auto max-w-7xl px-4 sm:mt-24">
           <div className="text-center">
-          <CSSTransition in={inProp} timeout={1000} classNames="appear">
+          <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-9 font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
