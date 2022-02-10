@@ -14,7 +14,7 @@
 }
 .appear-enter-active {
     opacity: 1;
-    transition: opacity 2000ms linear;
+    transition: opacity 2000ms ease-out;
 }
 .appear-exit {
     opacity: 1;
@@ -30,7 +30,7 @@
 }
 .button-enter-active {
     transform: scale(1.05, 1.05);
-    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-in;
 }
 .button-exit {
     transform: scale(1.05, 1.05);
