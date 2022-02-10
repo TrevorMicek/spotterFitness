@@ -201,23 +201,24 @@ export default function Example() {
             The app that takes the guesswork out of fitness.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-            <CSSTransition in={inPropHover} timeout={2000} classNames="button">
+
               <div
                 className="flex items-center justify-center rounded-md shadow"
-                onMouseOver={() => setInPropHover(true)}
-                onMouseOut={() => setInPropHover(false)}
-              >
 
+              >
+               <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
                   href="#"
-                  className="w-max px-6 py-2 border border-transparent text-sm font-medium rounded-md text-black hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
-                  style={{backgroundColor: "rgb(255,244,238)"}}
-
+                  className="w-max px-4 py-2  text-sm font-bold rounded-md text-black hover:bg-gray-800 md:py-4 md:text-lg md:px-10"
+                  style={{color: "rgb(132,92,65)", border: "2px solid rgb(132,92,65)"}}
+                  onMouseOver={() => setInPropHover(true)}
+                  onMouseOut={() => setInPropHover(false)}
                 >
                   DOWNLOAD SPOTTER
                 </a>
+                </CSSTransition>
                 </div>
-              </CSSTransition>
+
 
               <div className="mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
               <img
