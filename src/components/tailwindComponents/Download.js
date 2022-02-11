@@ -18,13 +18,13 @@ export default function Download() {
                   src={appStore}
                   width="100px"
                   height="50px"
-                  className="w-44  border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
+                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
                 />
               <img
                   src={googlePlay}
                   width="100px"
                   height="50px"
-                  className="w-44  border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
+                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
                 />
 
 
