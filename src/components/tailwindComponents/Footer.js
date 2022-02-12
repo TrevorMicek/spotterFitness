@@ -50,8 +50,8 @@ const navigation = {
     return (
       <footer >
 <div className="py-28 absolute -bottom-20 left-0 right-0 z-21" style={{backgroundColor: "rgb(17, 24, 38)"}} />
-          <div className="absolute bottom-0 left-0 right-0 z-21" style={{backgroundColor: "rgb(17, 24, 38)", height:"35vh", transform:"skewY(9deg)"}} />
-        <div className="max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
+          <div className="h-52 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
+        <div className="mt-12 max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
         <div className="mb-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} className="hover:text-gray-500" style={{color: "rgb(255,244,238)"}}>
