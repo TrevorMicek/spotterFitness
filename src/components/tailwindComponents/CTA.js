@@ -9,16 +9,16 @@ export default function CTA() {
 
         <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
           <div className="rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4" >
-            <div className="w-80 pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-              <div className=" lg:self-center flex flex-col items-center">
+            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="lg:self-center flex flex-col items-center">
                 <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
                   <span className="text-7xl block ">SPOT.</span>
                 </h2>
-                <p className="min-w-full text-sm leading-6 font-semibold text-center sm:text-lg" style={{color: "rgb(255, 244, 238)"}}>
-                  Create your profile and tell us what you’re looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
+                <p className="max-w-7xl text-sm leading-6 font-medium text-center sm:text-lg" style={{color: "rgb(255, 244, 238)"}}>
+                  Create your profile and tell us what you're looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
                 </p>
-                <p className="min-w-full text-md leading-6 font-bold text-center" style={{color: "rgb(255, 244, 238)"}}>
+                <p className="min-w-full text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)"}}>
                 WE FIND THE PERFECT GYM OR TRAINER FOR YOU IN SECONDS.
                 </p>
               </div>
