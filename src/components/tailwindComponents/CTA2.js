@@ -15,11 +15,11 @@ export default function CTA() {
 
                   <span className="text-7xl block ">SWEAT.</span>
                 </h2>
-                <p className="max-w-7xl text-sm leading-6 font-normal text-center" style={{color: "black"}}>
+                <p className="text-sm leading-6 font-normal text-center" style={{color: "black", minWidth:"330px"}}>
                 Access discounted drop-in rates at awesome gyms. Connect and book with matched trainers who will help keep your butt in gear.
                 </p>
-                <p className="min-w-full text-sm leading-6 font-semibold text-center" style={{color: "black"}}>
-                LOCK IT IN. SWEAT IT OUT. RATE YOUR EXPERIENCE.
+                <p className="text-sm leading-6 font-semibold text-center" style={{color: "black", minWidth:"300px"}}>
+                LOCK IT IN. SWEAT IT OUT.<br /> RATE YOUR EXPERIENCE.
                 </p>
               </div>
             </div>

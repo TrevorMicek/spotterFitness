@@ -15,10 +15,10 @@ export default function CTA() {
 
                   <span className="text-7xl block ">REPEAT.</span>
                 </h2>
-                <p className=" text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)"}}>
+                <p className="text-sm leading-6 font-normal text-center" style={{color: "rgb(255, 244, 238)", minWidth:"330px"}}>
                 Great session! Keep it going. Book again or explore new options.
                 </p>
-                <p className="text-md leading-6 font-bold text-center" style={{color: "rgb(255, 244, 238)"}}>
+                <p className="text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)", minWidth:"300px"}}>
                 YOU ROCKED IT! LET’S DO IT AGAIN!
                 </p>
               </div>

@@ -15,10 +15,10 @@ export default function CTA() {
 
                   <span className="text-7xl block ">SPOT.</span>
                 </h2>
-                <p className="max-w-7xl text-sm leading-6 font-medium text-center sm:text-lg" style={{color: "rgb(255, 244, 238)"}}>
+                <p className="text-sm leading-6 font-medium text-center sm:text-lg" style={{color: "rgb(255, 244, 238)", minWidth:"330px"}}>
                   Create your profile and tell us what you're looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
                 </p>
-                <p className="min-w-full text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)"}}>
+                <p className="text-sm leading-6 font-semibold text-center" style={{color: "rgb(255, 244, 238)", minWidth:"300px"}}>
                 WE FIND THE PERFECT GYM OR TRAINER FOR YOU IN SECONDS.
                 </p>
               </div>
