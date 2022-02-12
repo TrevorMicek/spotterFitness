@@ -14,11 +14,11 @@ return (
           <h2 className="mb-16 text-center font-2xl leading-8 tracking-tight sm:text-4xl" style={{color: "rgb(255,244,238)"}}>
             WORK WITH US
           </h2>
-          <div className="flex flex-col items-center justify-center rounded-md shadow">
+          <div className="flex flex-col items-center justify-center rounded-md shadow md:flex-row">
           <CSSTransition in={inPropHoverOne} timeout={2500} classNames="buttonOne">
                 <a
                   href="#"
-                  className="w-max mb-4 px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  className="w-max mb-4 px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-2 md:text-lg md:px-10"
 
                   onMouseOver={() => setInPropHoverOne(true)}
                   onMouseOut={() => setInPropHoverOne(false)}
@@ -29,7 +29,7 @@ return (
             <CSSTransition in={inPropHoverTwo} timeout={2500} classNames="buttonTwo">
               <a
                   href="#"
-                  className="w-max mb-4 px-14 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  className="w-max mb-4 px-14 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-2 md:mx-12 md:text-lg md:px-12"
 
                   onMouseOver={() => setInPropHoverTwo(true)}
                   onMouseOut={() => setInPropHoverTwo(false)}
@@ -41,7 +41,7 @@ return (
 
                <a
                   href="#"
-                  className="w-max px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  className="w-max mb-4 px-12 py-1 bg-red-50 border border-transparent text-sm font-medium rounded-md text-black hover:bg-gray-50 md:py-2 md:text-lg md:px-10"
 
                   onMouseOver={() => setInPropHoverThree(true)}
                   onMouseOut={() => setInPropHoverThree(false)}

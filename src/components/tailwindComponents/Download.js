@@ -13,18 +13,18 @@ export default function Download() {
           <span className="block -mt-8 mb-12">DOWNLOAD NOW</span>
 
         </h2>
-        <div className="mt-8 flex flex-col items-center justify-center">
+        <div className="mt-8 flex flex-col items-center justify-center md:flex-row">
                <img
                   src={appStore}
                   width="100px"
                   height="50px"
-                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
+                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                 />
               <img
                   src={googlePlay}
                   width="100px"
                   height="50px"
-                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:py-4 md:text-lg md:px-10"
+                  className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                 />
 
 
