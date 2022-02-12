@@ -52,6 +52,14 @@ const navigation = {
 <div className="py-28 absolute -bottom-20 left-0 right-0 z-21" style={{backgroundColor: "rgb(17, 24, 38)"}} />
           <div className="absolute bottom-0 left-0 right-0 z-21" style={{backgroundColor: "rgb(17, 24, 38)", height:"35vh", transform:"skewY(9deg)"}} />
         <div className="max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
+        <div className="mb-8 flex justify-center space-x-6">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} className="hover:text-gray-500" style={{color: "rgb(255,244,238)"}}>
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
               <div key={item.name} className="px-2 py-2">
@@ -61,14 +69,7 @@ const navigation = {
               </div>
             ))}
           </nav>
-          <div className="mt-8 flex justify-center space-x-6">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="hover:text-gray-500" style={{color: "rgb(255,244,238)"}}>
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
+
           <p className="mt-8 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
         </div>
       </footer>

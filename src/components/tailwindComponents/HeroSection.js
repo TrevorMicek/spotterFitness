@@ -15,7 +15,33 @@ const navigation = [
   { name: 'Trainers', href: '#' },
   { name: 'Contact', href: '#' },
 ]
+/*
 
+ * Determine the mobile operating system.
+ * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+ *
+ * @returns {String}
+
+ function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Windows Phone must come first because its UA also contains "Android"
+  if (/windows phone/i.test(userAgent)) {
+      return "Windows Phone";
+  }
+
+  if (/android/i.test(userAgent)) {
+      return "Android";
+  }
+
+  // iOS detection from: http://stackoverflow.com/a/9039885/177710
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+  }
+
+  return "unknown";
+}
+*/
 export default function Example() {
   const [inProp, setInProp] = useState(false)
   const [inPropHover, setInPropHover] = useState(false)
@@ -29,7 +55,7 @@ export default function Example() {
   const TextStroke = (props) => (
     <svg viewBox="0 0 400 60">
 
-  <text x="50%" y="40" style={{transform: "scaleY(1.4)"}}>
+  <text x="47%" y="40" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
     <tspan dx="10"  fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
@@ -98,10 +124,10 @@ export default function Example() {
           >
             <Popover.Panel
               focus
-              className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
               <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(17,24,38)"}}>
-                <div className="px-5 pt-4 flex items-center justify-between">
+                <div className="pl-4 pr-5 pt-4 flex items-center justify-between">
                   <div>
                     <img
                       className="h-10 w-auto"
@@ -142,18 +168,18 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-8 mx-auto max-w-7xl px-4 sm:mt-24">
+        <main className="mt-8 mx-auto max-w-7xl px-4">
           <div className="text-center">
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-9 font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
+            <h1 className="mb-9 font-extrabold text-gray-900 ">
+              <span className="block xl:inline"><span className="tracking-normal text-3xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
+              <span className="block xl:inline"><span className="tracking-normal text-3xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>
             </CSSTransition>
 
             <p className="mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
-            The app that takes the guesswork out of fitness.
+            The app that takes the guesswork<br /> out of fitness.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
 
@@ -164,7 +190,7 @@ export default function Example() {
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
                   href="#"
-                  className="w-max px-4 py-2  text-sm font-bold rounded-md text-black hover:bg-gray-800 md:py-4 md:text-lg md:px-10"
+                  className="w-max px-4 py-2  text-sm font-bold rounded-md text-black hover:bg-gray-800 md:py-3 md:text-lg md:px-8"
                   style={{color: "rgb(132,92,65)", border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
