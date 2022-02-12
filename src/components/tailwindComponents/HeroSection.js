@@ -168,7 +168,7 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-2 mx-auto max-w-7xl px-4">
+        <main className="mt-2 mx-auto max-w-7xl px-4 md:mt-12">
           <div className="text-center">
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
