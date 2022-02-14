@@ -42,9 +42,9 @@ export default function Features() {
               HOW IT WORKS
             </h2>
           </div>
-          <dl className="flex flex-col items-center justify-between md:flex-nowrap lg:mt-0 lg:col-span-2">
+          <dl className="relative flex flex-col items-center md:items-start md:flex-row lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
-              <div key={feature.name}  style={{maxWidth: '40vw'}}>
+              <div key={feature.name}  style={{width: '25vw'}}>
                 <dt className="flex flex-col justify-center items-center">
 
                   <div className="mb-3 text-lg">{feature.name}</div>
@@ -52,7 +52,7 @@ export default function Features() {
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="mt-2 -mx-8 mb-8 text-base text-center text-gray-700 md:mx-6">{feature.description}</dd>
+                <dd className="border-2 mt-2 -mx-16 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
               </div>
             ))}
           </dl>
