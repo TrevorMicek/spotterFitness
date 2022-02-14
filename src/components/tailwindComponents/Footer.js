@@ -60,7 +60,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+          <nav className="-mx-5 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
               <div key={item.name} className="px-2 py-2">
                 <a href={item.href} className="text-base hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
@@ -70,7 +70,7 @@ const navigation = {
             ))}
           </nav>
 
-          <p className="mt-8 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
+          <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
         </div>
       </footer>
     )
