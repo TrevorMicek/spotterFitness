@@ -13,7 +13,7 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center">
                 <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
-                  <span className="font-serif text-6xl block" style={{color: "rgb(255, 244, 238)", fontSize:"55px"}}>REPEAT.</span>
+                  <span className="ml-2 font-serif text-6xl block" style={{color: "rgb(255, 244, 238)", fontSize:"55px"}}>REPEAT.</span>
                 </h2>
                 <p className="text-sm leading-6 font-normal text-center" style={{color: "rgb(255, 244, 238)", minWidth:"280px"}}>
                 Great session! Keep it going. Book again or explore new options.

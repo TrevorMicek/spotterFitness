@@ -12,7 +12,7 @@ export default function CTA() {
           <div className="rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4" >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center flex flex-col items-center">
-                <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
+                <h2 className="ml-2 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
                   <span className="font-serif text-6xl block" style={{color: "rgb(255, 244, 238)", fontSize:"55px"}}>SPOT.</span>
                 </h2>
