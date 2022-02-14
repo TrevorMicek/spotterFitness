@@ -190,8 +190,8 @@ export default function Example() {
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
                   href="#"
-                  className="w-max px-4 py-2  text-xs font-semibold rounded-md text-black hover:bg-gray-800 md:py-3 md:text-lg md:px-8"
-                  style={{color: "rgb(132,92,65)", border: "2px solid rgb(132,92,65)"}}
+                  className="w-max px-4 py-2  text-xs font-semibold rounded-md text-black md:py-3 md:text-lg md:px-8"
+                  style={{backgroundImage: "linear-gradient(rgb(231,208,175), rgb(132,92,65))", border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
