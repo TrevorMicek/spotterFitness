@@ -173,8 +173,8 @@ export default function Example() {
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-9 font-extrabold text-gray-900 ">
-              <span className="block xl:inline"><span className="tracking-normal text-3xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
-              <span className="block xl:inline"><span className="tracking-normal text-3xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
+              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
+              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>
             </CSSTransition>
 
