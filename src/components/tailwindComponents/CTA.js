@@ -13,7 +13,7 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center">
                 <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
-                  <span className="text-7xl block ">SPOT.</span>
+                  <span className="font-serif text-6xl block ">SPOT.</span>
                 </h2>
                 <p className="text-sm leading-6 font-medium text-center sm:text-lg" style={{color: "rgb(255, 244, 238)", minWidth:"330px"}}>
                   Create your profile and tell us what you're looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
