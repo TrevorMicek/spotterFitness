@@ -33,7 +33,7 @@ export default function Features() {
   return (
     <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-28 lg:px-8">
 
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
@@ -52,7 +52,7 @@ export default function Features() {
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="border-2 mt-2 -mx-16 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
+                <dd className="mt-2 -mx-16 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
               </div>
             ))}
           </dl>
