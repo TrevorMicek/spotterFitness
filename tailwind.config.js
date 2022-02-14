@@ -5,11 +5,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
-    screens: {
-        'phone': '330px',
-        ...defaultTheme.screens,
-     
-    },
   },
   variants: {
     extend: {},
