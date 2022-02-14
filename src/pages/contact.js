@@ -8,7 +8,7 @@ import Form from '../components/tailwindComponents/Contact.js'
 const IndexPage = () => (
   <Layout title="Contact Us">
     <SEO title="Home" />
-    <Form />
+    <Form title="Contact Spotter" />
   </Layout>
 )
 export default IndexPage

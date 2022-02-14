@@ -41,7 +41,7 @@ const navigation = [
   return "unknown";
 }
 */
-export default function Example() {
+export default function Example(props) {
 
   return (
     <div className="relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
@@ -152,7 +152,7 @@ export default function Example() {
           <div className="text-center">
 
             <h1 className=" font-extrabold text-gray-900 ">
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "rgb(255,244,238)"}}>Contact Spotter</span> </span>{' '}
+              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "rgb(255,244,238)"}}>{props.title}</span> </span>{' '}
 
             </h1>
 
