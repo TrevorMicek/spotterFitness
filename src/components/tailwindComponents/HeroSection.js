@@ -10,10 +10,10 @@ import './textStroke.css'
 const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Gyms', href: '#' },
-  { name: 'Trainers', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Gyms', href: '/gyms' },
+  { name: 'Trainers', href: '/trainers' },
+  { name: 'Contact', href: '/contact' },
 ]
 /*
 

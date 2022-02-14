@@ -1,8 +1,8 @@
 import React from 'react';
 
-import storeStyles from '../../styles/StorePage/storeStyles.css'
+import HeroSection from '../tailwindComponents/HeroSection'
+import SecondaryHeader from '../tailwindComponents/SecondaryHeader'
 import secondStyles from './secondaryHeader.css';
-import firstStyles from '../../styles/FrontPage/headerStyles.css';
 const img = require("../../images/logo.png")
 const Header = (props) => {
 
@@ -17,54 +17,16 @@ const Header = (props) => {
     }
   }
   const secondTitle = getSecondaryTitle(props.title)
-  const HomeHeader = () => (
-    <section className="headerPictureWrapper">
 
-    <section className="gradient" />
 
-      <div className="headerBorder">
-        <span>
-      <img src={img} alt="logo image" width="60px" height="40px" className="logo" />
-      </span>
-      <h1 className="headerTitle">
-          <span>{props.title}</span>
-      </h1>
-      <h2 class="headerText">
-      Taking the guesswork out of fitness
-      </h2>
-
-      </div>
-
-    </section>
-  )
-  const SecondaryHeader = () => (
-    <section className={secondStyles.headerPictureWrapper}>
-   <div className={secondStyles.headerBorder}>
-   <h1 className={secondStyles.headerTitle}>
-   {props.title}
-   </h1>
-
-   </div>
-   </section>
-  )
-  const StoreHeader = () => (
-    <section className={storeStyles.headerPictureWrapper}>
-   <div className={storeStyles.headerBorder}>
-   <h1 className={storeStyles.headerTitle}>
-   {props.title}
-   </h1>
-
-   </div>
-   </section>
-  )
   const SwitchHeader = () => {
     switch(props.title) {
         case firstTitle:
-          return <HomeHeader />
+          return <HeroSection />
         case secondTitle:
           return <SecondaryHeader />
         default:
-          return <StoreHeader />
+          return <HeroSection />
     }
   }
 return (

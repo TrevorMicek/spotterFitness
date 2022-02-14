@@ -29,20 +29,11 @@ const features = [
 ]
 
 export default function Features() {
-  const TextStroke = (props) => (
-    <svg viewBox="0 0 40 15">
-  <text x="50%" stroke="black" fill="white" strokeWidth=".25px">
 
-    <tspan y="10" fontSize="4px">{props.title}</tspan>
-    </text>
-
-</svg>
-
-  )
   return (
     <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
 
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
@@ -51,17 +42,17 @@ export default function Features() {
               HOW IT WORKS
             </h2>
           </div>
-          <dl className="flex flex-row flex-wrap justify-between md:flex-nowrap lg:mt-0 lg:col-span-2">
+          <dl className="flex flex-col items-center justify-between md:flex-nowrap lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
               <div key={feature.name}  style={{maxWidth: '40vw'}}>
                 <dt className="flex flex-col justify-center items-center">
 
-                  <TextStroke title={feature.name} />
+                  <div className="mb-3 text-lg">{feature.name}</div>
                   <div className="flex mb-4 items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="mt-2 text-base text-center text-gray-700 md:mx-6">{feature.description}</dd>
+                <dd className="mt-2 -mx-8 mb-8 text-base text-center text-gray-700 md:mx-6">{feature.description}</dd>
               </div>
             ))}
           </dl>

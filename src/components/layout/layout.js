@@ -8,7 +8,7 @@
  import React, {useState} from "react"
  import PropTypes from "prop-types"
 
-
+ import Header from './Header'
  import HeroSection from '../tailwindComponents/HeroSection'
  import Footer from "./Footer";
 
@@ -35,7 +35,7 @@
          }}
        >
 
-         <HeroSection />
+         <Header title={title} />
 
 
          <main style={pageLayout}>{children}</main>
