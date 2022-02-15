@@ -8,21 +8,12 @@ const Footer = () => {
 
 
 return (
-<footer className={styles.footer}>
-        <div className={styles.waveContainer}>
-        <div className={styles.wave}></div>
-        </div>
 
-      <div className={styles.footerContainer}>
 
-        <div className={styles.footerTop}>
-
-        </div>
 <FooterComp />
 
 
-    </div>
-    </footer>
+
     )
       }
     export default Footer;

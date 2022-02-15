@@ -7,6 +7,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import './textStroke.css'
+const app = require('../../images/newImg/app.jpg')
 const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 const navigation = [
@@ -206,7 +207,7 @@ export default function Example() {
             <div className="mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
               <img
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
+                src={app}
                 alt="App screenshot"
                 width="200px"
                 height="100px"

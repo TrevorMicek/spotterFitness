@@ -49,10 +49,11 @@ const navigation = {
   export default function Footer() {
     return (
       <footer >
-<div className="py-28 absolute -bottom-20 left-0 right-0 z-21" style={{backgroundColor: "rgb(17, 24, 38)"}} />
-          <div className="h-52 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
+<div className="py-28 absolute -bottom-20 left-0 right-0 " style={{backgroundColor: "rgb(17, 24, 38)"}} />
+<a href='https://www.freepik.com/vectors/system-update' className="absolute -bottom-14 left-5 text-white text-center text-xs">System update vector<br /> created by pch.vector <br />- www.freepik.com</a>
+          <div className="h-48 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
         <div className="mt-12 max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
-        <div className="mb-8 flex justify-center space-x-6">
+        <div className=" mb-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} className="hover:text-gray-500" style={{color: "rgb(255,244,238)"}}>
                 <span className="sr-only">{item.name}</span>
@@ -71,7 +72,7 @@ const navigation = {
           </nav>
 
           <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
-          <a href='https://www.freepik.com/vectors/system-update' className="relative top-6 text-center text-base">System update vector created by pch.vector - www.freepik.com</a>
+
         </div>
       </footer>
     )
