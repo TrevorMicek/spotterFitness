@@ -1,30 +1,35 @@
 import React from 'react'
 
 import { GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/outline'
+const profileImg = require('../../images/newImg/profile.jpg')
+const trainersImg = require('../../images/newImg/trainers.jpg')
+const payImg = require('../../images/newImg/pay.jpg')
+const runningImg = require('../../images/newImg/running.jpg')
+
 
 const features = [
   {
     name: '1',
     description: 'Tell us about yourself. Create your profile in seconds.',
-    icon: GlobeAltIcon,
+    icon: profileImg,
   },
   {
     name: '2',
     description:
       'Match with gyms and trainers wherever you are.',
-    icon: ScaleIcon,
+    icon: trainersImg,
   },
   {
     name: '3',
     description:
       'Securely book, pay, and communicate in app.',
-    icon: LightningBoltIcon,
+    icon: payImg,
   },
   {
     name: '4',
     description:
       'Get your sweat on. Do it again!',
-    icon: MailIcon,
+    icon: runningImg,
   },
 ]
 
@@ -42,17 +47,17 @@ export default function Features() {
               HOW IT WORKS
             </h2>
           </div>
-          <dl className="relative flex flex-col items-center md:items-start md:flex-row lg:mt-0 lg:col-span-2">
+          <dl className="relative flex flex-row flex-wrap items-center justify-between md:items-start md:flex-row lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
-              <div key={feature.name}  style={{width: '25vw'}}>
+              <div key={feature.name}  style={{maxWidth: '40vw'}}>
                 <dt className="flex flex-col justify-center items-center">
 
                   <div className="mb-3 text-lg">{feature.name}</div>
-                  <div className="flex mb-4 items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="flex mb-4 items-center justify-center rounded-md text-white">
+                    <img src={feature.icon}  aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="mt-2 -mx-16 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
+                <dd className="mt-2 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
               </div>
             ))}
           </dl>

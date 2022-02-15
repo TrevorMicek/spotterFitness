@@ -71,6 +71,7 @@ const navigation = {
           </nav>
 
           <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
+          <a href='https://www.freepik.com/vectors/system-update' className="relative top-6 text-center text-base">System update vector created by pch.vector - www.freepik.com</a>
         </div>
       </footer>
     )

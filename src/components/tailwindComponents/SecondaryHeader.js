@@ -5,8 +5,6 @@ import { CSSTransition } from 'react-transition-group'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-
-const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 const navigation = [
   { name: 'Home', href: '/' },
