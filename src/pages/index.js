@@ -24,11 +24,11 @@ const IndexPage = () => (
 
       <div class="wrapper">
 
-      <FirstSection comp={Features} skew="right" bg="rgba(255, 244, 238)" borderTop="none" zTop="4" zBottom="4"  />
+      <FirstSection comp={Features} skew="right" bg="rgba(231,208,175)" borderTop="none" zTop="4" zBottom="4"  />
       <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
       <FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
       <FirstSection comp={CTA3} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="7" zBottom="7"  />
-      <FirstSection comp={Testimonials}  skew="right" bg="rgb(96,89,79)"  zTop="8" zBottom="8" pad="15vh"  />
+      <FirstSection comp={Testimonials}  skew="right" bg="rgb(231,208,175)"  zTop="8" zBottom="8" pad="15vh"  />
       <FirstSection comp={Download} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="9" zBottom="9"  />
       <FirstSection comp={Cities} skew="none" bg="rgb(17, 24, 38)" borderTop="none" zTop="10" zBottom="10" pad="15vh"  />
       <FirstSection comp={Work} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="11" zBottom="11"  />

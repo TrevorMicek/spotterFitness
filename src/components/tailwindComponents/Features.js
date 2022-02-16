@@ -43,7 +43,7 @@ export default function Features() {
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className="font-serif text-gold text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               HOW IT WORKS
             </h2>
           </div>

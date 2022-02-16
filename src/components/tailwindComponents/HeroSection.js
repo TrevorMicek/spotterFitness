@@ -85,10 +85,10 @@ export default function Example() {
                     />
                   </a>
                   <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
-                      <MenuIcon className="h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
+                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
 
                     </Popover.Button>
                   </div>
