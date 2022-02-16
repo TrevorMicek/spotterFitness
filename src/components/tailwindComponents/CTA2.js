@@ -15,7 +15,7 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center">
                 <h2 className="ml-2 sm:text-4xl" style={{color: "black"}}>
 
-                  <span className="font-serif text-6xl block" style={{fontSize:"55px"}}>SWEAT.</span>
+                  <span className="font-serif text-gold text-6xl block" style={{fontSize:"55px"}}>SWEAT.</span>
                 </h2>
                 <p className="text-sm leading-6 font-normal text-center" style={{color: "black", minWidth:"280px"}}>
                 Access discounted drop-in rates at awesome gyms. Connect and book with matched trainers who will help keep your butt in gear.
