@@ -7,7 +7,8 @@ module.exports = {
     extend: {
         colors: {
             'gold': 'rgb(132,92,65)',
-            'cream': 'rgb(231,208,175)'
+            'cream': 'rgb(231,208,175)',
+            'bg': 'rgb(17, 24, 38)'
         }
     },
   },
