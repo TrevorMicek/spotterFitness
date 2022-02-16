@@ -127,7 +127,7 @@ export default function Example() {
               focus
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
-              <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(17,24,38)"}}>
+              <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(231,208,175)"}}>
                 <div className="pl-4 pr-5 pt-4 flex items-center justify-between">
                   <div>
                     <img
@@ -139,9 +139,9 @@ export default function Example() {
                     />
                   </div>
                   <div className="-mr-5 mb-5">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold">
                       <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                      <XIcon className="text-gold h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function Example() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 rounded-md text-base text-white font-medium hover:text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 rounded-md text-base text-black font-medium hover:text-gray-100 hover:bg-gold"
 
 
                     >
@@ -160,7 +160,7 @@ export default function Example() {
                 </div>
                 <a
                   href="#"
-                  className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                  className="block border-t-2 border-gray-200 w-full px-5 py-3 text-center font-medium text-indigo-600 bg-cream hover:bg-gray-100"
                 >
                   Log in
                 </a>

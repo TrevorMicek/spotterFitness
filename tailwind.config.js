@@ -4,7 +4,12 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+            'gold': 'rgb(132,92,65)',
+            'cream': 'rgb(231,208,175)'
+        }
+    },
   },
   variants: {
     extend: {},
