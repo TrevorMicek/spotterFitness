@@ -43,7 +43,7 @@ export default function Features() {
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-gold text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               HOW IT WORKS
             </h2>
           </div>
@@ -54,7 +54,7 @@ export default function Features() {
 
                   <div className="mb-3 text-lg">{feature.name}</div>
                   <div className="flex mb-4 items-center justify-center rounded-md text-white">
-                    <img src={feature.icon}  aria-hidden="true" />
+                    <img src={feature.icon} width="150px" height="150px" loading="lazy" aria-hidden="true" />
                   </div>
                 </dt>
                 <dd className="mt-2 mb-8 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>

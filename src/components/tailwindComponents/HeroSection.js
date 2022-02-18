@@ -10,6 +10,7 @@ import './textStroke.css'
 const app = require('../../images/newImg/app.jpg')
 const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
+
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Gyms', href: '/gyms' },
@@ -54,7 +55,7 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg viewBox="0 0 400 60">
+    <svg  height="65" className="w-11/12 mx-auto sm:w-7/12">
 
   <text x="47%" y="40" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
@@ -169,13 +170,13 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-2 mx-auto max-w-7xl px-4 md:mt-12 md:pb-12">
+        <main className="mt-2 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="text-center">
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-9 font-extrabold text-gray-900 ">
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
+            <h1 className="mb-9  font-extrabold text-gray-900 ">
+              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-normal" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
+              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-normal" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>
             </CSSTransition>
 

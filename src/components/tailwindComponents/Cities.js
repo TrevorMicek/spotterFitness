@@ -17,12 +17,12 @@ const CityScroll = () => {
     <Ticker speed={tickerSpeed}>
         {({ index }) => (
           <>
-            <p className="max-w-3xl text-cream text-center text-2xl" style={{color: "rgb(255,244,238)"}}>
-              <span className="text-cream mr-16">Phoenix</span>
-              <span className="text-cream mr-16">Tuscon</span>
-              <span className="text-cream mr-16">Denver</span>
-              <span className="text-cream mr-16">LA</span>
-              <span className="text-cream mr-16">NYC</span>
+            <p className="max-w-3xl text-center text-2xl" style={{color: "rgb(255,244,238)"}}>
+              <span className="mr-16">Phoenix</span>
+              <span className="mr-16">Tuscon</span>
+              <span className="mr-16">Denver</span>
+              <span className="mr-16">LA</span>
+              <span className="mr-16">NYC</span>
             </p>
             </>
         )}
