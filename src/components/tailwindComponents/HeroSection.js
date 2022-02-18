@@ -55,7 +55,7 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg  height="65" className="w-11/12 mx-auto sm:w-7/12">
+    <svg  height="65" className="w-11/12 mx-auto sm:w-7/12 md:w-full">
 
   <text x="47%" y="40" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
@@ -171,7 +171,8 @@ export default function Example() {
         </Popover>
 
         <main className="mt-2 mx-auto max-w-7xl md:mt-12 md:pb-12">
-          <div className="text-center">
+          <div className="text-center md:flex md:flex-row md:ml-6">
+                    <div>
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-9  font-extrabold text-gray-900 ">
@@ -192,7 +193,7 @@ export default function Example() {
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
                   href="#"
-                  className="w-max px-4 py-2  text-xs font-semibold rounded-md text-black md:py-3 md:text-lg md:px-8"
+                  className="w-max px-4 py-2  text-xs font-semibold rounded-md text-black md:py-2 md:text-base md:px-6"
                   style={{backgroundImage: "linear-gradient(rgb(231,208,175), rgb(132,92,65))", border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
@@ -205,7 +206,8 @@ export default function Example() {
 
 
             </div>
-            <div className="mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+            </div>
+            <div className="mt-6 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
               <img
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}
