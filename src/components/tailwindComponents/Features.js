@@ -41,14 +41,14 @@ export default function Features() {
       <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-28 lg:px-8">
 
 
-        <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div className="relative">
           <div className="lg:col-span-1">
             <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               HOW IT WORKS
             </h2>
           </div>
           <dl className="relative flex flex-row flex-wrap items-center justify-between md:items-start md:flex-row lg:mt-0 lg:col-span-2">
-            {features.map((feature) => (
+            {features.map((feature, i) => (
               <div key={feature.name}  style={{maxWidth: '40vw'}}>
                 <dt className="flex flex-col justify-center items-center">
 

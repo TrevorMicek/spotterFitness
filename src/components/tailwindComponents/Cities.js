@@ -34,7 +34,7 @@ export default function Example() {
 
 return (
   <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-    <div className="pt-12 pb-24 -mb-14 py-0  md:-mb-16">
+    <div className="pt-12 pb-24 -mb-14 py-0  md:-mb-16 lg:pt-0 lg:pb-32">
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative">
           <h2 className="text-center text-gold text-sm leading-8 tracking-tight sm:text-4xl">

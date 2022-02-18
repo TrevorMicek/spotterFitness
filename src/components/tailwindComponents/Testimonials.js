@@ -29,10 +29,10 @@ const reviews = [
 export default function Testimonials() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-      <section className="pt-24 pb-8 overflow-hidden md:py-20 lg:py-24">
+      <section className="pt-24 pb-8 overflow-hidden md:py-20">
         <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-          <div className="relative pb-4 flex flex-row overflow-x-scroll px-4" >
+          <div className="relative pb-4 flex flex-row overflow-x-scroll px-4 lg:py-12 " >
             {
                 reviews.map((review) => (
                     <blockquote className="mb-12 mx-4 px-6 py-4 border-2 rounded-xl" style={{backgroundColor: "rgb(255,244,238)"}}>
