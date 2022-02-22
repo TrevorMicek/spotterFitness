@@ -9,6 +9,10 @@ module.exports = {
             'gold': 'rgb(132,92,65)',
             'cream': 'rgb(231,208,175)',
             'bg': 'rgb(17, 24, 38)'
+        },
+        backgroundImage: {
+            'download': 'url("../images/newImg/CrossFit.jpg")',
+            'gym': 'url("../images/newImg/gymBg.jpeg")'
         }
     },
   },
