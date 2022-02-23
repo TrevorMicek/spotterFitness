@@ -29,7 +29,7 @@ export default function Download() {
 
 
         </div>
-        <span className="text-gray-800">Privacy Notice</span>
+
       </div>
     </div>
       </div>
