@@ -48,10 +48,10 @@ const navigation = {
 
   export default function Footer() {
     return (
-      <footer >
-<div className="py-28 absolute -bottom-20 left-0 right-0 " style={{backgroundColor: "rgb(17, 24, 38)"}} />
-<a href='https://www.freepik.com/vectors/system-update' className="absolute -bottom-14 left-5 text-white text-center text-xs">System update vector<br /> created by pch.vector <br />- www.freepik.com</a>
-          <div className="h-48 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
+      <footer>
+<div className="py-24 absolute -bottom-12 left-0 right-0 " style={{backgroundColor: "rgb(17, 24, 38)"}} />
+
+          <div className="h-56 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
         <div className="mt-12 max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
         <div className=" mb-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
@@ -61,7 +61,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <nav className="-mx-5 flex flex-wrap justify-center" aria-label="Footer">
+          <nav className="relative -top-3  flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
               <div key={item.name} className="px-2 py-2">
                 <a href={item.href} className="text-base hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
@@ -70,8 +70,16 @@ const navigation = {
               </div>
             ))}
           </nav>
+          <span className="absolute bottom-12 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-4">
 
+              <a href="https://getterms.io/view/kEIyU/privacy/en-us" className="relative underline text-white text-center text-sm">Privacy Policy</a>
+              <a href="https://getterms.io/view/kEIyU/tos/en-us" className="relative underline text-white text-center text-sm">Terms of Service</a>
+              <a href="https://getterms.io/view/kEIyU/cookie/en-us" className="relative underline text-white text-center text-sm">Cookie Policy</a>
+              <a href="https://getterms.io/view/kEIyU/aup/en-us" className="relative underline text-white text-center text-sm">Acceptable Use Policy</a>
+            </span>
+          <a href='https://www.freepik.com/vectors/system-update' className="relative top-6 text-white text-center" style={{fontSize: "9px"}}><p className=" m-0 text-center">System update vector created by pch.vector - www.freepik.com</p></a>
           <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
+
 
         </div>
       </footer>

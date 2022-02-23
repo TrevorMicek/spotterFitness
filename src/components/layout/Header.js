@@ -7,7 +7,7 @@ const img = require("../../images/logo.png")
 const Header = (props) => {
 
   const firstTitle = 'Spotter Fitness'
-  const secondaryTitles = ['Services & Pricing', 'About Us', 'Contact Us']
+  const secondaryTitles = ['Gyms', 'Trainers', 'Contact Us']
 
   const getSecondaryTitle = (curTitle) => {
     for (let i=0;i<secondaryTitles.length;i++) {

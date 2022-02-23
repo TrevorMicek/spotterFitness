@@ -41,11 +41,10 @@ const IndexPage = () => {
       }
   }
   return (
-  <Layout title="Learn About Websites">
+  <Layout title="Trainers">
     <SEO title="Blog" />
     <div className={styles.secondSection}>
 
-      <SwitchEventPage />
 
     </div>
   </Layout>

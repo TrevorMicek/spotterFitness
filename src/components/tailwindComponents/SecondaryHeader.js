@@ -42,7 +42,7 @@ const navigation = [
 export default function Example(props) {
 
   return (
-    <div className="relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
+    <div className="relative " style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
       <div className="relative pt-6 pb-16 sm:pb-24">
