@@ -25,11 +25,7 @@ export default function Download() {
                   height="50px"
                   className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                 />
-
-
-
         </div>
-
       </div>
     </div>
       </div>
