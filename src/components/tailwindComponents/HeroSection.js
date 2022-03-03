@@ -55,9 +55,9 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg className="h-9 w-11/12 mx-auto sm:h-11 sm:w-7/12  md:w-full">
+    <svg className="h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12  md:w-full">
 
-  <text x="47%" y="60%" style={{transform: "scaleY(1.4)"}}>
+  <text x="47%" y="55%" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
     <tspan dx="5" fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
