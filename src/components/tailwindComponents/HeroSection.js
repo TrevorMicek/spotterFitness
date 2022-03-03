@@ -65,6 +65,25 @@ export default function Example() {
 </svg>
 
   )
+  const getMobileOS = () => {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+}
   return (
     <div className="relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
@@ -192,8 +211,9 @@ export default function Example() {
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
-                  href="#"
-                  className="w-max px-4 py-2  text-xs font-semibold rounded-md text-black md:py-2 md:text-base md:px-6"
+                  href={`${getMobileOS()}`}
+                  target="_blank"
+                  className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-black md:py-2 md:text-base md:px-6"
                   style={{backgroundImage: "linear-gradient(rgb(231,208,175), rgb(132,92,65))", border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}

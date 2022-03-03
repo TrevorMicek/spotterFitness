@@ -13,18 +13,22 @@ export default function Download() {
 
         </h2>
         <div className="mt-8 flex flex-col items-center justify-center md:flex-row">
-               <img
+                <a href="" target="_blank" rel="noopener noreferrer">
+                 <img
                   src={appStore}
                   width="100px"
                   height="50px"
                   className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
-                />
+                  />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter" target="_blank" rel="noopener noreferrer">
               <img
                   src={googlePlay}
                   width="100px"
                   height="50px"
                   className="w-44 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                 />
+                </a>
         </div>
       </div>
     </div>
