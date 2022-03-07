@@ -41,11 +41,11 @@ const navigation = [
 */
 export default function Example(props) {
   const TextStroke = (props) => (
-    <svg className="h-24 w-full mx-auto sm:h-11 sm:w-7/12  md:w-full">
+    <svg className="h-24 w-full mx-auto sm:h-24  md:w-full">
 
-  <text x="47%" y="35%" style={{transform: "scaleY(1.4)"}}>
-  <tspan dx="10"  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
-    <tspan dy="30%" dx={`${props.skew ? '-72%' : '-60%'}`} fill="rgb(231,208,175)">{props.title}</tspan>
+<text x="47%" y="35%" style={{transform: "scaleY(1.4)"}}>
+  <tspan  dx="10"  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
+    <tspan dy="30%" dx={`${props.skew ? '-220' : '-190'}`} fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 
 </svg>
@@ -160,13 +160,19 @@ export default function Example(props) {
           <div className="text-center">
 
           <h1 className="mb-6 font-extrabold text-gray-900 ">
-              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" /></span> </span>{' '}
-              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
+              <span className="block xl:inline text-3xl "><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" size="sm" /></span> </span>{' '}
+              <span className="block xl:inline text-3xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
             </h1>
 
 
-            <p className="mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
-            The app that takes the guesswork<br /> out of fitness.
+            <p className=" mb-0 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            Finding and retaining clients can be daunting.
+            </p>
+            <p className=" px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            Join our network and let us do the heavy lifting.
+            </p>
+            <p className="mb-8 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            Spotter users are looking for a trainer like YOU.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
 
