@@ -26,7 +26,7 @@ export default function CTA() {
                 </p>
               </div>
             </div>
-            <div className="mt-6 -ml-12 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+            <div className="mt-6 -ml-12 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1 lg:ml-0">
               <img
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={profileApp}
