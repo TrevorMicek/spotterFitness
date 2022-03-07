@@ -44,8 +44,8 @@ export default function Example(props) {
     <svg className="h-24 w-full mx-auto sm:h-24  md:w-full">
 
 <text x="47%" y="35%" style={{transform: "scaleY(1.4)"}}>
-  <tspan  dx="10"  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
-    <tspan dy="30%" dx={`${props.skew ? '-220' : '-190'}`} fill="rgb(231,208,175)">{props.title}</tspan>
+  <tspan  dx={`${props.skew ? '20' : '10'}`}  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
+    <tspan dy="30%" dx={`${props.skew ? '-220' : '-180'}`} fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 
 </svg>
