@@ -66,7 +66,7 @@ export default function Example() {
 
   )
   const getMobileOS = () => {
-    var userAgent = () => typeof window !== "undefined" && navigator.userAgent || navigator.vendor || window.opera;
+    var userAgent = () => typeof navigator !== "undefined" && navigator.userAgent || navigator.vendor || window.opera;
 
     // Windows Phone must come first because its UA also contains "Android"
     if (/windows phone/i.test(userAgent())) {
