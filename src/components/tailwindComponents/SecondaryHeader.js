@@ -159,7 +159,7 @@ export default function Example(props) {
         <main className="mt-6 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="text-center">
 
-          <h1 className="mb-2 font-extrabold text-gray-900 ">
+          <h1 className="mb-6 font-extrabold text-gray-900 ">
               <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" size="sm" /></span> </span>{' '}
               <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
             </h1>
