@@ -41,9 +41,9 @@ const navigation = [
 */
 export default function Example(props) {
   const TextStroke = (props) => (
-    <svg className="h-14 w-full mx-auto sm:h-24  md:w-full">
+    <svg className="h-10 w-full mx-auto sm:h-16  md:w-full">
 
-<text x="47%" y="35%" style={{transform: "scaleY(1.4)"}}>
+<text x="47%" y="50%" style={{transform: "scaleY(1.4)"}}>
   <tspan  dx='10'  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
     <tspan dx="5"  fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
@@ -159,7 +159,7 @@ export default function Example(props) {
         <main className="mt-6 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="text-center">
 
-          <h1 className="mb-6 font-extrabold text-gray-900 ">
+          <h1 className="mb-2 font-extrabold text-gray-900 ">
               <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" size="sm" /></span> </span>{' '}
               <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
             </h1>
