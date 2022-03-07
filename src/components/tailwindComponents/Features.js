@@ -47,7 +47,7 @@ export default function Features() {
               HOW IT WORKS
             </h2>
           </div>
-          <dl className="border-2 relative flex flex-row flex-wrap items-center justify-between md:items-start md:flex-row lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          <dl className="relative flex flex-row flex-wrap items-center justify-between md:items-start md:flex-row lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
             {features.map((feature, i) => (
               <div key={feature.name}  className="h-80 flex flex-col justify-between" style={{maxWidth: '40vw'}}>
                 <dt className="flex flex-col justify-center items-center">

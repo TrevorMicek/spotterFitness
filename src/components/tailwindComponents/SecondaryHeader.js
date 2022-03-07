@@ -40,12 +40,22 @@ const navigation = [
 }
 */
 export default function Example(props) {
+  const TextStroke = (props) => (
+    <svg className="h-24 w-full mx-auto sm:h-11 sm:w-7/12  md:w-full">
 
+  <text x="47%" y="35%" style={{transform: "scaleY(1.4)"}}>
+  <tspan dx="10"  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
+    <tspan dy="30%" dx={`${props.skew ? '-72%' : '-60%'}`} fill="rgb(231,208,175)">{props.title}</tspan>
+    </text>
+
+</svg>
+
+  )
   return (
     <div className="relative " style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
-      <div className="relative pt-6 pb-16 sm:pb-24">
+      <div className="relative pt-6 pb-5 sm:pb-24">
         <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
@@ -146,12 +156,12 @@ export default function Example(props) {
           </Transition>
         </Popover>
 
-        <main className="mt-2 mx-auto max-w-7xl px-4 md:mt-12 md:pb-12">
+        <main className="-mt-2 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="text-center">
 
-            <h1 className=" font-extrabold text-gray-900 ">
-              <span className="block xl:inline"><span className="tracking-normal text-4xl" style={{color: "rgb(255,244,238)"}}>{props.title}</span> </span>{' '}
-
+          <h1 className="mb-6 font-extrabold text-gray-900 ">
+              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" /></span> </span>{' '}
+              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
             </h1>
 
 

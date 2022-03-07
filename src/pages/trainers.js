@@ -40,13 +40,10 @@ const IndexPage = () => {
               </>
       }
   }
+
   return (
-  <Layout title="Trainers">
+  <Layout title="TRAINERS">
     <SEO title="Blog" />
-    <div className={styles.secondSection}>
-
-
-    </div>
   </Layout>
   )
   }
