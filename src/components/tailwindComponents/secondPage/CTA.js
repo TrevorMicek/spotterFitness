@@ -5,8 +5,16 @@ import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroi
 
 import { StarIcon } from '@heroicons/react/solid'
 
-
-
+const muscles = require('../../../images/newImg/muscles.png')
+const MusclesImg = () => (
+  <img
+    className="mt-4 h-7 w-auto sm:h-10"
+    src={muscles}
+    alt=""
+    width="30px"
+    height="30px"
+  />
+)
 const features = [
   {
     name: 'VISIBILITY',
@@ -30,7 +38,7 @@ const features = [
     name: 'YOUR TERMS → YOUR WAY',
     description:
       'Never compromise your business. We provide tools to help grow your brand your way. (“your way” → on your terms)',
-    icon: ThumbUpIcon,
+    icon: MusclesImg,
   },
   {
     name: 'RATINGS',
