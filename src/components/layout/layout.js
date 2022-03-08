@@ -14,7 +14,7 @@
 
  import "./layout.css"
 
- const Layout = ({children, title, pageLayout}) => {
+ const Layout = ({children, title, header, pageLayout}) => {
 
 
    /*
@@ -35,7 +35,7 @@
          }}
        >
 
-         <Header title={title} />
+         <Header title={title} header={header} />
 
 
          <main style={pageLayout}>{children}</main>

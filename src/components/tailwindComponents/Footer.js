@@ -2,9 +2,9 @@ import React from 'react'
 
 const navigation = {
     main: [
-      { name: 'Home', href: '#' },
-      { name: 'Gyms', href: '#' },
-      { name: 'Trainers', href: '#' },
+      { name: 'Home', href: '/' },
+      { name: 'Gyms', href: '/gyms' },
+      { name: 'Trainers', href: '/trainers' },
       { name: 'Contact', href: '/contact' }
     ],
     social: [
@@ -63,7 +63,7 @@ const navigation = {
           </div>
           <nav className="relative -top-3  flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
-              <div key={item.name} className="px-2 py-2">
+              <div key={item.name} className="px-2 py-4">
                 <a href={item.href} className="text-base hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
                   {item.name}
                 </a>

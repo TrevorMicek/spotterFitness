@@ -19,7 +19,7 @@ import wrapperStyles from '../styles/FrontPage/wrapper.css'
 
 const ServicePage = () => (
 
-  <Layout title="Gyms" pageLayout={{gridTemplateRows: "[top-gutter] auto [top-padding] auto [first] auto [second] auto [third] auto [fourth] auto [fifth] auto [sixth] auto [seventh] auto"}}>
+  <Layout title="Gyms" header={'div'}>
     <SEO title="Home" />
 
 

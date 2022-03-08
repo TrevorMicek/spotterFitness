@@ -24,7 +24,7 @@ const Header = (props) => {
         case firstTitle:
           return <HeroSection />
         case secondTitle:
-          return <SecondaryHeader title={props.title} />
+          return <SecondaryHeader title={props.title} header={props.header} />
         default:
           return <HeroSection />
     }
