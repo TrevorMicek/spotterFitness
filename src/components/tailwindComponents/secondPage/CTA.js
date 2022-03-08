@@ -1,7 +1,10 @@
 import React from 'react'
 
 
-import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
+
+import { StarIcon } from '@heroicons/react/solid'
+
 
 
 const features = [
@@ -9,31 +12,31 @@ const features = [
     name: 'VISIBILITY',
     description:
       'Join our network so clients can find you!',
-    icon: GlobeAltIcon,
+    icon: DeviceMobileIcon,
   },
   {
     name: 'GOOD FIT → CONNECT',
     description:
       'Our SpotFit™ technology matches you with potential clients to maximize a good fit.  (your best connection for best results)',
-    icon: ScaleIcon,
+    icon: ShareIcon,
   },
   {
     name: 'EASY TO USE → SAFE & SECURE',
     description:
       "Securely communicate and book in-app. We handle payments and verification so you don't have to!",
-    icon: LightningBoltIcon,
+    icon: CreditCardIcon,
   },
   {
     name: 'YOUR TERMS → YOUR WAY',
     description:
       'Never compromise your business. We provide tools to help grow your brand your way. (“your way” → on your terms)',
-    icon: AnnotationIcon,
+    icon: ThumbUpIcon,
   },
   {
     name: 'RATINGS',
     description:
       'Confirmed clients can leave awesome reviews and rate your sessions.',
-    icon: AnnotationIcon,
+    icon: StarIcon,
   }
 ]
 

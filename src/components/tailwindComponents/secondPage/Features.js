@@ -6,25 +6,25 @@ const profileApp = require('../../../images/newImg/profileApp.jpg')
 const features = [
   {
     name: '1',
-    description: 'Tell us about yourself. Create your profile in seconds.',
+    description: 'Create your verified profile in seconds! ',
 
   },
   {
     name: '2',
     description:
-      'Match with gyms and trainers wherever you are.',
+      'We match you with clients according to their preferences & your skillset.',
 
   },
   {
     name: '3',
     description:
-      'Securely book, pay, and communicate in app.',
+      'Securely communicate & book in-app.',
 
   },
   {
     name: '4',
     description:
-      'Get your sweat on. Do it again!',
+      'Work it! Build your business & your brand.',
 
   },
 ]
