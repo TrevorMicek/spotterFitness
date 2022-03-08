@@ -55,15 +55,7 @@ export default function Features() {
               </div>
             ))}
           </dl>
-          <div className="mt-6 mb-16 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
-              <img
-                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
-                alt="App screenshot"
-                width="200px"
-                height="100px"
-              />
-            </div>
+
         </div>
       </div>
     </div>

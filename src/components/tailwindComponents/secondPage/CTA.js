@@ -6,6 +6,7 @@ import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroi
 import { StarIcon } from '@heroicons/react/solid'
 
 const muscles = require('../../../images/newImg/muscles.png')
+
 const MusclesImg = () => (
   <img
     className="mt-4 h-7 w-auto sm:h-10"

@@ -15,7 +15,7 @@ import Work from '../components/tailwindComponents/Work'
 import FAQ from '../components/tailwindComponents/FAQ'
 
 import '../styles/FrontPage/wrapper.css'
-const app = require('../images/newImg/app.jpg')
+const app = require('../images/newImg/trainerProfile.jpg')
 const IndexPage = () => {
   const getMobileOS = () => {
     var userAgent = typeof navigator === 'undefined' ? 'undefined' : navigator.userAgent || navigator.vendor || window.opera;

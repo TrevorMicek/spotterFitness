@@ -70,14 +70,15 @@ const navigation = {
               </div>
             ))}
           </nav>
-          <span className="absolute bottom-12 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-4">
+          <span className="absolute bottom-14 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-4">
 
               <a href="https://getterms.io/view/kEIyU/privacy/en-us" className="relative underline text-white text-center text-sm">Privacy Policy</a>
               <a href="https://getterms.io/view/kEIyU/tos/en-us" className="relative underline text-white text-center text-sm">Terms of Service</a>
               <a href="https://getterms.io/view/kEIyU/cookie/en-us" className="relative underline text-white text-center text-sm">Cookie Policy</a>
               <a href="https://getterms.io/view/kEIyU/aup/en-us" className="relative underline text-white text-center text-sm">Acceptable Use Policy</a>
             </span>
-          <a href='https://www.freepik.com/vectors/system-update' className="relative top-6 text-white text-center" style={{fontSize: "9px"}}><p className=" m-0 text-center">System update vector created by pch.vector - www.freepik.com</p></a>
+          <a href='https://www.freepik.com/vectors/system-update' className="relative top-10 text-white text-left" style={{fontSize: "9px"}}><p className=" m-0 text-left">System update vector created by pch.vector - www.freepik.com</p></a>
+          <a href="https://www.flaticon.com/free-icons/arm" className="relative top-6 text-white" style={{fontSize: "9px"}} title="arm icons">Arm icons created by Those Icons - Flaticon</a>
           <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
 
 
