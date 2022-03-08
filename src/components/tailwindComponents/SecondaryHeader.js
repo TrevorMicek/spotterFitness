@@ -6,56 +6,59 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
+
+const app = require('../../images/newImg/app.jpg')
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Gyms', href: '/gyms' },
   { name: 'Trainers', href: '/trainers' },
   { name: 'Contact', href: '/contact' },
 ]
-/*
 
- * Determine the mobile operating system.
- * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
- *
- * @returns {String}
-
- function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-  // Windows Phone must come first because its UA also contains "Android"
-  if (/windows phone/i.test(userAgent)) {
-      return "Windows Phone";
-  }
-
-  if (/android/i.test(userAgent)) {
-      return "Android";
-  }
-
-  // iOS detection from: http://stackoverflow.com/a/9039885/177710
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return "iOS";
-  }
-
-  return "unknown";
-}
-*/
 export default function Example(props) {
+  const [inProp, setInProp] = useState(false)
+  const [inPropHover, setInPropHover] = useState(false)
+  const [inPropNav, setInPropNav] = useState(false)
+
+
+  useEffect(() => {
+    setInProp(true)
+  }, [])
   const TextStroke = (props) => (
-    <svg className="h-10 w-full mx-auto sm:h-16  md:w-full">
+    <svg className="h-10 w-full mx-auto sm:h-12">
 
 <text x="47%" y="50%" style={{transform: "scaleY(1.4)"}}>
-  <tspan  dx='10'  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">TRAIN WITH</tspan>
+  <tspan  dx='10'  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.35px">TRAIN WITH</tspan>
     <tspan dx="5"  fill="rgb(231,208,175)">{props.title}</tspan>
     </text>
 
 </svg>
 
   )
+  const getMobileOS = () => {
+    var userAgent = typeof navigator === 'undefined' ? 'undefined' : navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+}
   return (
     <div className="relative " style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
-      <div className="relative pt-6 pb-5 sm:pb-24">
+<div className="relative pt-6 pb-16 sm:pb-24">
         <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
@@ -72,10 +75,10 @@ export default function Example(props) {
                     />
                   </a>
                   <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
-                      <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
 
                     </Popover.Button>
                   </div>
@@ -114,7 +117,7 @@ export default function Example(props) {
               focus
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
-              <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(17,24,38)"}}>
+              <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(231,208,175)"}}>
                 <div className="pl-4 pr-5 pt-4 flex items-center justify-between">
                   <div>
                     <img
@@ -126,9 +129,9 @@ export default function Example(props) {
                     />
                   </div>
                   <div className="-mr-5 mb-5">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-50">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold">
                       <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                      <XIcon className="text-gold h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
@@ -137,7 +140,7 @@ export default function Example(props) {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 rounded-md text-base text-white font-medium hover:text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 rounded-md text-base text-black font-medium hover:text-gray-100 hover:bg-gold"
 
 
                     >
@@ -146,8 +149,8 @@ export default function Example(props) {
                   ))}
                 </div>
                 <a
-                  href="#"
-                  className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                  href="/"
+                  className="block border-t-2 border-gray-200 w-full px-5 py-3 text-center font-medium text-indigo-600 bg-cream hover:bg-gray-100"
                 >
                   Log in
                 </a>
@@ -156,7 +159,7 @@ export default function Example(props) {
           </Transition>
         </Popover>
 
-        <main className="mt-6 mx-auto max-w-7xl md:mt-12 md:pb-12">
+        <main className="mt-6 overflow-hidden mb-24 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="text-center">
 
           <h1 className="mb-6 font-extrabold text-gray-900 ">
@@ -174,11 +177,23 @@ export default function Example(props) {
             <p className="mb-8 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
             Spotter users are looking for a trainer like YOU.
             </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <a
+                  href={`${getMobileOS()}`}
+                  target="_blank"
+                  className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
+                  style={{border: "2px solid rgb(132,92,65)"}}
 
-
-
-
+                >
+                  DOWNLOAD SPOTTER
+                </a>
+                <div className="mt-6 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+              <img
+                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                src={app}
+                alt="App screenshot"
+                width="200px"
+                height="100px"
+              />
             </div>
 
           </div>

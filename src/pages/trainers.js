@@ -3,47 +3,31 @@ import React, { useState } from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-import MainSectionTitle from '../components/commonComps/MainSectionTitle'
-import styles from '../styles/ServicesPage/mainStyles.css';
-import Categories from '../components/pages/blogPage/BlogCategories'
-import CategoryData from '../data/blogPage/CategoryData'
-import basics from "../data/blogPage/blogPostData/basics"
-import CreateComponent from "../components/commonComps/createComponent"
-import Events from "../data/blogPage/Categories";
-import blogPosts from '../data/blogPage/blogPosts'
-import info from '../data/blogPage/tempData'
-const IndexPage = () => {
-  const [eventPage, setEventPage] = useState('Basics')
+import Features from '../components/tailwindComponents/secondPage/Features'
+import CTA from '../components/tailwindComponents/secondPage/CTA'
+import CTA2 from '../components/tailwindComponents/secondPage/CTA2'
+import CTA3 from '../components/tailwindComponents/CTA3'
+import FirstSection from '../components/commonComps/FirstSection'
+import Testimonials from '../components/tailwindComponents/Testimonials'
+import Download from '../components/tailwindComponents/Download'
+import Cities from '../components/tailwindComponents/Cities'
+import Work from '../components/tailwindComponents/Work'
+import FAQ from '../components/tailwindComponents/FAQ'
 
-  const SwitchEventPage = () => {
-      switch(eventPage) {
-          case 'SEO':
-              return <>
-               <MainSectionTitle {...CategoryData.two} />
-              <Events year='SEO' page={eventPage} changeYear={setEventPage} />
-              </>
-          case 'Web Design & Development':
-              return <>
-               <MainSectionTitle {...CategoryData.three} />
-               <Events year='Web Design & Development' page={eventPage} changeYear={setEventPage} />
-               </>
-          case 'Ecommerce':
-              return <>
-               <MainSectionTitle {...CategoryData.four} />
-              <Events year='Ecommerce' page={eventPage} changeYear={setEventPage} />
-              </>
-          default:
-              return <>
-               <MainSectionTitle {...CategoryData.one} />
-              <Events year='Basics' page={eventPage} changeYear={setEventPage} />
-              <CreateComponent component={Categories} data={basics} />
-              </>
-      }
-  }
+import '../styles/FrontPage/wrapper.css'
+const IndexPage = () => {
+
 
   return (
   <Layout title="TRAINERS">
     <SEO title="Blog" />
+    <div class="wrapper">
+
+<FirstSection comp={Features} skew="right" bg="rgba(255,244,238)" borderTop="none" zTop="4" zBottom="4"  />
+<FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
+<FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
+
+</div>
   </Layout>
   )
   }
