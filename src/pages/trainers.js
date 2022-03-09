@@ -70,7 +70,7 @@ const TextStroke = (props) => (
               </h1>
       </CSSTransition>
 
-              <p className=" -mb-5 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+              <p className=" mb-0 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl md:-mb-4" style={{color: "rgb(255,244,238)"}}>
               Finding and retaining clients can be daunting.
               </p>
               <p className=" px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
@@ -80,7 +80,7 @@ const TextStroke = (props) => (
               Spotter users are looking for a trainer like YOU.
               </p>
               <div
-                className="flex flex-col items-center justify-center rounded-md shadow"
+                className="flex items-center justify-center rounded-md shadow"
 
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
@@ -95,17 +95,17 @@ const TextStroke = (props) => (
                   DOWNLOAD SPOTTER
                 </a>
                 </CSSTransition>
-
-                  <div className="mt-20 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 ">
-                <img
-                  className="translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                </div>
+                <div className="mt-6 mx-auto mb-16 w-11/12 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 lg:w-2/4">
+              <img
+                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                   src={app}
                   alt="App screenshot"
                   width="200px"
                   height="100px"
                 />
               </div>
-              </div>
+
             </div>
   )
     }
