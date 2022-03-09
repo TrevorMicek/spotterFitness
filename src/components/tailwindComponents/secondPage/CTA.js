@@ -9,7 +9,7 @@ const muscles = require('../../../images/newImg/muscles.png')
 
 const MusclesImg = () => (
   <img
-    className="mt-4 h-7 w-auto sm:h-10"
+    className="mt-4 h-6 w-auto"
     src={muscles}
     alt=""
     width="30px"

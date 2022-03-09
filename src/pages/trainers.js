@@ -68,6 +68,7 @@ const TextStroke = (props) => (
               <a
                     href={`${getMobileOS()}`}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
                     style={{border: "2px solid rgb(132,92,65)"}}
 
