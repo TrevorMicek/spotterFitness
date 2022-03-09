@@ -14,7 +14,7 @@ export const onInitialClientRender = () => {
 */
 
 import "./src/css/index.css"
-
+/*
 export const shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition,
@@ -29,3 +29,4 @@ export const shouldUpdateScroll = ({
 
   return false
 }
+*/
