@@ -51,7 +51,7 @@ const navigation = {
       <footer>
 <div className="py-24 absolute -bottom-14 left-0 right-0 md:-bottom-20 lg:py-28 lg:-bottom-28" style={{backgroundColor: "rgb(17, 24, 38)"}} />
 
-          <div className="h-64 absolute bottom-0 left-0 right-0 md:h-60" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
+          <div className="h-64 absolute bottom-0 left-0 right-0 md:h-96" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
         <div className="mt-12 max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
         <div className=" mb-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
@@ -61,7 +61,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <nav className="relative -top-3  flex flex-wrap justify-center" aria-label="Footer">
+          <nav className="relative -top-5  flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
               <div key={item.name} className="px-2 py-4">
                 <a href={item.href} className="text-base hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
@@ -70,7 +70,7 @@ const navigation = {
               </div>
             ))}
           </nav>
-          <span className="absolute bottom-14 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-4">
+          <span className="absolute bottom-20 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-2">
 
               <a href="https://getterms.io/view/kEIyU/privacy/en-us" className="relative underline text-white text-center text-sm">Privacy Policy</a>
               <a href="https://getterms.io/view/kEIyU/tos/en-us" className="relative underline text-white text-center text-sm">Terms of Service</a>

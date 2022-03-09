@@ -34,7 +34,7 @@ export default function Features() {
   return (
     <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-28 lg:px-8">
+      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-28 lg:px-8 lg:py-36">
 
 
         <div className="relative">

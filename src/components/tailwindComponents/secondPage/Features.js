@@ -54,9 +54,9 @@ export default function Features() {
               </div>
             ))}
           </dl>
-          <div className="mt-6 mb-16 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+          <div className="mt-6 mb-16 mx-auto aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 lg:w-2/4">
               <img
-                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                className=" translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={schedule}
                 alt="App screenshot"
                 width="200px"

@@ -16,14 +16,6 @@ const navigation = [
 ]
 
 export default function Example(props) {
-  const [inProp, setInProp] = useState(false)
-  const [inPropHover, setInPropHover] = useState(false)
-  const [inPropNav, setInPropNav] = useState(false)
-
-
-  useEffect(() => {
-    setInProp(true)
-  }, [])
 
 
   return (
@@ -36,7 +28,7 @@ export default function Example(props) {
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
+                  <a href="/">
                     <span className="sr-only">Workflow</span>
                     <img
                       className="ml-2 h-10 w-auto sm:h-10"
@@ -50,7 +42,7 @@ export default function Example(props) {
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
-                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
+                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" />
 
                     </Popover.Button>
                   </div>
@@ -66,7 +58,7 @@ export default function Example(props) {
               <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <a
-                    href="#"
+                    href="/"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                   >
                     Log in
@@ -132,6 +124,8 @@ export default function Example(props) {
         </Popover>
 
         <main className="mt-6 overflow-hidden mb-24 mx-auto max-w-7xl md:mt-12 md:pb-12">
+
+
                     <props.header />
         </main>
       </div>

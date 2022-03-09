@@ -29,7 +29,7 @@ const reviews = [
 export default function Testimonials() {
     return (
         <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-      <section className="pt-24 pb-8 overflow-hidden md:py-20">
+      <section className="pt-24 pb-8 overflow-hidden md:py-20 md:pb-28">
         <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">
 
           <div className="relative pb-4 flex flex-row overflow-x-scroll px-4 lg:py-12 " >

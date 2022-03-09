@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
@@ -8,7 +9,7 @@ import CTA from '../components/tailwindComponents/secondPage/CTA'
 import CTA2 from '../components/tailwindComponents/secondPage/CTA2'
 import CTA3 from '../components/tailwindComponents/CTA3'
 import FirstSection from '../components/commonComps/FirstSection'
-import Testimonials from '../components/tailwindComponents/Testimonials'
+import Testimonials from '../components/tailwindComponents/secondPage/Testimonials'
 import Download from '../components/tailwindComponents/Download'
 import Cities from '../components/tailwindComponents/Cities'
 import Work from '../components/tailwindComponents/Work'
@@ -17,6 +18,7 @@ import FAQ from '../components/tailwindComponents/FAQ'
 import '../styles/FrontPage/wrapper.css'
 const app = require('../images/newImg/trainerProfile.jpg')
 const IndexPage = () => {
+
   const getMobileOS = () => {
     var userAgent = typeof navigator === 'undefined' ? 'undefined' : navigator.userAgent || navigator.vendor || window.opera;
 
@@ -47,16 +49,28 @@ const TextStroke = (props) => (
 </svg>
 
 )
-  const Header = () => (
+  const Header = () => {
+    const [inProp, setInProp] = useState(false)
+  const [inPropHover, setInPropHover] = useState(false)
+  const [inPropNav, setInPropNav] = useState(false)
+
+
+  useEffect(() => {
+    setInProp(true)
+  }, [])
+
+    return (
     <div className="text-center">
+
+      <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-6 font-extrabold text-gray-900 ">
                 <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="CONFIDENCE" skew="left" size="sm" /></span> </span>{' '}
                 <span className="block xl:inline text-2xl sm:text-3xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="SPOTTER" /></span> </span>
               </h1>
+      </CSSTransition>
 
-
-              <p className=" mb-0 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+              <p className=" -mb-5 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
               Finding and retaining clients can be daunting.
               </p>
               <p className=" px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
@@ -65,28 +79,36 @@ const TextStroke = (props) => (
               <p className="mb-8 px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
               Spotter users are looking for a trainer like YOU.
               </p>
-              <a
-                    href={`${getMobileOS()}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
-                    style={{border: "2px solid rgb(132,92,65)"}}
+              <div
+                className="flex flex-col items-center justify-center rounded-md shadow"
 
-                  >
-                    DOWNLOAD SPOTTER
-                  </a>
-                  <div className="mt-6 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+              >
+               <CSSTransition in={inPropHover} timeout={2500} classNames="button">
+                <a
+                  href={`${getMobileOS()}`}
+                  target="_blank"
+                  className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
+                  style={{border: "2px solid rgb(132,92,65)"}}
+                  onMouseOver={() => setInPropHover(true)}
+                  onMouseOut={() => setInPropHover(false)}
+                >
+                  DOWNLOAD SPOTTER
+                </a>
+                </CSSTransition>
+
+                  <div className="mt-20 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 ">
                 <img
-                  className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                  className="translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                   src={app}
                   alt="App screenshot"
                   width="200px"
                   height="100px"
                 />
               </div>
-
+              </div>
             </div>
   )
+    }
 
   return (
   <Layout title="TRAINERS" header={Header}>

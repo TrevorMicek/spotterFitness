@@ -59,7 +59,7 @@ export default function CTA() {
       <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
         <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg shadow-xl overflow-hidden md:flex md:flex-row lg:grid lg:grid-cols-2 lg:gap-4" >
+          <div className="rounded-lg shadow-xl overflow-hidden" >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center flex flex-col items-center md:items-start">
                 <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>

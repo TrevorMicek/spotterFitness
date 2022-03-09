@@ -15,14 +15,13 @@ import Cities from '../components/tailwindComponents/Cities'
 import Work from '../components/tailwindComponents/Work'
 import FAQ from '../components/tailwindComponents/FAQ'
 
-import '../styles/FrontPage/wrapper.css'
 
 const IndexPage = () => (
     <Layout title="Spotter Fitness" pageLayout={{gridTemplateRows: "[top-gutter] auto [top-padding] auto [first] auto"}}>
       <SEO title="Home" />
 
 
-      <div class="wrapper">
+
 
       <FirstSection comp={Features} skew="right" bg="rgba(255,244,238)" borderTop="none" zTop="4" zBottom="4"  />
       <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
@@ -33,7 +32,7 @@ const IndexPage = () => (
       <FirstSection comp={Cities} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="10" zBottom="10" pad="15vh"  />
       <FirstSection comp={Work} skew="left" bg="none" borderTop="none" zTop="11" zBottom="11"  />
       <FirstSection comp={FAQ}  skew="right" bg="rgb(255,244,238)" borderTop="none" zTop="12" zBottom="12" pad="15vh"  />
-    </div>
+
     </Layout>
   )
 
