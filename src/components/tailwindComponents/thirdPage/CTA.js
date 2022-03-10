@@ -137,6 +137,15 @@ export default function CTA() {
                 </a>
                 </CSSTransition>
                 </div>
+                <div className="mt-6 mx-auto mb-16 w-11/12 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 lg:w-2/4">
+              <img
+                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                  src={profileApp}
+                  alt="App screenshot"
+                  width="200px"
+                  height="100px"
+                />
+              </div>
           </div>
         </div>
       </div>

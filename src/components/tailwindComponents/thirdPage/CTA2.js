@@ -1,64 +1,98 @@
 import React from 'react'
 
 
-const app = require('../../../images/newImg/app.jpg')
+import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
 
+import { StarIcon } from '@heroicons/react/solid'
+
+const muscles = require('../../../images/newImg/muscles.png')
+
+const MusclesImg = () => (
+  <img
+    className="mt-4 h-6 w-auto"
+    src={muscles}
+    alt=""
+    width="30px"
+    height="30px"
+  />
+)
 const features = [
   {
-    name: '89.4%',
-    description: 'Increase in desire for a personal trainer since the pandemic.',
-
+    name: 'Increase exposure and marketing online.',
+    description:
+      'Join our ever-growing network of gyms and fitness facilities. ',
+    icon: DeviceMobileIcon,
   },
   {
-    name: '121%',
+    name: 'Curated matches ',
     description:
-      'MIncrease in desire for a personalized fitness experience.',
-
+      'Our SpotFit™ technology matches clients to your facility. Curated matches increase the chances of a good fit. More matches = more revenue for YOU',
+    icon: ShareIcon,
   },
   {
-    name: '57,600',
+    name: 'Easy Integration',
     description:
-      'Projected new personal trainers between 2019 and 2029. ',
-
+      "Payments from clients are securely taken in-app and seamlessly redeemed through our portal. Monitor your facility's growth in your personal dashboard. ",
+    icon: CreditCardIcon,
   },
   {
-    name: '46%',
+    name: 'Your terms',
     description:
-      'Increase in downloads of fitness-related apps.',
-
+      "Never compromise your brand or your business. You control your facility's profile, and you pick content and rates. Premium features for enhanced marketing solutions are also available.",
+    icon: MusclesImg,
   },
+  {
+    name: 'Ratings and reviews',
+    description:
+      'Confirmed users can leave reviews, rate your facility, and refer friends. Build your online reputation and keep the foot traffic coming!',
+    icon: StarIcon,
+  }
 ]
 
-export default function Features() {
 
-  return (
-    <div style={{position: 'relative', top: '0', zIndex: '21'}}>
-    <div className="overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-28 lg:px-8 lg:py-36">
+const profileApp = require('../../../images/newImg/profileApp.jpg')
+export default function CTA() {
+    return (
+      <>
 
 
-        <div className="relative">
-          <div className="lg:col-span-1">
-            <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
-              HERE ARE THE NUMBERS
-            </h2>
-          </div>
-          <dl className="relative flex flex-col items-start justify-between md:items-start  lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-            {features.map((feature, i) => (
-              <div key={feature.name}  className="flex flex-col align-start justify-between">
+      <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
+
+        <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
+          <div className=" overflow-hidden" >
+            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+              <div className="lg:self-center flex flex-col items-center md:items-start">
+                <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
+
+                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES.</span>
+                </h3>
+
+              </div>
+            </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            {features.map((feature) => (
+              <div key={feature.name} className="relative" >
                 <dt>
-
-                  <div className="-mt-1 mr-4 text-lg">{feature.name}</div>
-
+                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-white" >
+                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                  <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>
                 </dt>
-                <dd className="relative text-base text-left text-gray-700 md:mx-4">{feature.description}</dd>
+                <dd className="-mt-3 ml-12 text-base text-bg">{feature.description}</dd>
               </div>
             ))}
           </dl>
 
+      </div>
+
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-  )
-}
+      </>
+    )
+  }
