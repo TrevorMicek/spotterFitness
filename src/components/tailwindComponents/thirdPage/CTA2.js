@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
+import { DeviceMobileIcon, CogIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
 
 import { StarIcon } from '@heroicons/react/solid'
 
@@ -33,7 +33,7 @@ const features = [
     name: 'Easy Integration',
     description:
       "Payments from clients are securely taken in-app and seamlessly redeemed through our portal. Monitor your facility's growth in your personal dashboard. ",
-    icon: CreditCardIcon,
+    icon: CogIcon,
   },
   {
     name: 'Your terms',
@@ -78,7 +78,7 @@ export default function CTA() {
             {features.map((feature) => (
               <div key={feature.name} className="relative" >
                 <dt>
-                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-white" >
+                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-cream" >
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>

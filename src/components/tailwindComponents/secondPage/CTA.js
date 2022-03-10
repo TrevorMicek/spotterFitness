@@ -78,7 +78,7 @@ export default function CTA() {
             {features.map((feature) => (
               <div key={feature.name} className="relative" >
                 <dt>
-                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white" >
+                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-cream" >
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>
