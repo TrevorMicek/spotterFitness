@@ -55,7 +55,7 @@ export default function CTA() {
 
 
 
-          <dl className="ml-4 flex flex-col justify-between items-start border-2 space-y-5 sm:-ml-2 sm:flex-row sm:space-y-0 ">
+          <dl className="ml-4 flex flex-col justify-between items-start space-y-5 sm:-ml-2 sm:flex-row sm:space-y-0 ">
             {features.map((feature) => (
               <div key={feature.name} className={`relative ${feature.name === "FREEDOM" ? 'sm:mx-4' : ''}`} >
                 <dt>
