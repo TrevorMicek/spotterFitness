@@ -38,7 +38,7 @@ export default function Example(props) {
                       height="50px"
                     />
                   </a>
-                  <div className="relative bottom-3 -mr-2 flex items-center md:hidden">
+                  <div className="relative -mr-3 mb-0 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
@@ -59,7 +59,7 @@ export default function Example(props) {
                 <span className="inline-flex rounded-md shadow">
                   <a
                     href="/"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-cream hover:text-gold"
                   >
                     Log in
                   </a>
@@ -114,7 +114,7 @@ export default function Example(props) {
                 </div>
                 <a
                   href="/"
-                  className="block border-t-2 border-gray-200 w-full px-5 py-3 text-center font-medium text-indigo-600 bg-cream hover:bg-gray-100"
+                  className="block border-t-2 border-gold w-full px-5 py-3 text-center font-medium text-gold bg-cream hover:bg-gray-100"
                 >
                   Log in
                 </a>

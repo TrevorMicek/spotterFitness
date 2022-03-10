@@ -43,7 +43,7 @@ export default function Features() {
               HERE ARE THE NUMBERS
             </h2>
           </div>
-          <dl className="relative flex flex-col items-start justify-between md:items-start  lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          <dl className="relative flex flex-col items-start justify-between mx-auto sm:w-11/12 md:w-9/12 md:items-start  lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
             {features.map((feature, i) => (
               <div key={feature.name}  className="flex flex-col align-start justify-between">
                 <dt>
@@ -51,7 +51,7 @@ export default function Features() {
                   <div className="-mt-1 mr-4 text-lg text-white">{feature.name}</div>
 
                 </dt>
-                <dd className="relative text-base text-left text-white md:mx-4">{feature.description}</dd>
+                <dd className="relative text-base text-left text-white">{feature.description}</dd>
               </div>
             ))}
           </dl>

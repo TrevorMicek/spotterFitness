@@ -25,8 +25,8 @@ const IndexPage = () => {
 const TextStroke = (props) => (
   <svg className="h-10 w-full mx-auto sm:h-12">
 
-<text x="47%" y="50%" style={{transform: "scaleY(1.4)"}}>
-<tspan  dx='10'  fill="none" stroke="rgb(132,92,65)" strokeWidth="1.35px">TRAIN WITH</tspan>
+<text x="50%" y="50%" style={{transform: "scaleY(1.4)"}}>
+<tspan    fill="none" stroke="rgb(132,92,65)" strokeWidth="1.35px">TRAIN WITH</tspan>
   <tspan dx="5"  fill="rgb(231,208,175)">{props.title}</tspan>
   </text>
 

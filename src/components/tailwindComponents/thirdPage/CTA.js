@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
 
 import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
@@ -39,6 +40,15 @@ const features = [
 
 const profileApp = require('../../../images/newImg/profileApp.jpg')
 export default function CTA() {
+  const [inProp, setInProp] = useState(false)
+  const [inPropHover, setInPropHover] = useState(false)
+  const [inPropHoverTwo, setInPropHoverTwo] = useState(false)
+  const [inPropHoverThree, setInPropHoverThree] = useState(false)
+
+
+  useEffect(() => {
+    setInProp(true)
+  }, [])
     return (
       <>
 
@@ -46,7 +56,7 @@ export default function CTA() {
       <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
         <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg shadow-xl overflow-hidden" >
+          <div className=" overflow-hidden" >
             <div className="pt-5 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
 
             </div>
@@ -69,7 +79,64 @@ export default function CTA() {
           </dl>
 
       </div>
+      <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+      WHAT WE DO FOR YOU- allow you to create and market unique offerings of your facility to match with client's needs
+          </p>
+          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          exposure and lead gen.
+          </p>
+          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          Leading the new way of fitness. flexibility, versatility and freedom when it comes to their fitness.
 
+          </p>
+          <div
+                className="mt-12 flex items-center justify-center mb-4"
+
+              >
+               <CSSTransition in={inPropHover} timeout={2500} classNames="button">
+                <a
+
+                  className="w-48 px-4 py-2 cursor-pointer text-center text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
+                  style={{border: "2px solid rgb(132,92,65)"}}
+                  onMouseOver={() => setInPropHover(true)}
+                  onMouseOut={() => setInPropHover(false)}
+                >
+                  CREATE YOUR PROFILE
+                </a>
+                </CSSTransition>
+                </div>
+                <div
+                className="flex items-center justify-center mb-4"
+
+              >
+               <CSSTransition in={inPropHoverTwo} timeout={2500} classNames="button">
+                <a
+
+                  className=" px-4 w-48 py-2 cursor-pointer text-center text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
+                  style={{border: "2px solid rgb(132,92,65)"}}
+                  onMouseOver={() => setInPropHoverTwo(true)}
+                  onMouseOut={() => setInPropHoverTwo(false)}
+                >
+                  PARTNER WITH US
+                </a>
+                </CSSTransition>
+                </div>
+                <div
+                className="flex items-center justify-center mb-4"
+
+              >
+               <CSSTransition in={inPropHoverThree} timeout={2500} classNames="button">
+                <a
+
+                  className="w-48 px-4 py-2 cursor-pointer text-center text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
+                  style={{border: "2px solid rgb(132,92,65)"}}
+                  onMouseOver={() => setInPropHoverThree(true)}
+                  onMouseOut={() => setInPropHoverThree(false)}
+                >
+                  DOWNLOAD SPOTTER
+                </a>
+                </CSSTransition>
+                </div>
           </div>
         </div>
       </div>
