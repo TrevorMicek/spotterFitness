@@ -56,14 +56,14 @@ export default function CTA() {
 
 
           <dl className="ml-4 flex flex-col justify-between items-start space-y-5 sm:-ml-2 sm:flex-row sm:space-y-0 ">
-            {features.map((feature) => (
-              <div key={feature.name} className={`relative ${feature.name === "FREEDOM" ? 'sm:mx-4' : ''}`} >
+            {features.map((feature, i) => (
+              <div key={feature.name} className={`relative ${feature.name === "FREEDOM" ? 'sm:ml-5' : ''}`} >
                 <dt>
 
-                  <p className="text-lg leading-6 font-medium" style={{color: "rgb(255, 244, 238)"}}><b>{feature.name}</b></p>
+                  <p className={`text-lg leading-6 font-medium ${i === 1 ? 'text-gold' : 'text-cream'}`}><b>{feature.name}</b></p>
                 </dt>
-                <dd className="-mt-3  text-base text-gray-500 " style={{color: "rgb(255, 244, 238)"}}><span className="font-bold">Clients:</span> {feature.clients}</dd>
-                <dd className="-mt-3 text-base text-gray-500 " style={{color: "rgb(255, 244, 238)"}}><span className="font-bold">Facilities:</span> {feature.facilities}</dd>
+                <dd className={`-mt-3  text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Clients:</span> {feature.clients}</dd>
+                <dd className={`-mt-3 text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Facilities:</span> {feature.facilities}</dd>
               </div>
             ))}
           </dl>
