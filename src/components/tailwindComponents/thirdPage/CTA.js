@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group'
-
+import { Link } from 'gatsby'
 
 import { DeviceMobileIcon, CreditCardIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
 
@@ -36,7 +36,25 @@ const features = [
     facilities: ""
   }
 ]
+const getMobileOS = () => {
+  var userAgent = typeof navigator === 'undefined' ? 'undefined' : navigator.userAgent || navigator.vendor || window.opera;
 
+  // Windows Phone must come first because its UA also contains "Android"
+  if (/windows phone/i.test(userAgent)) {
+      return "Windows Phone";
+  }
+
+  if (/android/i.test(userAgent)) {
+      return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+  }
+
+  // iOS detection from: http://stackoverflow.com/a/9039885/177710
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+  }
+
+  return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
+}
 
 const profileApp = require('../../../images/newImg/profileApp.jpg')
 export default function CTA() {
@@ -94,15 +112,15 @@ export default function CTA() {
 
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
-                <a
-
+                <Link
+                  to="/gyms/#contact"
                   className="w-48 px-4 py-2 cursor-pointer text-center text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
                   style={{border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
                   CREATE YOUR PROFILE
-                </a>
+                </Link>
                 </CSSTransition>
                 </div>
                 <div
@@ -127,7 +145,8 @@ export default function CTA() {
               >
                <CSSTransition in={inPropHoverThree} timeout={2500} classNames="button">
                 <a
-
+                  href={`${getMobileOS()}`}
+                  target="_blank"
                   className="w-48 px-4 py-2 cursor-pointer text-center text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
                   style={{border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHoverThree(true)}

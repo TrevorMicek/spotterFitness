@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { Switch } from '@headlessui/react'
 import emailjs from '@emailjs/browser';
 
-import Confirm from '../Confirmation'
+import Confirm from './Confirmation'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -52,7 +52,8 @@ const handleChange = (e) => {
           setPassword(e.target.value)
           break;
         case 'passwordMatch':
-          if (validatePasswordMatch !== undefined && validatePasswordMatch === password) {
+          if (validatePasswordMatch !== undefined) {
+
               setValidatePasswordMatch(undefined)
           }
           setPasswordMatch(e.target.value)
@@ -65,7 +66,15 @@ const validateError = (label, which) => {
       * {which} input is empty
       </div>
   )
+  const PassErrorMessage = () => (
+    <div className="text-red-500">
+    * passwords must match
+    </div>
+)
   console.log(label)
+  if (passwordMatch !== '') {
+    return setValidatePasswordMatch(PassErrorMessage)
+  }
  switch (label) {
      case name:
           setValidateName(errorMessage)
@@ -82,28 +91,30 @@ const validateError = (label, which) => {
     case passwordMatch:
         setValidatePasswordMatch(errorMessage)
         break;
+
+
  }
 }
 const onSubmit = (e) => {
-  switch ('') {
-      case name:
+  switch (true) {
+      case name === '':
           validateError(name, 'name');
           e.preventDefault()
           break;
-      case email:
+      case email === '':
           validateError(email, 'email')
           e.preventDefault()
           break;
-        case company:
+        case company === '':
             validateError(company, 'company');
             e.preventDefault()
             break;
-      case password:
-          validateError(password, 'message');
+      case password === '':
+          validateError(password, 'password');
           e.preventDefault()
           break;
-        case passwordMatch:
-          validateError(passwordMatch, 'message');
+        case passwordMatch === '' || password !== passwordMatch:
+          validateError(passwordMatch, 'passwordMatch');
           e.preventDefault()
           break;
 
@@ -114,7 +125,7 @@ const onSubmit = (e) => {
          e.preventDefault()
   }
 }
-const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will respond ASAP']
+const confirmMessage = ['Thanks for choosing Spotter Fitness!', 'Please wait while we create your account']
 
   return (
     <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
@@ -165,7 +176,7 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
           </defs>
           <rect width={404} height={404} fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
         </svg>
-        <div className="text-center">
+        <div className="text-center pt-5" id="contact">
           <h2 className="text-3xl font-extrabold tracking-tight text-bg sm:text-4xl">Create Your Profile</h2>
           <p className="mt-4 text-lg leading-6 text-gold">
             Join our network now!
@@ -188,7 +199,7 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
                   onChange={handleChange}
                   key='name'
                   placeholder="Enter name..."
-                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -203,7 +214,11 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  value={company}
+                  onChange={handleChange}
+                  key='name'
+                  placeholder="Enter name..."
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -221,7 +236,7 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
                   onChange={handleChange}
                   key='name'
                   placeholder="Enter email..."
-                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -237,7 +252,7 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
                   <select
                     id="country"
                     name="country"
-                    className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+                    className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-gold focus:border-gold rounded-md"
                   >
                     <option>US</option>
                     <option>CA</option>
@@ -249,36 +264,44 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="py-3 px-4 mb-6 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 mb-6 block w-full pl-20 focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                   placeholder="+1 (555) 987-6543"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                Password
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                Password {validatePassword}
               </label>
               <div className="mt-1">
                 <input
-                  type="text"
-                  name="password"
                   id="password"
-                  autoComplete="organization"
-                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  name="password"
+                  type="password"
+                  autoComplete="password"
+                  value={password}
+                  onChange={handleChange}
+                  key='password'
+                  placeholder="Enter password..."
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="passwordMatch" className="block text-sm font-medium text-gray-700">
-                Re-enter Password
+                Re-enter Password {validatePasswordMatch}
               </label>
               <div className="mt-1">
                 <input
                   type="text"
                   name="passwordMatch"
                   id="passwordMatch"
-                  autoComplete="organization"
-                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  autoComplete="re-enter password"
+                  value={passwordMatch}
+                  onChange={handleChange}
+                  key='passwordMatch'
+                  placeholder="Enter password again..."
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-gold focus:border-gold border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -321,7 +344,7 @@ const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will 
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gold hover:bg-cream hover:border-4 hover:border-gold hover:text-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gold hover:bg-cream hover:border-4 hover:border-gold hover:text-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold"
               >
                 Create Account
               </button>

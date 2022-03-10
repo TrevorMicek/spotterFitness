@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group'
-
+import { Link } from 'gatsby'
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
@@ -79,15 +79,15 @@ const TextStroke = (props) => (
 
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
-                <a
-                  href="/#contact"
+                <Link
+                  to="/gyms/#contact"
                   className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
                   style={{border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
                   CREATE YOUR PROFILE
-                </a>
+                </Link>
                 </CSSTransition>
                 </div>
 
@@ -105,7 +105,7 @@ const TextStroke = (props) => (
       <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
       <FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
       <FirstSection comp={DidYou}  skew="left" bg="rgb(17, 24, 38)"  zTop="7" zBottom="7" pad="15vh"  />
-      <FirstSection comp={Contact} id="contact" skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="8" zBottom="8" pad="15vh"  />
+      <FirstSection comp={Contact} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="8" zBottom="8" pad="15vh"  />
     </div>
 
 
