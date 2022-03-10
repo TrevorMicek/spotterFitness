@@ -1,5 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Switch } from '@headlessui/react'
+import emailjs from '@emailjs/browser';
+
+import Confirm from '../Confirmation'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -7,12 +10,117 @@ function classNames(...classes) {
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false)
+  const [confirm, setConfirm] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
+  const [password, setPassword] = useState('')
+  const [passwordMatch, setPasswordMatch] = useState('')
+
+  const [validateName, setValidateName] = useState(undefined)
+  const [validateEmail, setValidateEmail] = useState(undefined)
+  const [validateCompany, setValidateCompany] = useState(undefined)
+  const [validatePassword, setValidatePassword] = useState('')
+  const [validatePasswordMatch, setValidatePasswordMatch] = useState('')
+
+  const form = useRef()
+
+const handleChange = (e) => {
+  switch(e.target.name) {
+      case 'email':
+           if (validateEmail !== undefined) {
+               setValidateEmail(undefined)
+           }
+          setEmail(e.target.value)
+          break;
+      case 'name':
+          if (validateName !== undefined) {
+              setValidateName(undefined)
+          }
+          setName(e.target.value)
+          break;
+    case 'company':
+        if (validateCompany !== undefined) {
+                setValidateCompany(undefined)
+            }
+            setCompany(e.target.value)
+            break;
+      case 'password':
+          if (validatePassword !== undefined) {
+              setValidatePassword(undefined)
+          }
+          setPassword(e.target.value)
+          break;
+        case 'passwordMatch':
+          if (validatePasswordMatch !== undefined && validatePasswordMatch === password) {
+              setValidatePasswordMatch(undefined)
+          }
+          setPasswordMatch(e.target.value)
+          break;
+    }
+}
+const validateError = (label, which) => {
+  const errorMessage = () => (
+      <div className="text-red-500">
+      * {which} input is empty
+      </div>
+  )
+  console.log(label)
+ switch (label) {
+     case name:
+          setValidateName(errorMessage)
+          break;
+     case email:
+         setValidateEmail(errorMessage)
+         break;
+    case company:
+        setValidateCompany(errorMessage)
+         break;
+      case password:
+          setValidatePassword(errorMessage)
+          break;
+    case passwordMatch:
+        setValidatePasswordMatch(errorMessage)
+        break;
+ }
+}
+const onSubmit = (e) => {
+  switch ('') {
+      case name:
+          validateError(name, 'name');
+          e.preventDefault()
+          break;
+      case email:
+          validateError(email, 'email')
+          e.preventDefault()
+          break;
+        case company:
+            validateError(company, 'company');
+            e.preventDefault()
+            break;
+      case password:
+          validateError(password, 'message');
+          e.preventDefault()
+          break;
+        case passwordMatch:
+          validateError(passwordMatch, 'message');
+          e.preventDefault()
+          break;
+
+      default:
+         /* setURL() */
+         setConfirm(true)
+         //emailjs.sendForm('service_arikqvn', 'template_ht51ufi', e.target, 'user_kC0T8kmC4F1GOkt3Q06Q4')
+         e.preventDefault()
+  }
+}
+const confirmMessage = ['Thanks for reaching out to Spotter Fitness!', 'We will respond ASAP']
 
   return (
-    <div style={{position: 'relative', top: '-20vh', zIndex: '21'}}>
+    <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
-    <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-      <div className="relative max-w-xl mx-auto">
+    <div className="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+      <div className="relative max-w-xl mx-auto" >
         <svg
           className="absolute left-full transform translate-x-1/2"
           width={404}
@@ -57,42 +165,34 @@ export default function Example() {
           </defs>
           <rect width={404} height={404} fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
         </svg>
-        <div className="text-center flex flex-col items-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Have questions about Spotter Fitness?</h2>
-          <p className=" text-lg leading-6 text-gray-500">
-            Fill out the form and we'll get back to you ASAP. We look forward to chatting with you!
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-bg sm:text-4xl">Create Your Profile</h2>
+          <p className="mt-4 text-lg leading-6 text-gold">
+            Join our network now!
           </p>
         </div>
         <div className="mt-12">
-          <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+        {confirm ? <Confirm prompt="false" message={confirmMessage} confirm={() =>setConfirm(false)} /> : null}
+          <form ref={form} onSubmit={onSubmit} className="sm:grid-cols-2 sm:gap-x-8">
             <div>
-              <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                First name
-              </label>
+
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full name</label> {validateName}
+
               <div className="mt-1">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="name"
+                  id="name"
                   autoComplete="given-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  value={name}
+                  onChange={handleChange}
+                  key='name'
+                  placeholder="Enter name..."
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
             </div>
-            <div>
-              <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                Last name
-              </label>
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                />
-              </div>
-            </div>
+
             <div className="sm:col-span-2">
               <label htmlFor="company" className="block text-sm font-medium text-gray-700">
                 Company
@@ -103,13 +203,13 @@ export default function Example() {
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
+                Email {validateEmail}
               </label>
               <div className="mt-1">
                 <input
@@ -117,7 +217,11 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  value={email}
+                  onChange={handleChange}
+                  key='name'
+                  placeholder="Enter email..."
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -145,22 +249,36 @@ export default function Example() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="py-3 px-4 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 mb-6 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                   placeholder="+1 (555) 987-6543"
                 />
               </div>
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                Password
               </label>
               <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
-                  defaultValue={''}
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  autoComplete="organization"
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-2">
+              <label htmlFor="passwordMatch" className="block text-sm font-medium text-gray-700">
+                Re-enter Password
+              </label>
+              <div className="mt-1">
+                <input
+                  type="text"
+                  name="passwordMatch"
+                  id="passwordMatch"
+                  autoComplete="organization"
+                  className="py-3 px-4 mb-6 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 />
               </div>
             </div>
@@ -171,8 +289,8 @@ export default function Example() {
                     checked={agreed}
                     onChange={setAgreed}
                     className={classNames(
-                      agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                      'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                      agreed ? 'bg-gold' : 'bg-gray-200',
+                      'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bg'
                     )}
                   >
                     <span className="sr-only">Agree to policies</span>
@@ -203,9 +321,9 @@ export default function Example() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gold hover:bg-cream hover:border-4 hover:border-gold hover:text-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                Let's talk
+                Create Account
               </button>
             </div>
           </form>

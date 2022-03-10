@@ -1,7 +1,7 @@
 import React from 'react'
 import appImg from '../../images/appImg.png'
 
-const purpleApp = require('../../images/newImg/purpleApp.jpg')
+const purpleApp = require('../../images/newImg/purpleAppBU.jpg')
 export default function CTA() {
     return (
       <>

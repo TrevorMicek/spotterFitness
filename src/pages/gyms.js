@@ -12,11 +12,7 @@ import CTA3 from '../components/tailwindComponents/CTA3'
 import FirstSection from '../components/commonComps/FirstSection'
 import Testimonials from '../components/tailwindComponents/secondPage/Testimonials'
 import DidYou from '../components/tailwindComponents/thirdPage/DidYou'
-import Download from '../components/tailwindComponents/Download'
-import Cities from '../components/tailwindComponents/Cities'
-import Work from '../components/tailwindComponents/Work'
-import FAQ from '../components/tailwindComponents/FAQ'
-
+import Contact from '../components/tailwindComponents/thirdPage/Contact'
 import '../styles/FrontPage/wrapper.css'
 const app = require('../images/newImg/trainerProfile.jpg')
 const ServicePage = () => {
@@ -84,7 +80,7 @@ const TextStroke = (props) => (
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
-
+                  href="/#contact"
                   className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
                   style={{border: "2px solid rgb(132,92,65)"}}
                   onMouseOver={() => setInPropHover(true)}
@@ -109,7 +105,7 @@ const TextStroke = (props) => (
       <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
       <FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
       <FirstSection comp={DidYou}  skew="left" bg="rgb(17, 24, 38)"  zTop="7" zBottom="7" pad="15vh"  />
-
+      <FirstSection comp={Contact} id="contact" skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="8" zBottom="8" pad="15vh"  />
     </div>
 
 
