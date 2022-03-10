@@ -55,7 +55,7 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg className="h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12  md:w-full">
+    <svg className="h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12 md:w-full">
 
   <text x="47%" y="65%" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
@@ -194,7 +194,7 @@ export default function Example() {
                     <div>
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-6 font-extrabold text-gray-900 ">
+            <h1 className="mb-6 font-extrabold text-gray-900">
               <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-tight" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
               <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
             </h1>

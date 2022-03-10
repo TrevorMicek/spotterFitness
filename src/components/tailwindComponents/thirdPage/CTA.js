@@ -18,34 +18,21 @@ const MusclesImg = () => (
 )
 const features = [
   {
-    name: 'VISIBILITY',
-    description:
-      'Join our network so clients can find you!',
-    icon: DeviceMobileIcon,
+    name: 'FLEXIBILITY',
+    clients: "Multiple options for access to facility ",
+    facilities: "Simplified and improved drop-in experience for easy of use "
   },
   {
-    name: 'GOOD FIT → CONNECT',
-    description:
-      'Our SpotFit™ technology matches you with potential clients to maximize a good fit.  (your best connection for best results)',
-    icon: ShareIcon,
+    name: 'FREEDOM',
+    clients:
+    "Try before you buy; no more getting locked into memberships that aren't suited for you anymore.",
+    facilities: "Provide a unique "
   },
   {
-    name: 'EASY TO USE → SAFE & SECURE',
-    description:
-      "Securely communicate and book in-app. We handle payments and verification so you don't have to!",
-    icon: CreditCardIcon,
-  },
-  {
-    name: 'YOUR TERMS → YOUR WAY',
-    description:
-      'Never compromise your business. We provide tools to help grow your brand your way. (“your way” → on your terms)',
-    icon: MusclesImg,
-  },
-  {
-    name: 'RATINGS',
-    description:
-      'Confirmed clients can leave awesome reviews and rate your sessions.',
-    icon: StarIcon,
+    name: 'CUSTOMIZATION',
+    clients:
+      "Choose your desired amenities according to your needs. ",
+    facilities: ""
   }
 ]
 
@@ -60,30 +47,23 @@ export default function CTA() {
 
         <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
           <div className="rounded-lg shadow-xl overflow-hidden" >
-            <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-              <div className="lg:self-center flex flex-col items-center md:items-start">
-                <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
+            <div className="pt-5 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
 
-                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(255, 244, 238)"}}>KEY FEATURES.</span>
-                </h3>
-
-              </div>
             </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 
 
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <dl className="ml-4 flex flex-col justify-between items-start border-2 space-y-5 sm:-ml-2 sm:flex-row sm:space-y-0 ">
             {features.map((feature) => (
-              <div key={feature.name} className="relative" >
+              <div key={feature.name} className={`relative ${feature.name === "FREEDOM" ? 'sm:mx-4' : ''}`} >
                 <dt>
-                  <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white" >
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <p className="ml-12 text-lg leading-6 font-medium" style={{color: "rgb(255, 244, 238)"}}>{feature.name}</p>
+
+                  <p className="text-lg leading-6 font-medium" style={{color: "rgb(255, 244, 238)"}}><b>{feature.name}</b></p>
                 </dt>
-                <dd className="-mt-3 ml-12 text-base text-gray-500" style={{color: "rgb(255, 244, 238)"}}>{feature.description}</dd>
+                <dd className="-mt-3  text-base text-gray-500 " style={{color: "rgb(255, 244, 238)"}}><span className="font-bold">Clients:</span> {feature.clients}</dd>
+                <dd className="-mt-3 text-base text-gray-500 " style={{color: "rgb(255, 244, 238)"}}><span className="font-bold">Facilities:</span> {feature.facilities}</dd>
               </div>
             ))}
           </dl>

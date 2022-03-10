@@ -59,12 +59,12 @@ export default function CTA() {
       <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
         <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg shadow-xl overflow-hidden" >
+          <div className=" overflow-hidden" >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center flex flex-col items-center md:items-start">
-                <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
+                <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
 
-                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(255, 244, 238)"}}>KEY FEATURES.</span>
+                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES.</span>
                 </h3>
 
               </div>
@@ -81,9 +81,9 @@ export default function CTA() {
                   <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white" >
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-12 text-lg leading-6 font-medium" style={{color: "rgb(255, 244, 238)"}}>{feature.name}</p>
+                  <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>
                 </dt>
-                <dd className="-mt-3 ml-12 text-base text-gray-500" style={{color: "rgb(255, 244, 238)"}}>{feature.description}</dd>
+                <dd className="-mt-3 ml-12 text-base text-bg">{feature.description}</dd>
               </div>
             ))}
           </dl>

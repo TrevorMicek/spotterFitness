@@ -38,7 +38,7 @@ export default function Features() {
 
         <div className="relative">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className="font-serif text-white text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               HOW IT WORKS
             </h2>
           </div>
@@ -47,10 +47,10 @@ export default function Features() {
               <div key={feature.name}  className="flex flex-row align-start justify-between">
                 <dt>
 
-                  <div className="-mt-1 mr-4 text-lg">{feature.name}</div>
+                  <div className="-mt-1 mr-4 text-lg text-white">{feature.name}</div>
 
                 </dt>
-                <dd className="relative text-base text-left text-gray-700 md:mx-4">{feature.description}</dd>
+                <dd className="relative text-base text-left text-white md:mx-4">{feature.description}</dd>
               </div>
             ))}
           </dl>
