@@ -89,12 +89,12 @@ export default function Example() {
 
 
       <div className="relative pt-6 pb-16 sm:pb-24">
-        <Popover>
+      <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
+                  <a href="/">
                     <span className="sr-only">Workflow</span>
                     <img
                       className="ml-2 h-10 w-auto sm:h-10"
@@ -104,11 +104,11 @@ export default function Example() {
                       height="50px"
                     />
                   </a>
-                  <div className="relative -mr-3 mb-0 flex items-center md:hidden">
+                  <div className="relative -mr-2 mb-4 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
-                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" onClick={() => setInPropNav(true)} />
+                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" />
 
                     </Popover.Button>
                   </div>
@@ -124,8 +124,8 @@ export default function Example() {
               <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <a
-                    href="#"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-cream bg-gold hover:bg-cream hover:text-gold"
+                    href="/"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-cream hover:text-gold"
                   >
                     Log in
                   </a>
@@ -158,7 +158,7 @@ export default function Example() {
                       height="50px"
                     />
                   </div>
-                  <div className="-mr-5 mb-5">
+                  <div className="-mr-5 mb-5 sm:-mr-3 sm:-mt-5">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="text-gold h-6 w-6" aria-hidden="true" />
@@ -179,8 +179,8 @@ export default function Example() {
                   ))}
                 </div>
                 <a
-                  href="#"
-                  className="block border-t-2 border-gold w-full px-5 py-3 text-center font-medium text-gold bg-cream hover:bg-gold hover:text-white"
+                  href="/"
+                  className="block border-t-2 border-gold w-full px-5 py-3 text-center font-medium text-gold bg-cream hover:bg-gray-100"
                 >
                   Log in
                 </a>

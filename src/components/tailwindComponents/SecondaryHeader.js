@@ -38,7 +38,7 @@ export default function Example(props) {
                       height="50px"
                     />
                   </a>
-                  <div className="relative -mr-3 mb-0 flex items-center md:hidden">
+                  <div className="relative -mr-2 mb-4 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
                       <span className="sr-only">Open main menu</span>
 
@@ -92,7 +92,7 @@ export default function Example(props) {
                       height="50px"
                     />
                   </div>
-                  <div className="-mr-5 mb-5">
+                  <div className="-mr-5 mb-5 sm:-mr-3 sm:-mt-5">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="text-gold h-6 w-6" aria-hidden="true" />
