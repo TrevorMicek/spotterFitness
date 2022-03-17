@@ -119,7 +119,7 @@ export default function CTA() {
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
-                  CREATE YOUR PROFILE
+                  CONTACT US
                 </Link>
                 </CSSTransition>
                 </div>
