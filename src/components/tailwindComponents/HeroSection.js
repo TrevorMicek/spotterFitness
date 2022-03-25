@@ -213,8 +213,8 @@ export default function Example() {
                 <a
                   href={`${getMobileOS()}`}
                   target="_blank"
-                  className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-cream md:py-2 md:text-base md:px-6"
-                  style={{border: "2px solid rgb(132,92,65)"}}
+                  className="w-max px-4 py-2 cursor-pointer text-xs font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
+                  style={{backgroundImage: "linear-gradient(to bottom, rgb(231,208,175), rgb(132,92,65), rgb(132,92,65))"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
