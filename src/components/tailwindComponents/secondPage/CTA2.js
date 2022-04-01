@@ -12,7 +12,7 @@ const features = [
   {
     name: '121%',
     description:
-      'MIncrease in desire for a personalized fitness experience.',
+      'Increase in desire for a personalized fitness experience.',
 
   },
   {

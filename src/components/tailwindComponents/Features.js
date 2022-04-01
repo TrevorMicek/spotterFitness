@@ -10,13 +10,13 @@ const runningImg = require('../../images/newImg/running.jpg')
 const features = [
   {
     name: '1',
-    description: 'Tell us about yourself. Create your profile in seconds.',
+    description: 'Tell us about yourself! Create your profile in seconds.',
     icon: profileImg,
   },
   {
     name: '2',
     description:
-      'Match with gyms and trainers wherever you are.',
+      'Match with gyms and/or trainers wherever you are.',
     icon: trainersImg,
   },
   {

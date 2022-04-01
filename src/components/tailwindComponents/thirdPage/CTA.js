@@ -80,7 +80,16 @@ export default function CTA() {
             </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+      WHAT WE DO FOR YOU <br /> we allow you to create and market unique offerings at your facility to match with users' needs.
+          </p>
+          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          exposure and lead gen.
+          </p>
+          <p className="relative mb-10 text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          Leading the new way of fitness. flexibility, versatility and freedom when it comes to their fitness.
 
+          </p>
 
 
           <dl className="ml-4 flex flex-col justify-between items-start space-y-5 sm:-ml-2 sm:flex-row sm:space-y-0 ">
@@ -97,16 +106,7 @@ export default function CTA() {
           </dl>
 
       </div>
-      <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-      WHAT WE DO FOR YOU- allow you to create and market unique offerings of your facility to match with client's needs
-          </p>
-          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-          exposure and lead gen.
-          </p>
-          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-          Leading the new way of fitness. flexibility, versatility and freedom when it comes to their fitness.
 
-          </p>
           <div
                 className="mt-12 flex items-center justify-center mb-4"
 

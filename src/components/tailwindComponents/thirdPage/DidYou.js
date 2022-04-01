@@ -6,7 +6,7 @@ const features = [
   {
     name: '1.',
     num: "72%",
-    description: "of Gym-goers said they would like to return to a facility once it's okay to do so.",
+    description: "of gym-goers said they would like to return to a facility once it's okay to do so.",
 
   },
   {
@@ -44,10 +44,8 @@ export default function Features() {
               <div key={feature.name}  className="flex flex-row align-start justify-between">
                 <dt>
 
-                  <div className="mt-2 mr-4 text-lg text-white">{feature.name}</div>
-
                 </dt>
-                <dd className="relative text-base text-left text-white md:mx-4"><span className="bold text-4xl">{feature.num} </span>{feature.description}</dd>
+                <dd className="relative text-base text-left ml-4 text-white md:mx-4"><span className="bold text-4xl">{feature.num} </span>{feature.description}</dd>
               </div>
             ))}
           </dl>

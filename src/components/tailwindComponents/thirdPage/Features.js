@@ -5,13 +5,13 @@ import React from 'react'
 const features = [
   {
     name: '1',
-    description: 'COVID-19 ROCKED the Gym world- it hurt memberships, it changed how people approach fitness. Let us help you navigate a new way forward. ',
+    description: 'COVID-19 ROCKED THE GYM WORLD. It hurt memberships. It fundamentally changed how people approach fitness. Let us help you navigate the new way forward. ',
 
   },
   {
     name: '2',
     description:
-      'This new norm has created a type of consumer that expects a more complete and personalized experience to meet their needs and desires. ',
+      'In this new norm, consumers expects a more complete and personalized experience to meet their needs and desires. ',
 
   },
   {
@@ -23,13 +23,13 @@ const features = [
   {
     name: '4',
     description:
-      'Facility- noun fa·​cil·​i·​ty | \ fə-ˈsi-lə-tē - a place, amenity, or piece of equipment provided for a particular purpose.',
+      'fa·​cil·​i·​ty | \ fə-ˈsi-lə-tē - a place that serves a specific function affording a convenience or service.',
 
   },
   {
     name: '5',
     description:
-      "SPOTTER definition:  Any place of business that survived the pandemic and is still standing strong. If you have amenities where people can get their fit on, we're talking to YOU!",
+      "Gym, studio, health club, or any entity that provides fitness or wellness services",
 
   },
 ]
@@ -74,20 +74,31 @@ export default function Features() {
         <div className="relative">
           <div className="lg:col-span-1">
             <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
-            YOU'VE SURVIVED, NOW IT'S TIME TO THRIVE!
+            YOU'VE SURVIVED. NOW IT'S TIME TO THRIVE!
             </h2>
           </div>
           <dl className="relative w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-            {features.map((feature, i) => (
+            {features.map((feature, i) => {
+              const isItalic = () => {
+                switch (feature.name) {
+                  case '4':
+                    return <>Facility<br/><i>noun</i>, {feature.description}</>
+                  case '5':
+                    return <><i className="underline">Examples</i>: {feature.description}</>
+                  default:
+                    return feature.description
+                }
+              }
+              return (
               <div key={feature.name}  className="flex flex-row align-start justify-between">
                 <dt>
 
                   <div className="-mt-1 mr-4 text-lg"></div>
 
                 </dt>
-                <dd className="relative text-base text-left text-gray-700 md:mx-4">{feature.name === '5' ? <i>{feature.description}</i> : feature.description}</dd>
+                <dd className="relative text-base text-left text-gray-700 md:mx-4">{isItalic()}</dd>
               </div>
-            ))}
+            )})}
           </dl>
 
         </div>

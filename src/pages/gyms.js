@@ -67,11 +67,11 @@ const TextStroke = (props) => (
               </h1>
       </CSSTransition>
 
-              <p className=" mb-2 w-64 max-w-md mx-auto font-normal text-sm text-gray-500 sm:w-80 sm:text-lg md:mt-5 md:max-w-3xl md:-mb-4" style={{color: "rgb(255,244,238)"}}>
-              Attract new clients, increase visibility, brand awareness and SPOTLIGHT your amenities across our Spotter network.
+              <p className=" mb-2 w-64 max-w-md mx-auto font-normal text-sm text-gray-500 sm:w-80 sm:text-base md:mt-5 md:max-w-3xl md:-mb-4" style={{color: "rgb(255,244,238)"}}>
+              Attract new clients, increase visibility and brand awareness, and SPOTLIGHT your amenities across our Spotter network.
               </p>
-              <p className=" px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
-              Leading the path to fitness-the new way.
+              <p className=" px-2 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-base md:mt-5 md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+              Leading the path to fitness the new way.
               </p>
 
               <div

@@ -18,31 +18,31 @@ const MusclesImg = () => (
 )
 const features = [
   {
-    name: 'Increase exposure and marketing online.',
+    name: 'INCREASE EXPOSURE AND MARKETING ONLINE.',
     description:
       'Join our ever-growing network of gyms and fitness facilities. ',
     icon: DeviceMobileIcon,
   },
   {
-    name: 'Curated matches ',
+    name: 'CURATED MATCHES',
     description:
       'Our SpotFit™ technology matches clients to your facility. Curated matches increase the chances of a good fit. More matches = more revenue for YOU',
     icon: ShareIcon,
   },
   {
-    name: 'Easy Integration',
+    name: 'EASY INTEGRATION',
     description:
       "Payments from clients are securely taken in-app and seamlessly redeemed through our portal. Monitor your facility's growth in your personal dashboard. ",
     icon: CogIcon,
   },
   {
-    name: 'Your terms',
+    name: 'YOUR TERMS',
     description:
       "Never compromise your brand or your business. You control your facility's profile, and you pick content and rates. Premium features for enhanced marketing solutions are also available.",
     icon: MusclesImg,
   },
   {
-    name: 'Ratings and reviews',
+    name: 'RATINGS AND REVIEWS',
     description:
       'Confirmed users can leave reviews, rate your facility, and refer friends. Build your online reputation and keep the foot traffic coming!',
     icon: StarIcon,
@@ -64,7 +64,7 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center md:items-start">
                 <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
 
-                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES.</span>
+                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES</span>
                 </h3>
 
               </div>
@@ -81,7 +81,7 @@ export default function CTA() {
                   <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-cream" >
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>
+                  <p className="ml-12 text-lg leading-6 font-bold text-bg">{feature.name}</p>
                 </dt>
                 <dd className="-mt-3 ml-12 text-base text-bg">{feature.description}</dd>
               </div>

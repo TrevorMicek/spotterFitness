@@ -26,7 +26,7 @@ const features = [
   {
     name: 'GOOD FIT → CONNECT',
     description:
-      'Our SpotFit™ technology matches you with potential clients to maximize a good fit.  (your best connection for best results)',
+      'Our SpotFit™ technology matches you with potential clients to maximize a good fit.  (Your best connection for the best results)',
     icon: ShareIcon,
   },
   {
@@ -38,7 +38,7 @@ const features = [
   {
     name: 'YOUR TERMS → YOUR WAY',
     description:
-      'Never compromise your business. We provide tools to help grow your brand your way. (“your way” → on your terms)',
+      'Never compromise your business. We provide tools to help grow your brand your way. (Your way → on your terms)',
     icon: MusclesImg,
   },
   {
@@ -64,7 +64,7 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center md:items-start">
                 <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
 
-                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES.</span>
+                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES</span>
                 </h3>
 
               </div>
@@ -81,7 +81,7 @@ export default function CTA() {
                   <div className="absolute -left-4 flex items-center justify-center h-12 w-12 rounded-md bg-gold text-cream" >
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-12 text-lg leading-6 font-medium text-bg">{feature.name}</p>
+                  <p className="ml-12 text-lg leading-6 font-bold text-bg">{feature.name}</p>
                 </dt>
                 <dd className="-mt-3 ml-12 text-base text-bg">{feature.description}</dd>
               </div>
