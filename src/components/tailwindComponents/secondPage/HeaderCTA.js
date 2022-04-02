@@ -60,8 +60,8 @@ export default function Features() {
 
         <div className="relative">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-bg text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
-            Spotter users are looking for a trainer like YOU.
+            <h2 className="font-serif  text-3xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            SPOTTER USERS ARE LOOKING FOR A TRAINER LIKE YOU.
             </h2>
           </div>
           <div

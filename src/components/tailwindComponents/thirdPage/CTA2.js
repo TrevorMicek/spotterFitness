@@ -62,9 +62,9 @@ export default function CTA() {
           <div className=" overflow-hidden" >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center flex flex-col items-center md:items-start">
-                <h3 className="ml-0 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
+                <h3 className="ml-0 mx-3 whitespace-nowrap text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(17, 24, 38)"}}>
 
-                  <span className="font-serif text-3xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES</span>
+                  <span className="font-serif text-4xl block md:text-4xl" style={{color: "rgb(17, 24, 38)"}}>KEY FEATURES</span>
                 </h3>
 
               </div>

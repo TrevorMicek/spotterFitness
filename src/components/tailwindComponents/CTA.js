@@ -14,14 +14,14 @@ export default function CTA() {
           <div className="rounded-lg shadow-xl overflow-hidden md:flex md:flex-row lg:grid lg:grid-cols-2 lg:gap-4" >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center flex flex-col items-center md:items-start">
-                <h3 className="ml-2 text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
+                <h3 className="ml-2 text-gold  font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
-                  <span className="font-serif text-5xl block md:text-6xl" style={{color: "rgb(255, 244, 238)"}}>SPOT.</span>
+                  <span className="text-gold font-serif text-6xl block md:text-6xl">SPOT.</span>
                 </h3>
-                <p className="text-sm leading-6 font-medium text-center sm:text-lg md:text-left" style={{color: "rgb(255, 244, 238)", minWidth:"280px"}}>
+                <p className="text-sm text-gold leading-6 font-medium text-center sm:text-lg md:text-left" style={{minWidth:"280px"}}>
                   Create your profile and tell us what you're looking for. Our SpotFit™ technology curates options for you. Let us do the heavy lifting.
                 </p>
-                <p className="text-sm leading-6 font-semibold text-center md:text-left" style={{color: "rgb(255, 244, 238)", minWidth:"280px"}}>
+                <p className="text-sm text-gold leading-6 font-semibold text-center md:text-left"style={{minWidth:"280px"}}>
                 WE FIND THE PERFECT GYM OR TRAINER FOR YOU IN SECONDS.
                 </p>
               </div>

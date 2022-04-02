@@ -15,12 +15,12 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center md:-mr-6 md:items-start lg:-ml-16">
                 <h2 className="ml-2 sm:text-4xl" style={{color: "black"}}>
 
-                  <span className="font-serif text-gold text-5xl block md:text-6xl">SWEAT.</span>
+                  <span className="font-serif text-bg text-6xl block md:text-6xl">SWEAT.</span>
                 </h2>
-                <p className="text-sm leading-6 font-normal text-center sm:text-lg md:text-left" style={{color: "black", minWidth:"280px"}}>
+                <p className="text-bg text-sm leading-6 font-normal text-center sm:text-lg md:text-left" style={{color: "black", minWidth:"280px"}}>
                 Access discounted drop-in rates at awesome gyms. Connect and book with matched trainers who will help keep your butt in gear.
                 </p>
-                <p className="text-sm leading-6 font-semibold text-center md:text-left" style={{color: "black", minWidth:"280px"}}>
+                <p className="text-bg text-sm leading-6 font-semibold text-center md:text-left" style={{color: "black", minWidth:"280px"}}>
                 LOCK IT IN. SWEAT IT OUT.<br /> RATE YOUR EXPERIENCE.
                 </p>
               </div>

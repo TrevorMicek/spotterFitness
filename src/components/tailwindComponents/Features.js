@@ -10,25 +10,25 @@ const runningImg = require('../../images/newImg/running.jpg')
 const features = [
   {
     name: '1',
-    description: 'Tell us about yourself! Create your profile in seconds.',
+    description: 'TELL US ABOUT YOURSELF! CREATE YOUR PROFILE IN SECONDS.',
     icon: profileImg,
   },
   {
     name: '2',
     description:
-      'Match with gyms and/or trainers wherever you are.',
+      'MATCH WITH GYMS AND/OR TRAINERS WHEREVER YOU ARE.',
     icon: trainersImg,
   },
   {
     name: '3',
     description:
-      'Securely book, pay, and communicate in app.',
+      'SECURELY BOOK, PAY, AND COMMUNICATE IN APP.',
     icon: payImg,
   },
   {
     name: '4',
     description:
-      'Get your sweat on. Do it again!',
+      'GET YOUR SWEAT ON. DO IT AGAIN!',
     icon: runningImg,
   },
 ]
@@ -43,7 +43,7 @@ export default function Features() {
 
         <div className="relative">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className=" text-bg text-4xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               HOW IT WORKS
             </h2>
           </div>
@@ -52,12 +52,12 @@ export default function Features() {
               <div key={feature.name}  className="h-80 flex flex-col justify-between" style={{maxWidth: '40vw'}}>
                 <dt className="flex flex-col justify-center items-center">
 
-                  <div className="mb-3 text-lg">{feature.name}</div>
+                  <div className="text-bg mb-3 text-lg">{feature.name}</div>
                   <div className="flex mb-4 items-center justify-center rounded-md text-white">
                     <img src={feature.icon} width="150px" height="150px" loading="lazy" aria-hidden="true" />
                   </div>
                 </dt>
-                <dd className="mt-2 mb-8 relative bottom-0 text-base text-center text-gray-700 md:mx-4">{feature.description}</dd>
+                <dd className="text-bg mt-2 mb-8 relative font-bold bottom-0 text-sm text-center text-gray-700 md:mx-4">{feature.description}</dd>
               </div>
             ))}
           </dl>

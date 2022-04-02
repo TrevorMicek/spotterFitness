@@ -23,7 +23,7 @@ const IndexPage = () => (
 
 
 
-      <FirstSection comp={Features} skew="right" bg="rgba(255,244,238)" borderTop="none" zTop="4" zBottom="4"  />
+      <FirstSection comp={Features} skew="right" bg="rgba(231,208,175)" borderTop="none" zTop="4" zBottom="4"  />
       <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
       <FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
       <FirstSection comp={CTA3} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="7" zBottom="7"  />

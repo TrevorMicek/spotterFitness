@@ -73,7 +73,7 @@ export default function Features() {
 
         <div className="relative">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-black text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className="font-serif text-bg text-3xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
             YOU'VE SURVIVED. NOW IT'S TIME TO THRIVE!
             </h2>
           </div>
@@ -96,7 +96,7 @@ export default function Features() {
                   <div className="-mt-1 mr-4 text-lg"></div>
 
                 </dt>
-                <dd className="relative text-base text-left text-gray-700 md:mx-4">{isItalic()}</dd>
+                <dd className="relative text-base text-left text-bg md:mx-4">{isItalic()}</dd>
               </div>
             )})}
           </dl>

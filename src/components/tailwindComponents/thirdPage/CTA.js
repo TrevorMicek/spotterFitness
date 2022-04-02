@@ -20,20 +20,21 @@ const MusclesImg = () => (
 const features = [
   {
     name: 'FLEXIBILITY',
-    clients: "Multiple options for access to facility ",
-    facilities: "Simplified and improved drop-in experience for easy of use "
+    facilities: "Increased traffic through customized drop-in offerings.",
+    users: "Reduce barriers to find and access your facility.",
+    trainers: "Spotlight your trainers in-app."
   },
   {
     name: 'FREEDOM',
-    clients:
-    "Try before you buy; no more getting locked into memberships that aren't suited for you anymore.",
-    facilities: "Provide a unique "
+    facilities: "A better way to market your business to the modern fitness consumer.",
+    users: "Try before they buy. Reduced barriers mean more drop ins. More drop-ins mean more revenue for you.",
+    trainers: "A better way to promote your trainers to the modern fitness consumer."
   },
   {
     name: 'CUSTOMIZATION',
-    clients:
-      "Choose your desired amenities according to your needs. ",
-    facilities: ""
+    facilities: "Use our platform customized with your branding to attract more traffic.",
+    users: "Users can better search for and match with your facility, thereby maximizing their chances of having a great experience.",
+    trainers: "Use our platform customized to your trainers’ specializations to attract more clients."
   }
 ]
 const getMobileOS = () => {
@@ -80,13 +81,13 @@ export default function CTA() {
             </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
-      WHAT WE DO FOR YOU <br /> we allow you to create and market unique offerings at your facility to match with users' needs.
+      <p className="relative text-gold w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+      <span className="text-3xl">WHAT WE DO FOR YOU</span> <br /> we allow you to create and market unique offerings at your facility to match with users' needs.
           </p>
-          <p className="relative text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          <p className="relative text-gold w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
           exposure and lead gen.
           </p>
-          <p className="relative mb-10 text-white w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
+          <p className="relative mb-10 text-gold w-10/12 mx-auto flex flex-col items-start justify-between sm:items-start sm:mx-auto sm:flex-wrap sm:flex-row sm:w-96 lg:mt-0 lg:col-span-2 lg:max-w-screen-lg lg:mx-auto">
           Leading the new way of fitness. flexibility, versatility and freedom when it comes to their fitness.
 
           </p>
@@ -99,8 +100,9 @@ export default function CTA() {
 
                   <p className={`text-lg leading-6 font-medium ${i === 1 ? 'text-gold' : 'text-cream'}`}><b>{feature.name}</b></p>
                 </dt>
-                <dd className={`-mt-3  text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Clients:</span> {feature.clients}</dd>
-                <dd className={`-mt-3 text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Facilities:</span> {feature.facilities}</dd>
+                <dd className={`-mt-3  text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Clients:</span> {feature.facilities}</dd>
+                <dd className={`-mt-3 text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Facilities:</span> {feature.users}</dd>
+                <dd className={`-mt-3 text-base text-gray-500 sm:w-40 md:w-48 ${i === 1 ? 'text-gold' : 'text-cream'}`}><span className="font-bold">Facilities:</span> {feature.trainers}</dd>
               </div>
             ))}
           </dl>

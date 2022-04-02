@@ -13,12 +13,12 @@ export default function CTA() {
               <div className="lg:self-center flex flex-col items-center md:-mr-6 md:items-start">
                 <h2 className="text-3xl font-extra bold sm:text-4xl" style={{color: "rgb(255, 244, 238)"}}>
 
-                  <span className="ml-2 font-serif text-5xl block md:text-6xl md:-mr-5" style={{color: "rgb(255, 244, 238)"}}>REPEAT.</span>
+                  <span className="ml-2 font-serif text-gold text-6xl block md:text-6xl md:-mr-5">REPEAT.</span>
                 </h2>
-                <p className="text-sm leading-6 font-normal text-center sm:text-lg md:text-left" style={{color: "rgb(255, 244, 238)", minWidth:"280px"}}>
+                <p className="text-sm text-gold leading-6 font-normal text-center sm:text-lg md:text-left" style={{minWidth:"280px"}}>
                 Great session! Keep it going. Book again or explore new options.
                 </p>
-                <p className="text-sm leading-6 font-semibold text-center md:text-left" style={{color: "rgb(255, 244, 238)", minWidth:"280px"}}>
+                <p className="text-sm text-gold leading-6 font-semibold text-center md:text-left" style={{minWidth:"280px"}}>
                 YOU ROCKED IT! LET’S DO IT AGAIN!
                 </p>
               </div>

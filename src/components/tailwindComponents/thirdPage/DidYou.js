@@ -35,7 +35,7 @@ export default function Features() {
 
         <div className="relative">
           <div className="lg:col-span-1">
-            <h2 className="font-serif text-white text-2xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
+            <h2 className="font-serif text-gold text-4xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
               DID YOU KNOW?
             </h2>
           </div>
@@ -45,7 +45,7 @@ export default function Features() {
                 <dt>
 
                 </dt>
-                <dd className="relative text-base text-left ml-4 text-white md:mx-4"><span className="bold text-4xl">{feature.num} </span>{feature.description}</dd>
+                <dd className="relative text-base text-left ml-4 text-gold md:mx-4"><span className="bold text-4xl">{feature.num} </span>{feature.description}</dd>
               </div>
             ))}
           </dl>
