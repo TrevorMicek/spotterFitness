@@ -3,7 +3,7 @@ import React from 'react'
 import appImg from '../../images/appImg.png'
 export default function FirstSection() {
     return (
-        <div className="py-16 xl:py-36 px-7 mb-10 sm:px-6 lg:px-8 overflow-hidden" >
+        <div className="font-default py-16 xl:py-36 px-7 mb-10 sm:px-6 lg:px-8 overflow-hidden" >
         <div className="max-w-max lg:max-w-7xl mx-auto relative z-9" >
           <div className=" mb-8 md:mb-2 md:px-6  relative z-10" >
             <div className="text-base max-w-prose lg:max-w-none border-b-2 border-solid border-gray-200" >

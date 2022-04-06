@@ -8,7 +8,7 @@ export default function Work() {
   const [inPropHoverThree, setInPropHoverThree] = useState(false)
 return (
   <div style={{position: 'relative',  top: '0vh', zIndex: '21'}}>
-    <div className="pb-16 pt-16 relative bg-gym bg-cover lg:pt-16 lg:pb-32">
+    <div className="font-default pb-16 pt-16 relative bg-gym bg-cover lg:pt-16 lg:pb-32">
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative ">
           <h2 className="mb-10 mt-7 text-center font-2xl leading-8 tracking-tight sm:text-4xl" style={{color: "rgb(255,244,238)"}}>

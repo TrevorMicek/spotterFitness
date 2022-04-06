@@ -111,7 +111,7 @@ const confirmMessage = ['Thanks for choosing Spotter Fitness!', 'Please wait whi
   return (
     <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
-    <div className="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+    <div className="font-default py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
       <div className="relative max-w-xl mx-auto" >
         <svg
           className="absolute left-full transform translate-x-1/2"

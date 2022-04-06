@@ -64,7 +64,7 @@ function classNames(...classes) {
 export default function FAQ() {
   return (
     <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
-    <div className="pt-20 pb-12" >
+    <div className="font-default pt-20 pb-12" >
       <div className="max-w-7xl mx-auto pb-8 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
           <h2 className="text-center text-6xl font-extrabold text-gray-900 ">FAQ's</h2>

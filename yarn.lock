@@ -1340,6 +1340,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/libre-franklin@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/libre-franklin/-/libre-franklin-4.5.5.tgz#a65535ec0c29243b4373d41d62161a623299a526"
+  integrity sha512-tb9Bl8mWWEIUDZ3y5HEyxxgSaJH2lv1UUf05uc4r4e4Vbt3NKRPrNQoJ9UGhzp1XIVo297wSWEtnqJeFHZJgYQ==
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"

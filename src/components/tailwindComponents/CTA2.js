@@ -9,7 +9,7 @@ export default function CTA() {
 
       <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
-        <div className="max-w-7xl mx-auto pt-10 pb-24 sm:px-6 lg:px-8">
+        <div className="font-default max-w-7xl mx-auto pt-10 pb-24 sm:px-6 lg:px-8">
           <div className="md:flex md:flex-row-reverse md:justify-between overflow-hidden lg:pl-16 lg:flex lg:justify-between lg:flex-row-reverse lg:grid lg:grid-cols-2 lg:gap-4 " >
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="ml-6 lg:self-center flex flex-col items-center md:-mr-6 md:items-start lg:-ml-16">

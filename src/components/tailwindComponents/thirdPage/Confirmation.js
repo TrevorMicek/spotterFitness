@@ -30,7 +30,7 @@ export default function Example(props) {
   return (
 
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={confirm}>
+      <Dialog as="div" className="font-default fixed z-10 inset-0 overflow-y-auto" onClose={confirm}>
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
             as={Fragment}
@@ -65,7 +65,7 @@ export default function Example(props) {
 
 
 
-<div className="mt-6 sm:col-span-2">
+<div className="font-default mt-6 sm:col-span-2">
   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
 
   </label>

@@ -55,7 +55,7 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg className="h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12 md:w-full">
+    <svg className="font-default h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12 md:w-full">
 
   <text x="47%" y="65%" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
@@ -85,7 +85,7 @@ export default function Example() {
     return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
 }
   return (
-    <div className="relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
+    <div className="font-default relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
       <div className="relative pt-6 pb-16 sm:pb-24">
@@ -110,7 +110,7 @@ export default function Example() {
               </div>
               <div className="hidden md:flex md:space-x-10">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-xl text-gold hover:text-gray-900">
+                  <a key={item.name} href={item.href} className="text-xl text-gold hover:text-cream">
                     {item.name}
                   </a>
                 ))}

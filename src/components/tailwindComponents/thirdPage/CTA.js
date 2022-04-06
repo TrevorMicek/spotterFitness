@@ -74,7 +74,7 @@ export default function CTA() {
 
       <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
 
-        <div className="mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
+        <div className="font-default mx-auto pt-10 pb-24 px-4 sm:px-6 lg:px-8">
           <div className=" overflow-hidden" >
             <div className="pt-5 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
 

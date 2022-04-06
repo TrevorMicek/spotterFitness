@@ -6,6 +6,7 @@
   "author": "Trevor Micek",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
+    "@fontsource/libre-franklin": "^4.5.5",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@reach/router": "^1.3.4",

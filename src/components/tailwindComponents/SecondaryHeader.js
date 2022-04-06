@@ -19,24 +19,18 @@ export default function Example(props) {
 
 
   return (
-    <div className="relative " style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
+    <div className=" relative " style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
-<div className="relative pt-6 pb-16 sm:pb-24">
+<div className="font-default relative pt-6 pb-16 sm:pb-24">
         <Popover>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="/">
+                <a href="/" className="font-bold text-xl text-cream">
                     <span className="sr-only">Workflow</span>
-                    <img
-                      className="ml-2 h-10 w-auto sm:h-10"
-                      src={Icon}
-                      alt=""
-                      width="50px"
-                      height="50px"
-                    />
+                    SPOTTER
                   </a>
                   <div className="relative -mr-2 mb-4 flex items-center md:hidden">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
@@ -50,7 +44,7 @@ export default function Example(props) {
               </div>
               <div className="hidden md:flex md:space-x-10">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
+                  <a key={item.name} href={item.href} className="text-xl text-gold hover:text-cream">
                     {item.name}
                   </a>
                 ))}
@@ -79,18 +73,12 @@ export default function Example(props) {
           >
             <Popover.Panel
               focus
-              className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              className="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
               <div className="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden" style={{backgroundColor: "rgb(231,208,175)"}}>
                 <div className="pl-4 pr-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img
-                      className="h-10 w-auto"
-                      src={Icon}
-                      alt=""
-                      width="50px"
-                      height="50px"
-                    />
+                <div className="font-bold text-xl">
+                    SPOTTER
                   </div>
                   <div className="-mr-5 mb-5 sm:-mr-3 sm:-mt-5">
                     <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold">
@@ -104,7 +92,7 @@ export default function Example(props) {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 rounded-md text-base text-black font-medium hover:text-gray-100 hover:bg-gold"
+                      className="block px-3 py-2 rounded-md text-lg text-black font-medium hover:text-gray-100 hover:bg-gold"
 
 
                     >

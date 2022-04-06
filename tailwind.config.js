@@ -13,8 +13,14 @@ module.exports = {
         backgroundImage: {
             'download': 'url("../images/newImg/CrossFit.jpg")',
             'gym': 'url("../images/newImg/gymBg.jpeg")'
+        },
+        font: {
+            'default': 'libre-franklin'
         }
     },
+    fontFamily: {
+      'default': ['"Libre Franklin"']
+    }
   },
   variants: {
     extend: {},

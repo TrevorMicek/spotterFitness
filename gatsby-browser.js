@@ -14,6 +14,7 @@ export const onInitialClientRender = () => {
 */
 
 import "./src/css/index.css"
+import "@fontsource/libre-franklin"
 /*
 export const shouldUpdateScroll = ({
   routerProps: { location },
