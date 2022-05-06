@@ -7,7 +7,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import './textStroke.css'
-const app = require('../../images/newImg/app.jpg')
+const app = require('../../images/newImg/graphics/home/homeApp.png')
 const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
@@ -202,7 +202,7 @@ export default function Example() {
                   href={`${getMobileOS()}`}
                   target="_blank"
                   className="w-max px-4 py-2 cursor-pointer text-xs font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
-                  style={{backgroundImage: "linear-gradient(to bottom, rgb(231,208,175), rgb(132,92,65), rgb(132,92,65))"}}
+                  style={{backgroundImage: "linear-gradient(to right, rgb(231,208,175), rgb(132,92,65), rgb(132,92,65))"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
