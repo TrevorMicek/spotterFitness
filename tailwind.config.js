@@ -16,6 +16,9 @@ module.exports = {
         },
         font: {
             'default': 'libre-franklin'
+        },
+        fontSize: {
+            'default': '9px'
         }
     },
     fontFamily: {

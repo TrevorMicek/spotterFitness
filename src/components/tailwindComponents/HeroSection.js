@@ -171,7 +171,7 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-2 -mb-24 mx-auto max-w-7xl md:mt-12 md:pb-12">
+        <main className="mt-2 -mb-28 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="flex flex-row text-left ml-5 md:flex md:flex-row md:ml-6">
                     <div>
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
@@ -182,7 +182,7 @@ export default function Example() {
             </h1>
             </CSSTransition>
 
-            <p className="ml-1 mb-0 max-w-md mx-auto font-normal text-xs text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            <p className="ml-1 mb-0 max-w-md whitespace-nowrap mx-auto font-normal text-default text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
             THE APP THAT TAKES THE GUESSWORK OUT OF FITNESS.
             </p>
             <div className="mt-4 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
@@ -195,7 +195,7 @@ export default function Example() {
                 <a
                   href={`${getMobileOS()}`}
                   target="_blank"
-                  className="w-max px-3 py-1 cursor-pointer text-xs font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
+                  className="w-max px-3 -py-1 cursor-pointer text-default font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
                   style={{backgroundImage: "linear-gradient(to right, rgb(231,208,175), rgb(132,92,65), rgb(132,92,65))"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
@@ -209,7 +209,7 @@ export default function Example() {
 
             </div>
             </div>
-            <div className="relative  right-12  md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+            <div className="mr-12 w-4/12 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
               <img
                 className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}
