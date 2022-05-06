@@ -13,10 +13,10 @@ const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
-  { name: 'HOME', href: '/' },
-  { name: 'GYMS', href: '/gyms' },
-  { name: 'TRAINERS', href: '/trainers' },
-  { name: 'CONTACT', href: '/contact' },
+  { name: 'HOME', href: '/', featured: true },
+  { name: 'WORK WITH US', href: '/gyms' },
+  { name: 'CONTACT', href: '/trainers' },
+  { name: 'ABOUT US', href: '/contact' },
 ]
 /*
 
@@ -102,9 +102,9 @@ export default function Example() {
 
                 </div>
               </div>
-              <div className=" flex space-x-2">
+              <div className=" -mt-5 flex space-x-2">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-base text-gold hover:text-cream">
+                  <a key={item.name} href={item.href} className="text-xs text-white hover:text-cream">
                     {item.name}
                   </a>
                 ))}
@@ -171,21 +171,21 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-2 mx-auto max-w-7xl md:mt-12 md:pb-12">
+        <main className="mt-2 -mb-24 mx-auto max-w-7xl md:mt-12 md:pb-12">
           <div className="flex flex-row text-left ml-5 md:flex md:flex-row md:ml-6">
                     <div>
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-6 font-normal text-gray-900">
-              <span className=" xl:inline text-3xl sm:text-4xl"><span className="tracking-tight"><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStrokeWidth:"1px", webkitTextStrokeColor:"white"}}>SPOT</span></span> </span>{' '}
-              <span className=" block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38"}}><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>FIT</span></span> </span>
+            <h1 className="mb-2 font-normal text-gray-900">
+              <span className=" xl:inline text-2xl sm:text-4xl"><span className="tracking-tight"><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStrokeWidth:"1px", webkitTextStrokeColor:"white"}}>SPOT</span></span> </span>{' '}
+              <span className=" block xl:inline text-2xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38"}}><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>FIT</span></span> </span>
             </h1>
             </CSSTransition>
 
-            <p className="ml-1 mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            <p className="ml-1 mb-0 max-w-md mx-auto font-normal text-xs text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
             THE APP THAT TAKES THE GUESSWORK OUT OF FITNESS.
             </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <div className="mt-4 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
 
               <div
                 className="flex ml-1 items-left justify-left rounded-md shadow"
@@ -195,7 +195,7 @@ export default function Example() {
                 <a
                   href={`${getMobileOS()}`}
                   target="_blank"
-                  className="w-max px-4 py-2 cursor-pointer text-xs font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
+                  className="w-max px-3 py-1 cursor-pointer text-xs font-extrabold rounded-lg text-black md:py-2 md:text-base md:px-6"
                   style={{backgroundImage: "linear-gradient(to right, rgb(231,208,175), rgb(132,92,65), rgb(132,92,65))"}}
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
@@ -209,9 +209,9 @@ export default function Example() {
 
             </div>
             </div>
-            <div className="mt-6 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+            <div className="relative  right-12  md:w-2/4 md:aspect-w-2 md:aspect-h-1">
               <img
-                className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}
                 alt="App screenshot"
                 width="200px"
