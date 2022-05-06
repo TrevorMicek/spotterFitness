@@ -25,13 +25,14 @@ const IndexPage = () => (
 
       <Features />
       <CTA />
-      <FirstSection comp={CTA2} bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
-      <FirstSection comp={CTA3}  bg="rgb(17, 24, 38)" borderTop="none" zTop="7" zBottom="7"  />
-      <FirstSection comp={Testimonials}  bg="rgb(231,208,175)"  zTop="8" zBottom="8" pad="15vh"  />
-      <FirstSection comp={Download}  bg="rgb(231,208,175)" borderTop="none" zTop="9" zBottom="9"  />
-      <FirstSection comp={Cities}  bg="rgb(231,208,175)" borderTop="none" zTop="10" zBottom="10" pad="15vh"  />
-      <FirstSection comp={Work}  bg="none" borderTop="none" zTop="11" zBottom="11"  />
-      <FirstSection comp={FAQ}   bg="rgb(255,244,238)" borderTop="none" zTop="12" zBottom="12" pad="15vh"  />
+      <CTA2  />
+      <CTA3  />
+      <Testimonials  />
+      <Download  />
+      <Cities  />
+      <Work  />
+      <FAQ  />
+
 
     </Layout>
   )
