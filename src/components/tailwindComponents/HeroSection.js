@@ -7,8 +7,8 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import './textStroke.css'
-const app = require('../../images/newImg/graphics/home/homeApp.png')
-const Logo = require('../../images/newImg/SpotterLogo.svg')
+
+const app = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
