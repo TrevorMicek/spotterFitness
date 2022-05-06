@@ -177,7 +177,7 @@ export default function Example() {
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
             <h1 className="mb-6 font-normal text-gray-900">
-              <span className=" xl:inline text-3xl sm:text-4xl"><span className="tracking-tight"><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>SPOT</span></span> </span>{' '}
+              <span className=" xl:inline text-3xl sm:text-4xl"><span className="tracking-tight"><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStrokeWidth:"1px", webkitTextStrokeColor:"white"}}>SPOT</span></span> </span>{' '}
               <span className=" block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38"}}><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>FIT</span></span> </span>
             </h1>
             </CSSTransition>
