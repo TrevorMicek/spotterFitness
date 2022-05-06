@@ -13,7 +13,7 @@ const IndexPage = () => (
 
 
 
-      <img src={home} />
+      <img src='https://res.cloudinary.com/websites-by-trevor/image/upload/v1651851728/home_uziz5k.png' />
     </Layout>
   )
 
