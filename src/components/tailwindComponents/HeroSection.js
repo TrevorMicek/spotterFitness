@@ -7,8 +7,9 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import './textStroke.css'
-
-const app = require('../../images/newImg/SpotterLogo.svg')
+const logo = require('../../images/newImg/graphics/home/logo.png')
+const app = require('../../images/newImg/graphics/home/homeApp.png')
+const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
@@ -55,7 +56,7 @@ export default function Example() {
   }, [])
 
   const TextStroke = (props) => (
-    <svg className="font-default h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12 md:w-full">
+    <svg className="font-default  h-10 w-11/12 mx-auto sm:h-11 sm:w-7/12 md:w-full">
 
   <text x="47%" y="65%" style={{transform: "scaleY(1.4)"}}>
   <tspan dx="10" fill="none" stroke="rgb(132,92,65)" strokeWidth="1.5px">FIND YOUR</tspan>
@@ -85,7 +86,7 @@ export default function Example() {
     return "https://play.google.com/store/apps/details?id=com.camsilu.spotter";
 }
   return (
-    <div className="font-default relative overflow-hidden pb-32" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
+    <div className="font-default relative overflow-hidden" style={{backgroundColor: "rgb(17, 24, 38)", gridColumn: "span 5", gridRowStart: "header", gridRowEnd: "main"}}>
 
 
       <div className="relative pt-6 pb-16 sm:pb-24">
@@ -94,23 +95,16 @@ export default function Example() {
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="/" className="font-bold text-xl text-cream">
-                    <span className="sr-only">Workflow</span>
-                    SPOTTER
+                  <a href="/" >
+
+                    <img src={logo} className="min-w-12 ml-1" width="50px" height="25px" />
                   </a>
-                  <div className="relative -mr-2 mb-4 flex items-center md:hidden">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cream">
-                      <span className="sr-only">Open main menu</span>
 
-                      <MenuIcon className="text-cream h-6 w-6" aria-hidden="true" />
-
-                    </Popover.Button>
-                  </div>
                 </div>
               </div>
-              <div className="hidden md:flex md:space-x-10">
+              <div className=" flex space-x-2">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-xl text-gold hover:text-cream">
+                  <a key={item.name} href={item.href} className="text-base text-gold hover:text-cream">
                     {item.name}
                   </a>
                 ))}
@@ -178,23 +172,23 @@ export default function Example() {
         </Popover>
 
         <main className="mt-2 mx-auto max-w-7xl md:mt-12 md:pb-12">
-          <div className="text-center md:flex md:flex-row md:ml-6">
+          <div className="flex flex-row text-left ml-5 md:flex md:flex-row md:ml-6">
                     <div>
           <CSSTransition in={inProp} timeout={2000} classNames="appear">
 
-            <h1 className="mb-6 font-extrabold text-gray-900">
-              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-tight" style={{color: "17,24,38", wordSpacing: "-5px"}}><TextStroke title="SPOT" /></span> </span>{' '}
-              <span className="block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38",wordSpacing: "-5px"}}><TextStroke title="FIT" /></span> </span>
+            <h1 className="mb-6 font-normal text-gray-900">
+              <span className=" xl:inline text-3xl sm:text-4xl"><span className="tracking-tight"><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>SPOT</span></span> </span>{' '}
+              <span className=" block xl:inline text-3xl sm:text-4xl"><span className="tracking-wider" style={{color: "17,24,38"}}><span style={{color: "rgb(255,244,238)"}}>FIND <span className="font-bold">YOUR</span></span> <span style={{webkitTextStroke:"1px white"}}>FIT</span></span> </span>
             </h1>
             </CSSTransition>
 
-            <p className="mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
-            The app that takes the guesswork<br /> out of fitness.
+            <p className="ml-1 mb-8 max-w-md mx-auto font-normal text-sm text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl" style={{color: "rgb(255,244,238)"}}>
+            THE APP THAT TAKES THE GUESSWORK OUT OF FITNESS.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
 
               <div
-                className="flex items-center justify-center rounded-md shadow"
+                className="flex ml-1 items-left justify-left rounded-md shadow"
 
               >
                <CSSTransition in={inPropHover} timeout={2500} classNames="button">
@@ -215,7 +209,7 @@ export default function Example() {
 
             </div>
             </div>
-            <div className="mt-6 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+            <div className="mt-6 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
               <img
                 className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}

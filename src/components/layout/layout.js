@@ -35,10 +35,11 @@
          }}
        >
 
+         <Header title={title} header={header} />
 
 
          <main style={pageLayout}>{children}</main>
-
+         <Footer />
 
 
        </div>
