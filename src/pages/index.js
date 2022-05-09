@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-
+import sections from '../images/newImg/graphics/homeSections.png'
 import Features from '../components/tailwindComponents/Features'
 import CTA from '../components/tailwindComponents/CTA'
 import CTA2 from '../components/tailwindComponents/CTA2'
@@ -24,9 +24,7 @@ const IndexPage = () => (
 
 
       <Features />
-      <CTA />
-      <CTA2  />
-      <CTA3  />
+      <img src={sections} />
       <Testimonials  />
       <Download  />
       <Cities  />
