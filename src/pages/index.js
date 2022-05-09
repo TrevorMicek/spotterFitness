@@ -23,7 +23,7 @@ const IndexPage = () => (
 
 
 
-      <Features />
+
       <img src={sections} />
       <Testimonials  />
       <Download  />
