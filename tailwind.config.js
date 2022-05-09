@@ -11,7 +11,7 @@ module.exports = {
             'bg': 'rgb(17, 24, 38)'
         },
         backgroundImage: {
-            'download': 'url("../images/newImg/CrossFit.jpg")',
+            'download': 'url("../images/newImg/graphics/home/7_Screen.png")',
             'gym': 'url("../images/newImg/gymBg.jpeg")'
         },
         font: {

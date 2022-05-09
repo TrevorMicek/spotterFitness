@@ -174,8 +174,9 @@ export default function Example() {
 
         <main className="-mt-2 -mb-28 mx-auto max-w-7xl md:mt-12 md:pb-12">
                     <img src={backGround} />
-                    <button><img src={button} width="100px" height="40px" className="absolute bottom-5 left-5" /></button>
-                    <div className="absolute -bottom-6 right-12 w-32 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+
+                    <button><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5" /></button>
+                    <div className=" absolute -bottom-6 right-8 w-28 h-40 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
               <img
                 className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}
