@@ -15,7 +15,6 @@ import Cities from '../components/tailwindComponents/Cities'
 import Work from '../components/tailwindComponents/Work'
 import FAQ from '../components/tailwindComponents/FAQ'
 
-
 const IndexPage = () => (
     <Layout title="Spotter Fitness" pageLayout={{gridTemplateRows: "[top-gutter] auto [top-padding] auto [first] auto"}}>
       <SEO title="Home" />

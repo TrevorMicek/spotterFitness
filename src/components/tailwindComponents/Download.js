@@ -6,7 +6,7 @@ export default function Download() {
 
   return (
     <div style={{position: 'relative',  zIndex: '21'}}>
-      <div className="font-default pb-26 h-36 pt-10 relative top-0 -mt-8 bg-download bg-contain bg-no-repeat md:-top-12">
+      <div className="font-default -mb-3 pb-26 h-36 pt-10 relative top-0 -mt-8 bg-download bg-contain bg-no-repeat md:-top-12">
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:pt-8 lg:pb-32 lg:px-8">
 
         <div className="-mt-5 mr-8 flex flex-row items-end justify-end md:flex-row">

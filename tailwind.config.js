@@ -12,7 +12,7 @@ module.exports = {
         },
         backgroundImage: {
             'download': 'url("../images/newImg/graphics/home/7_Screen.png")',
-            'gym': 'url("../images/newImg/gymBg.jpeg")'
+            'gym': 'url("../images/newImg/graphics/home/9_Screen@3x.png")'
         },
         font: {
             'default': 'libre-franklin'
