@@ -63,7 +63,7 @@ function classNames(...classes) {
 
 export default function FAQ() {
   return (
-    <div style={{position: 'relative', top: '0vh', zIndex: '21'}}>
+    <div style={{position: 'relative', top: '-6vh', zIndex: '21'}}>
     <div className="font-default pt-0 pb-12" >
       <div className="max-w-7xl mx-auto pb-8  sm:py-16 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">

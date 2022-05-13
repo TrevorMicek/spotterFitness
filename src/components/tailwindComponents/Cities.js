@@ -33,7 +33,7 @@ const CityScroll = () => {
 export default function Example() {
 
 return (
-  <div style={{position: 'relative', zIndex:'12', top: '0vh', zIndex: '21', background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}>
+  <div style={{position: 'relative', zIndex:'12', top: '-6vh', zIndex: '21', background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}>
     <div className="font-default h-24 py-0  md:-mb-16 lg:pt-0 lg:pb-32">
     <div className="max-w-7xl mx-auto text-center pt-3 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative">

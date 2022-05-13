@@ -105,7 +105,7 @@ export default function Example() {
               </div>
               <div className=" absolute top-0 right-0 flex space-x-2">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-xs text-white hover:text-cream">
+                  <a key={item.name} href={item.href} className=" text-white hover:text-cream" style={{fontSize:"9px"}}>
                     {item.name}
                   </a>
                 ))}

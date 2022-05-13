@@ -8,7 +8,7 @@ export default function Work() {
   const [inPropHoverTwo, setInPropHoverTwo] = useState(false)
   const [inPropHoverThree, setInPropHoverThree] = useState(false)
 return (
-  <div style={{position: 'relative',  top: '0vh', zIndex: '21'}}>
+  <div style={{position: 'relative',  top: '-6vh', zIndex: '21'}}>
     <div className="font-default pb-0 pt-0 relative bg-gym bg-contain bg-no-repeat lg:pt-16 lg:pb-32">
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative ">
