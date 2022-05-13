@@ -50,41 +50,9 @@ const navigation = {
   export default function Footer() {
     return (
       <footer>
-<div className="font-default py-24 absolute -bottom-14 left-0 right-0 md:-bottom-20 lg:py-28 lg:-bottom-28" style={{backgroundColor: "rgb(17, 24, 38)"}} />
-
-          <div className="h-72 absolute bottom-0 left-0 right-0 md:h-96" style={{backgroundColor: "rgb(17, 24, 38)", transform:"skewY(9deg)"}} />
-        <div className="mt-12 max-w-7xl mx-auto px-4 overflow-hidden sm:px-6 lg:px-8 relative">
-        <div className=" mb-8 flex justify-center space-x-6">
-            {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-gray-500" style={{color: "rgb(255,244,238)"}}>
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
-            ))}
-          </div>
-          <nav className="relative -top-5  flex flex-wrap flex-row justify-center md:flex-col md:text-center" aria-label="Footer">
-            {navigation.main.map((item) => (
-              <div key={item.name} className="px-2 py-4 md:py-2">
-                <a href={item.href} className="text-base hover:text-gray-900" style={{color: "rgb(255,244,238)"}}>
-                  {item.name}
-                </a>
-              </div>
-            ))}
-          </nav>
-          <span className="absolute bottom-20 left-0 text-center w-screen pt-4 flex flex-row items-center justify-center space-x-2">
-
-              <a href="https://getterms.io/view/kEIyU/privacy/en-us" className="relative underline text-white text-center text-sm">Privacy Policy</a>
-              <a href="https://getterms.io/view/kEIyU/tos/en-us" className="relative underline text-white text-center text-sm">Terms of Service</a>
-              <a href="https://getterms.io/view/kEIyU/cookie/en-us" className="relative underline text-white text-center text-sm">Cookie Policy</a>
-              <a href="https://getterms.io/view/kEIyU/aup/en-us" className="relative underline text-white text-center text-sm">Acceptable Use Policy</a>
-            </span>
-          <a href='https://www.freepik.com/vectors/system-update' className="relative top-10 text-white text-left" style={{fontSize: "9px"}}><p className=" m-0 text-left">System update vector created by pch.vector - www.freepik.com</p></a>
-          <a href="https://www.flaticon.com/free-icons/arm" className="relative top-6 text-white" style={{fontSize: "9px"}} title="arm icons">Arm icons created by Those Icons - Flaticon</a>
-          <p className="relative top-6 text-center text-base" style={{color: "rgb(255,244,238)"}}>&copy; 2020 Spotter Fitness, All rights reserved.</p>
+<div className="font-default top-3 bg-footer bg-contain bg-no-repeat py-7 absolute -bottom-14 left-0 right-0 md:-bottom-20 lg:py-28 lg:-bottom-28" />
 
 
-        </div>
-        <img src={logo} width="100px" height="50px" className="text-white mx-auto relative top-2" />
 
       </footer>
     )

@@ -1,3 +1,4 @@
+const { url } = require('inspector')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -12,7 +13,8 @@ module.exports = {
         },
         backgroundImage: {
             'download': 'url("../images/newImg/graphics/home/7_Screen.png")',
-            'gym': 'url("../images/newImg/graphics/home/9_Screen@3x.png")'
+            'gym': 'url("../images/newImg/graphics/home/9_Screen@3x.png")',
+            'footer': 'url("../images/newImg/graphics/Header-footer/Footer@3x.png")'
         },
         font: {
             'default': 'libre-franklin'
