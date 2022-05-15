@@ -16,8 +16,9 @@ import Download from '../components/tailwindComponents/Download'
 import Cities from '../components/tailwindComponents/Cities'
 import Work from '../components/tailwindComponents/Work'
 import FAQ from '../components/tailwindComponents/FAQ'
-
+import Header from '../components/tailwindComponents/TrainerHeader'
 import '../styles/FrontPage/wrapper.css'
+import sections from '../images/newImg/graphics/Trainers/sections.png'
 const app = require('../images/newImg/trainerProfile.jpg')
 const IndexPage = () => {
 
@@ -33,7 +34,7 @@ const TextStroke = (props) => (
 </svg>
 
 )
-  const Header = () => {
+  const Hheader = () => {
     const [inProp, setInProp] = useState(false)
   const [inPropHover, setInPropHover] = useState(false)
   const [inPropNav, setInPropNav] = useState(false)
@@ -67,15 +68,12 @@ const TextStroke = (props) => (
     }
 
   return (
-  <Layout title="TRAINERS" header={Header}>
+  <Layout title="TRAINERS">
     <SEO title="Trainers" />
     <div class="wrapper">
-
-      <FirstSection comp={HeaderCTA} skew="left" bg="rgb(231,208,175)" borderTop="none" zTop="3" zBottom="3"  />
-      <FirstSection comp={Features} skew="right" bg="rgba(17, 24, 38)" borderTop="none" zTop="4" zBottom="4"  />
-      <FirstSection comp={CTA} skew="left" bg="rgb(231,208,175)" borderTop="none" zTop="5" zBottom="5"  />
-      <FirstSection comp={CTA2} skew="right" bg="rgb(17, 24, 38)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
-      <FirstSection comp={Testimonials}  skew="left" bg="rgb(231,208,175)"  zTop="8" zBottom="8" pad="15vh"  />
+      <Header />
+      <HeaderCTA />
+      <img src={sections} className="-mb-8" />
     </div>
   </Layout>
   )

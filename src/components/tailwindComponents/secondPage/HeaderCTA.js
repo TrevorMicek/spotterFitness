@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
-
+import button from '../../../images/newImg/graphics/Trainers/2_Button@3x.png'
+import img from '../../../images/newImg/graphics/Trainers/2_Graphic@3x.png'
+import section from '../../../images/newImg/graphics/Trainers/2_Screen@3x.png'
 
 const features = [
   {
@@ -55,20 +57,11 @@ export default function Features() {
   return (
     <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="font-default overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 md:py-28 lg:px-8">
-
-
-        <div className="relative">
-          <div className="lg:col-span-1">
-            <h2 className="font-serif  text-3xl text-center font-bold tracking-tight sm:text-4xl md:mb-12">
-            SPOTTER USERS ARE LOOKING FOR A TRAINER LIKE YOU.
-            </h2>
-          </div>
-          <div
-                className="flex items-center justify-center"
-
-              >
-               <CSSTransition in={inPropHover} timeout={2500} classNames="button">
+      <div className="relative -mb-6 max-w-7xl mx-auto sm:px-6 md:py-28 lg:px-8">
+      <div className="flex flex-row">
+        <img src={img} className="relative z-10 w-36 bg-contain bg-no-repeat" />
+        <img src={section} className="absolute right-0 z-0 " />
+        <CSSTransition in={inPropHover} timeout={2500} classNames="button">
                 <a
                   href={`${getMobileOS()}`}
                   target="_blank"
@@ -77,20 +70,13 @@ export default function Features() {
                   onMouseOver={() => setInPropHover(true)}
                   onMouseOut={() => setInPropHover(false)}
                 >
-                  DOWNLOAD SPOTTER
+                  <img src={button} width="80px" height="50px" className="absolute bottom-4 right-16 mr-3" />
                 </a>
                 </CSSTransition>
-                </div>
-                <div className="mt-6 mx-auto mb-16 w-11/12 aspect-w-5 aspect-h-3 md:w-2/4 md:aspect-w-3 md:aspect-h-1 lg:w-2/4">
-              <img
-                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-                  src={app}
-                  alt="App screenshot"
-                  width="200px"
-                  height="100px"
-                />
-              </div>
-        </div>
+
+      </div>
+
+
       </div>
     </div>
     </div>

@@ -4,7 +4,10 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-
+import section from '../images/newImg/graphics/Work with us/2_Screen@3x.png'
+import button from '../images/newImg/graphics/Work with us/2_Button@3x.png'
+import backGround from '../images/newImg/graphics/Work with us/gymSection.png'
+import Header from '../components/tailwindComponents/GymHeader'
 import Features from '../components/tailwindComponents/thirdPage/Features'
 import CTA from '../components/tailwindComponents/thirdPage/CTA'
 import CTA2 from '../components/tailwindComponents/thirdPage/CTA2'
@@ -16,6 +19,14 @@ import Contact from '../components/tailwindComponents/thirdPage/Contact'
 import '../styles/FrontPage/wrapper.css'
 const app = require('../images/newImg/trainerProfile.jpg')
 const ServicePage = () => {
+  const [inProp, setInProp] = useState(false)
+  const [inPropHover, setInPropHover] = useState(false)
+  const [inPropNav, setInPropNav] = useState(false)
+
+
+  useEffect(() => {
+    setInProp(true)
+  }, [])
   const getMobileOS = () => {
     var userAgent = typeof navigator === 'undefined' ? 'undefined' : navigator.userAgent || navigator.vendor || window.opera;
 
@@ -46,7 +57,7 @@ const TextStroke = (props) => (
 </svg>
 
 )
-  const Header = () => {
+  const Hheader = () => {
     const [inProp, setInProp] = useState(false)
   const [inPropHover, setInPropHover] = useState(false)
   const [inPropNav, setInPropNav] = useState(false)
@@ -100,12 +111,14 @@ const TextStroke = (props) => (
   <Layout title="GYMS" header={Header}>
     <SEO title="Home" />
     <div class="wrapper">
+      <Header />
+      <div className="mb-0">
+      <img src={section} className="font-defaultpb-26 pt-5 top-0 -mt-8 bg-contain bg-no-repeat md:-top-12" />
+      <img src={button} width="85px" height="50px" className="cursor-pointer absolute z-10 right-12  -mt-14" />
 
-      <FirstSection comp={Features} skew="right" bg="rgba(255,244,238)" borderTop="none" zTop="4" zBottom="4"  />
-      <FirstSection comp={CTA} skew="left" bg="rgb(17, 24, 38)" borderTop="none" zTop="5" zBottom="5"  />
-      <FirstSection comp={CTA2} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="6" zBottom="6" pad="15vh"  />
-      <FirstSection comp={DidYou}  skew="left" bg="rgb(17, 24, 38)"  zTop="7" zBottom="7" pad="15vh"  />
-      <FirstSection comp={Contact} skew="right" bg="rgb(231,208,175)" borderTop="none" zTop="8" zBottom="8" pad="15vh"  />
+      </div>
+      <img src={backGround}  className="relative -top-2" />
+      <Contact />
     </div>
 
 
