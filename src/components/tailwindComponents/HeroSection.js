@@ -94,11 +94,11 @@ export default function Example() {
       <Popover>
           <div className=" max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
-                <div className="absolute top-0 flex items-center justify-between w-full md:w-auto">
+              <div className="flex items-center flex-1 " >
+                <div className="absolute top-0 flex items-center justify-between w-full ">
                   <a href="/" >
 
-                    <img src={logo} className="min-w-12 ml-1" width="50px" height="25px" />
+                    <img src={logo} className="relative min-w-12 ml-1 md:top-4" width="50px" height="25px" />
                   </a>
 
                 </div>
@@ -110,16 +110,7 @@ export default function Example() {
                   </a>
                 ))}
               </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-                <span className="inline-flex rounded-md shadow">
-                  <a
-                    href="/"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-cream hover:text-gold"
-                  >
-                    Log in
-                  </a>
-                </span>
-              </div>
+
             </nav>
           </div>
 
@@ -172,11 +163,11 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="-mt-2 -mb-28 mx-auto max-w-7xl md:mt-12 md:pb-12">
+        <main className="-mt-2 -mb-28 mx-auto max-w-7xl ">
                     <img src={backGround} />
 
-                    <button><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5" /></button>
-                    <div className=" absolute -bottom-6 right-8 w-28 h-40 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+                    <button><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5 md:left-9 md:bottom-7" /></button>
+                    <div className=" absolute -bottom-6 right-8 w-28 h-40 md:w-2/4 md:-right-10">
               <img
                 className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}
