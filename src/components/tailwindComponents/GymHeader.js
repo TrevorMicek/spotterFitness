@@ -17,9 +17,9 @@ const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
   { name: 'HOME', href: '/', featured: true },
-  { name: 'WORK WITH US', href: '/gyms' },
-  { name: 'CONTACT', href: '/trainers' },
-  { name: 'ABOUT US', href: '/contact' },
+  { name: 'WORK WITH US', href: '/gyms/#contact' },
+  { name: 'TRAINERS', href: '/trainers' },
+  { name: 'GYMS', href: '/gyms' },
 ]
 /*
 
@@ -170,6 +170,7 @@ export default function Example() {
 
 
                     <div className=" absolute -mb-2 -bottom-24 right-4 w-28 h-40 sm:right-28 sm:-bottom-16">
+              <a href="/gyms/#contact">
               <img
                 className=" rounded-md object-cover object-left-top sm:w-32 "
                 src={button}
@@ -177,6 +178,7 @@ export default function Example() {
                 width="80px"
                 height="100px"
               />
+              </a>
             </div>
         </main>
       </div>

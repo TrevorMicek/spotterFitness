@@ -15,9 +15,9 @@ const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 const backGround = require('../../images/newImg/graphics/home/1_Screen.png')
 const navigation = [
   { name: 'HOME', href: '/', featured: true },
-  { name: 'WORK WITH US', href: '/gyms' },
-  { name: 'CONTACT', href: '/trainers' },
-  { name: 'ABOUT US', href: '/contact' },
+  { name: 'WORK WITH US', href: '/gyms/#contact' },
+  { name: 'TRAINERS', href: '/trainers' },
+  { name: 'GYMS', href: '/gyms' },
 ]
 /*
 
@@ -166,7 +166,7 @@ export default function Example() {
         <main className="-mt-2 -mb-28 mx-auto max-w-7xl ">
                     <img src={backGround} />
 
-                    <button><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5 md:left-9 md:bottom-7" /></button>
+                    <button><a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter"><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5 md:left-9 md:bottom-7" /></a></button>
                     <div className=" absolute -bottom-6 right-8 w-28 h-40 md:w-2/4 md:-right-10">
               <img
                 className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"

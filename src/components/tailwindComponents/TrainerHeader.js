@@ -16,9 +16,9 @@ const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
   { name: 'HOME', href: '/', featured: true },
-  { name: 'WORK WITH US', href: '/gyms' },
-  { name: 'CONTACT', href: '/trainers' },
-  { name: 'ABOUT US', href: '/contact' },
+  { name: 'WORK WITH US', href: '/gyms/#contact' },
+  { name: 'TRAINERS', href: '/trainers' },
+  { name: 'GYMS', href: '/gyms' },
 ]
 /*
 
@@ -173,11 +173,11 @@ export default function Example() {
           </Transition>
         </Popover>
 
-        <main className="mt-5 -mb-20 mx-auto max-w-7xl md:mt-12 md:pb-12">
+        <main className="-mt-2 -mb-28 mx-auto max-w-7xl ">
                     <img src={backGround} />
 
-
-                    <div className=" absolute -mb-1 -bottom-12 right-8 w-28 h-40 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+                    <button><a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter" target="_blank" rel="noopener noreferrer"><img src={button} width="100px" height="40px" className="absolute -bottom-3 left-7 sm:left-7 md:left-7" /></a></button>
+                    <div className=" absolute -bottom-12 right-8 w-28 h-40 md:w-2/4 md:-right-10">
               <img
                 className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
                 src={app}

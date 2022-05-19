@@ -62,12 +62,12 @@ export default function Features() {
         <img src={img} className="relative left-0 -mb-3 z-10 w-44 bg-contain bg-no-repeat" />
         <img src={section} className="absolute right-0 z-0 h-36" />
           <a
-                    href={`${getMobileOS()}`}
+                    href="https://play.google.com/store/apps/details?id=com.camsilu.spotter"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-bg md:py-2 md:text-base md:px-6"
-                    style={{border: "2px solid rgb(132,92,65)"}}
-                    onMouseOver={() => setInPropHover(true)}
-                    onMouseOut={() => setInPropHover(false)}
+
+
                   >
                     <img src={button} width="80px" height="50px" className="absolute -bottom-2 right-16 mr-3" />
                   </a>
