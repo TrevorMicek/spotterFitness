@@ -8,8 +8,8 @@ export default function Work() {
   const [inPropHoverTwo, setInPropHoverTwo] = useState(false)
   const [inPropHoverThree, setInPropHoverThree] = useState(false)
 return (
-  <div style={{position: 'relative',  top: '-6vh', zIndex: '21'}}>
-    <div className="font-default pb-0 pt-0 relative bg-gym bg-contain bg-no-repeat lg:pt-16 lg:pb-32">
+  <div style={{position: 'relative',  top: '-3vh', zIndex: '21'}}>
+    <div className="font-default pb-0 pt-0 relative bg-gym bg-contain bg-no-repeat sm:bg-cover">
     <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="relative ">
 
@@ -17,7 +17,7 @@ return (
           <CSSTransition in={inPropHoverOne} timeout={2500} classNames="buttonOne">
                 <a
                   href="#"
-                  className="w-20 mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 md:py-2 md:text-lg md:px-10"
+                  className="w-20 relative top-0  mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 sm:top-10"
                   style={{background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}
                   onMouseOver={() => setInPropHoverOne(true)}
                   onMouseOut={() => setInPropHoverOne(false)}
@@ -28,7 +28,7 @@ return (
             <CSSTransition in={inPropHoverTwo} timeout={2500} classNames="buttonTwo">
               <a
                   href="#"
-                  className="w-20 mb-4 px-0 py-0 bg-red-50  text-xs font-medium rounded-sm text-black hover:bg-gray-50 md:py-2 md:mx-12 md:text-lg md:px-12"
+                  className="w-20 relative top-0  mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 sm:top-10"
                   style={{background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}
                   onMouseOver={() => setInPropHoverTwo(true)}
                   onMouseOut={() => setInPropHoverTwo(false)}
@@ -40,7 +40,7 @@ return (
 
                <a
                   href="#"
-                  className="w-20 mb-4 px-0 py-0 bg-red-50  text-xs font-medium rounded-sm text-black hover:bg-gray-50 md:py-2 md:text-lg md:px-10"
+                  className="w-20 relative top-0  mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 sm:top-10 sm:mb-10"
                   style={{background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}
                   onMouseOver={() => setInPropHoverThree(true)}
                   onMouseOut={() => setInPropHoverThree(false)}

@@ -50,7 +50,7 @@ const navigation = {
   export default function Footer() {
     return (
       <footer>
-<div className="font-default bg-footer bg-contain bg-no-repeat py-7  left-0 right-0 md:-bottom-20 lg:py-28 lg:-bottom-28" />
+<div className="font-default bg-footer bg-cover bg-no-repeat py-7  left-0 right-0 sm:py-10 md:py-12 lg:py-20" />
 
 
 
