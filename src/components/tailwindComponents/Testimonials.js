@@ -35,18 +35,17 @@ export default function Testimonials() {
         <div className="relative max-w-7xl mx-auto lg:px-8">
         <img src={reviewBox} />
         <div className="flex flex-row justify-evenly items-center absolute -bottom-3 w-fit mx-3">
-          <span className="flex flex-col items-center leading-3">
-          <p className="text-center relative top-0 mx-3 text-xs sm:text-sm sm:-top-7 sm:mx-10" ><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2">"</span>
-        <img src={stars} width="50px" height="50px" className="" />
-        </span>
-        <span className="flex flex-col items-center leading-3 ">
-        <p className="text-center relative top-0 mx-3 text-xs sm:text-sm sm:-top-7 sm:mx-10" style={{fontSize:"10px"}}><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2">"</span>
-        <img src={stars} width="50px" height="50px" className="" />
+        <span className="flex flex-col items-center leading-3">
+          <p className="text-center text-default leading-3 relative top-0 mx-3 md:-top-10 sm:text-sm sm:-top-2 sm:mx-7" ><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2 sm:bottom-5 sm:-right-12 md:-right-10 md:bottom-12">"</span>
+        <img src={stars} width="50px" height="50px" className="w-12 relative sm:w-20 sm:bottom-2" />
         </span>
         <span className="flex flex-col items-center leading-3">
-
-        <p className="text-center relative top-0 mx-3 text-xs sm:text-sm sm:-top-7 sm:mx-10" style={{fontSize:"10px"}}><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2">"</span>
-        <img src={stars} width="50px" height="50px" className="" />
+          <p className="text-center text-default leading-3 relative top-0 mx-3 md:-top-10 sm:text-sm sm:-top-2 sm:mx-7" ><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2 sm:bottom-5 sm:-right-12 md:-right-10 md:bottom-12">"</span>
+        <img src={stars} width="50px" height="50px" className="w-12 relative sm:w-20 sm:bottom-2" />
+        </span>
+        <span className="flex flex-col items-center leading-3">
+          <p className="text-center text-default leading-3 relative top-0 mx-3 md:-top-10 sm:text-sm sm:-top-2 sm:mx-7" ><span className="text-lg absolute top-1">"</span><span className="relative top-5">Lorem ipsum dolor sit amet consec tetur adipisicing elit. Nemo expedita</span></p><span className="text-lg relative bottom-2 -right-8 h-2 sm:bottom-5 sm:-right-12 md:-right-10 md:bottom-12">"</span>
+        <img src={stars} width="50px" height="50px" className="w-12 relative sm:w-20 sm:bottom-2" />
         </span>
         </div>
         </div>

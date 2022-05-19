@@ -96,8 +96,8 @@ export default function Example() {
       <Popover>
           <div className=" max-w-7xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0" >
-                <div className="absolute top-3 flex items-center justify-between w-full md:w-auto">
+              <div className="flex items-center flex-1 " >
+                <div className="absolute top-3 sm:top-5 flex items-center justify-between w-full ">
                   <a href="/" >
 
                     <img src={logo} className="min-w-12 ml-1" width="50px" height="25px" />
@@ -105,23 +105,14 @@ export default function Example() {
 
                 </div>
               </div>
-              <div className=" absolute top-2 right-0 flex space-x-2">
+              <div className="absolute top-2 right-0 flex space-x-2 sm:top-5 ">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className=" text-white hover:text-cream" style={{fontSize:"9px"}}>
+                  <a key={item.name} href={item.href} className="text-default text-white hover:text-cream sm:text-xs md:text-sm">
                     {item.name}
                   </a>
                 ))}
               </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-                <span className="inline-flex rounded-md shadow">
-                  <a
-                    href="/"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gold hover:bg-cream hover:text-gold"
-                  >
-                    Log in
-                  </a>
-                </span>
-              </div>
+
             </nav>
           </div>
 
@@ -178,9 +169,9 @@ export default function Example() {
                     <img src={backGround} />
 
 
-                    <div className=" absolute -mb-2 -bottom-24 right-4 w-28 h-40 md:w-2/4 md:aspect-w-2 md:aspect-h-1">
+                    <div className=" absolute -mb-2 -bottom-24 right-4 w-28 h-40 sm:right-28 sm:-bottom-16">
               <img
-                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                className=" rounded-md object-cover object-left-top sm:w-32 "
                 src={button}
                 alt="App screenshot"
                 width="80px"

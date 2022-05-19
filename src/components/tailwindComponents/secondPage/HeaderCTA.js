@@ -57,22 +57,21 @@ export default function Features() {
   return (
     <div style={{position: 'relative', top: '0', zIndex: '21'}}>
     <div className="font-default overflow-hidden">
-      <div className="relative -mb-6 max-w-7xl mx-auto sm:px-6 md:py-28 lg:px-8">
+      <div className="relative bg-cream max-w-7xl mx-auto">
       <div className="flex flex-row">
-        <img src={img} className="relative z-10 w-36 bg-contain bg-no-repeat" />
-        <img src={section} className="absolute right-0 z-0 " />
-        <CSSTransition in={inPropHover} timeout={2500} classNames="button">
-                <a
-                  href={`${getMobileOS()}`}
-                  target="_blank"
-                  className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-bg md:py-2 md:text-base md:px-6"
-                  style={{border: "2px solid rgb(132,92,65)"}}
-                  onMouseOver={() => setInPropHover(true)}
-                  onMouseOut={() => setInPropHover(false)}
-                >
-                  <img src={button} width="80px" height="50px" className="absolute bottom-4 right-16 mr-3" />
-                </a>
-                </CSSTransition>
+        <img src={img} className="relative left-0 -mb-3 z-10 w-44 bg-contain bg-no-repeat" />
+        <img src={section} className="absolute right-0 z-0 h-36" />
+          <a
+                    href={`${getMobileOS()}`}
+                    target="_blank"
+                    className="w-max px-4 py-2 cursor-pointer text-xs font-semibold rounded-md text-bg md:py-2 md:text-base md:px-6"
+                    style={{border: "2px solid rgb(132,92,65)"}}
+                    onMouseOver={() => setInPropHover(true)}
+                    onMouseOut={() => setInPropHover(false)}
+                  >
+                    <img src={button} width="80px" height="50px" className="absolute -bottom-2 right-16 mr-3" />
+                  </a>
+
 
       </div>
 

@@ -6,6 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+
         colors: {
             'gold': 'rgb(132,92,65)',
             'cream': 'rgb(231,208,175)',
