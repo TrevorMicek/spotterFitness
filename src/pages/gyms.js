@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group'
 import { Link } from 'gatsby'
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-
+import { Popover, Sidetab } from '@typeform/embed-react'
 import section from '../images/newImg/graphics/Work with us/2_Screen@3x.png'
 import button from '../images/newImg/graphics/Work with us/2_Button@3x.png'
 import backGround from '../images/newImg/graphics/Work with us/gymSection.png'
@@ -118,7 +118,7 @@ const TextStroke = (props) => (
 
       </div>
       <img src={backGround}  className="relative -top-2" />
-      <Contact />
+      <Sidetab id="pQWv7XVg" button Text="Start Partnership" />
     </div>
 
 
