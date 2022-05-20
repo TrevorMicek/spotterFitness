@@ -27,13 +27,13 @@ export default function Download() {
       <div className="font-default -mb-10 pb-26 h-44 pt-10 relative -top-5 -mt-8 bg-download bg-cover bg-no-repeat md:-top-5 md:-mb-14 sm:h-52 lg:-mb-20">
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:pt-8 lg:pb-32 lg:px-8">
 
-        <div className="-mt-5 mr-3 flex flex-row items-end justify-end md:flex-row">
+        <div className="-mt-5 mr-0 flex flex-row items-end justify-end md:flex-row">
                 <a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter" target="_blank" rel="noopener noreferrer">
                  <img
                   src={appStore}
                   width="100px"
                   height="50px"
-                  className="w-14 mr-1 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
+                  className="w-12 mr-1 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                   />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ export default function Download() {
                   src={googlePlay}
                   width="100px"
                   height="50px"
-                  className="w-16 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
+                  className="w-12 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
                 />
                 </a>
         </div>
