@@ -33,7 +33,7 @@ export default function Download() {
                   src={appStore}
                   width="100px"
                   height="50px"
-                  className="w-12 mr-1 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
+                  className="w-12 mr-1 cursor-pointer border border-transparent text-sm font-medium rounded-md bg-indigo-50 hover:bg-indigo-50 sm:w-14 md:w-20 md:mx-4 md:text-lg"
                   />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter" target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ export default function Download() {
                   src={googlePlay}
                   width="100px"
                   height="50px"
-                  className="w-12 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50 md:mx-4 md:text-lg"
+                  className="w-12 cursor-pointer border border-transparent text-sm font-medium rounded-md  bg-indigo-50 hover:bg-indigo-50  sm:w-14 md:w-20 md:mx-4 md:text-lg"
                 />
                 </a>
         </div>
