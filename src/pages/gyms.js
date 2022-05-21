@@ -119,7 +119,9 @@ const TextStroke = (props) => (
       </div>
       <img src={backGround}  className="relative -top-2" />
 
+      <span id="contact">
       <Widget id="pQWv7XVg" button Text="Start Partnership" style={{height: "142vh"}} />
+      </span>
     </div>
 
 
