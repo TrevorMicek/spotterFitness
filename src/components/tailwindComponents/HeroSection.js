@@ -6,6 +6,9 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
+import '../../styles/FrontPage/wrapper.css'
+
+
 import './textStroke.css'
 const button = require('../../images/newImg/graphics/home/1_button.png')
 const logo = require('../../images/newImg/graphics/home/logo.png')
@@ -166,15 +169,18 @@ export default function Example() {
         <main className="-mt-2 -mb-28 mx-auto max-w-7xl ">
                     <img src={backGround} />
 
-                    <button><a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter"><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5 md:left-9 md:bottom-7" /></a></button>
-                    <div className=" absolute -bottom-6 right-8 w-28 h-40 md:w-2/4 md:-right-10">
+                    <button><a href="https://play.google.com/store/apps/details?id=com.camsilu.spotter"><img src={button} width="100px" height="40px" className="absolute bottom-0 left-5 sm:w-32 md:left-9 md:bottom-7" /></a></button>
+                    <div className=" absolute -bottom-6 right-8 w-28 h-40 sm:w-52 sm:bottom-12 md:w-2/4 md:-right-10">
+                    <CSSTransition in={inProp} timeout={2000} classNames="appear">
+
               <img
-                className=" rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
+                className="w-32 rounded-md object-cover object-left-top sm:w-52"
                 src={app}
                 alt="App screenshot"
                 width="200px"
                 height="100px"
               />
+              </CSSTransition>
             </div>
         </main>
       </div>

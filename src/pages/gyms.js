@@ -114,7 +114,7 @@ const TextStroke = (props) => (
       <Header />
       <div className="mb-0">
       <img src={section} className="font-defaultpb-26 pt-5 top-0 -mt-8 bg-contain bg-no-repeat md:-top-12" />
-      <a href="/gyms/contact"><img src={button} width="85px" height="50px" className="cursor-pointer absolute z-10 right-12  -mt-14 sm:w-32 sm:right-24 m: -mt-20" /></a>
+      <a href="/gyms/contact"><img src={button} width="85px" height="50px" className="cursor-pointer absolute z-10 right-12  -mt-14 sm:w-32 sm:right-24 md:-mt-20" /></a>
 
       </div>
       <img src={backGround}  className="relative -top-2" />
