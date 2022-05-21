@@ -3,11 +3,11 @@ import { CSSTransition } from 'react-transition-group'
 import { Link } from 'gatsby'
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
-import { Popover, Sidetab, standard } from '@typeform/embed-react'
+import { Widget, Popover, Sidetab, standard } from '@typeform/embed-react'
 import section from '../images/newImg/graphics/Work with us/2_Screen@3x.png'
 import button from '../images/newImg/graphics/Work with us/2_Button@3x.png'
-import backGround from '../images/newImg/graphics/Work with us/gymSection.png'
-import Header from '../components/tailwindComponents/GymHeader'
+import backGround from '../images/newImg/graphics/aboutPage.png'
+import Header from '../components/tailwindComponents/AboutHeader'
 import Features from '../components/tailwindComponents/thirdPage/Features'
 import CTA from '../components/tailwindComponents/thirdPage/CTA'
 import CTA2 from '../components/tailwindComponents/thirdPage/CTA2'
@@ -110,17 +110,13 @@ const TextStroke = (props) => (
 
   <Layout title="GYMS" header={Header}>
     <SEO title="Home" />
-    <div class="wrapper">
+
       <Header />
-      <div className="mb-0">
-      <img src={section} className="font-defaultpb-26 pt-5 top-0 -mt-8 bg-contain bg-no-repeat md:-top-12" />
-      <a href="/gyms/contact"><img src={button} width="85px" height="50px" className="cursor-pointer absolute z-10 right-12  -mt-14 sm:w-32 sm:right-24 m: -mt-20" /></a>
 
-      </div>
-      <img src={backGround}  className="relative -top-2" />
+      <img src={backGround}  className="-mb-3 relative -top-2" />
 
-      <Sidetab id="pQWv7XVg" button Text="Start Partnership" />
-    </div>
+
+
 
 
   </Layout>
