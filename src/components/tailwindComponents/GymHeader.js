@@ -17,9 +17,9 @@ const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
   { name: 'HOME', href: '/', featured: true },
-  { name: 'WORK WITH US', href: '/gyms/#contact' },
+  { name: 'WORK WITH US', href: '/gyms/' },
   { name: 'TRAINERS', href: '/trainers' },
-  { name: 'GYMS', href: '/gyms' },
+  { name: 'ABOUT US', href: '/about' },
 ]
 /*
 

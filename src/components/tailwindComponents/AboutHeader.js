@@ -16,10 +16,10 @@ const Logo = require('../../images/newImg/SpotterLogo.svg')
 const Icon = require('../../images/newImg/SpotterAppIcon.svg')
 
 const navigation = [
-  { name: 'HOME', href: '/', featured: true },
-  { name: 'WORK WITH US', href: '/gyms/#contact' },
-  { name: 'TRAINERS', href: '/trainers' },
-  { name: 'GYMS', href: '/gyms' },
+    { name: 'HOME', href: '/', featured: true },
+    { name: 'WORK WITH US', href: '/gyms/' },
+    { name: 'TRAINERS', href: '/trainers' },
+    { name: 'ABOUT US', href: '/about' },
 ]
 /*
 

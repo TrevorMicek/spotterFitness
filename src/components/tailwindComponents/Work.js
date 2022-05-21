@@ -27,7 +27,7 @@ return (
             </CSSTransition>
             <CSSTransition in={inPropHoverTwo} timeout={2500} classNames="buttonTwo">
               <a
-                  href="/gyms"
+                  href="/"
                   className="w-20 relative top-0  mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 sm:top-10"
                   style={{background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}
                   onMouseOver={() => setInPropHoverTwo(true)}
@@ -39,7 +39,7 @@ return (
             <CSSTransition in={inPropHoverThree} timeout={2500} classNames="buttonTwo">
 
                <a
-                  href="/gyms/#contact"
+                  href="/gyms/"
                   className="w-20 relative top-0  mb-4 px-0 py-0 bg-red-50 text-xs font-medium rounded-sm text-black hover:bg-gray-50 sm:top-10"
                   style={{background: "linear-gradient(90deg, #e7d0af, #d8bf9e, #caae8d, #bc9d7d, #ae8c6d, #a07c5e, #926c4f, #845c41)"}}
                   onMouseOver={() => setInPropHoverThree(true)}
